@@ -1,0 +1,83 @@
+{
+  "Breadcrumb": {
+    "home": "Home",
+    "ariaLabel": "Breadcrumb",
+    "detailHotel": "Hotel Detail",
+    "detailFlight": "Flight Detail",
+    "detailCar": "Car Detail",
+    "pages": {
+      "about": {
+        "title": "About Us",
+        "description": "Discover who we are, our mission, and the passion behind every journey we craft for travelers worldwide."
+      },
+      "contact": {
+        "title": "Contact Us",
+        "description": "Get in touch with our team for questions, support, or custom travel help."
+      },
+      "faqs": {
+        "title": "Frequently Asked Questions",
+        "description": "Find answers to common questions about our services, bookings, and policies"
+      },
+      "flights": {
+        "title": "Flights",
+        "description": "Compare and book flights to hundreds of destinations with the best fares from top airlines."
+      },
+      "flight-search": {
+        "title": "Flight Search",
+        "description": "Search through thousands of routes to find your perfect flight at the best price available."
+      },
+      "flightbooking": {
+        "title": "Flight Booking",
+        "description": "Complete your flight reservation securely. Review your itinerary and confirm your booking."
+      },
+      "cars": {
+        "title": "Car Rentals",
+        "description": "Browse premium vehicles for every journey — from economy to luxury, at unbeatable rates."
+      },
+      "car-search": {
+        "title": "Car Search",
+        "description": "Find the perfect rental car for your trip. Filter by type, price, and features."
+      },
+      "carbooking": {
+        "title": "Car Booking",
+        "description": "Finalize your car rental. Review vehicle details and confirm your reservation."
+      },
+      "hotels": {
+        "title": "Hotels",
+        "description": "Explore handpicked hotels and resorts worldwide — from boutique stays to five-star luxury."
+      },
+      "hotel-search": {
+        "title": "Hotel Search",
+        "description": "Search accommodations by destination, dates, and amenities to find your ideal stay."
+      },
+      "hotelbooking": {
+        "title": "Hotel Booking",
+        "description": "Secure your room reservation. Review hotel details, amenities, and confirm your stay."
+      },
+      "login": {
+        "title": "Login",
+        "description": "Sign in to your TravelTourUp account to manage bookings and access exclusive deals."
+      },
+      "signup": {
+        "title": "Create Account",
+        "description": "Join TravelTourUp today and unlock personalized travel deals and seamless booking."
+      },
+      "payment": {
+        "title": "Payment",
+        "description": "Complete your purchase securely. We protect every transaction with industry-standard encryption."
+      },
+      "privacy": {
+        "title": "Privacy Policy",
+        "description": "Learn how we collect, use, and protect your personal information at TravelTourUp."
+      },
+      "terms": {
+        "title": "Terms of Service",
+        "description": "Review the terms and conditions governing your use of TravelTourUp services."
+      },
+      "profile": {
+        "title": "Profile",
+        "description": "View your account information and travel preferences."
+      }
+    }
+  }
+}

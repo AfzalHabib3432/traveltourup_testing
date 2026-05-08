@@ -1,0 +1,8 @@
+-- DEPRECATED: run Prisma migrations instead — this file is no longer the source of truth.
+--
+--   prisma/migrations/20260326103000_supabase_storage_user_uploads_bucket_and_rls/migration.sql
+--
+--   npm run db:deploy
+--   # or locally: npm run db:migrate / dotenv -e .env.local -- prisma migrate deploy
+--
+-- Only use the SQL Editor if you cannot run Prisma against this database.

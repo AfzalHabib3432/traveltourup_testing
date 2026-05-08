@@ -1,0 +1,83 @@
+{
+  "Breadcrumb": {
+    "home": "Accueil",
+    "ariaLabel": "Fil d’Ariane",
+    "detailHotel": "Détail de l’hôtel",
+    "detailFlight": "Détail du vol",
+    "detailCar": "Détail de la voiture",
+    "pages": {
+      "about": {
+        "title": "À propos",
+        "description": "Découvrez qui nous sommes, notre mission et la passion qui anime chaque voyage que nous créons pour les voyageurs du monde entier."
+      },
+      "contact": {
+        "title": "Contact",
+        "description": "Contactez notre équipe pour vos questions, votre assistance ou un projet de voyage sur mesure."
+      },
+      "faqs": {
+        "title": "Questions fréquentes",
+        "description": "Réponses aux questions courantes sur nos services, réservations et politiques."
+      },
+      "flights": {
+        "title": "Vols",
+        "description": "Comparez et réservez des vols vers des centaines de destinations aux meilleurs tarifs."
+      },
+      "flight-search": {
+        "title": "Recherche de vols",
+        "description": "Parcourez des milliers de lignes pour trouver le vol idéal au meilleur prix."
+      },
+      "flightbooking": {
+        "title": "Réservation de vol",
+        "description": "Finalisez votre réservation en toute sécurité. Vérifiez votre itinéraire et confirmez votre vol."
+      },
+      "cars": {
+        "title": "Location de voiture",
+        "description": "Parcourez des véhicules pour tous les trajets — de l’économique au luxe, à prix avantageux."
+      },
+      "car-search": {
+        "title": "Recherche de voiture",
+        "description": "Trouvez la voiture idéale pour votre voyage. Filtrez par type, prix et équipements."
+      },
+      "carbooking": {
+        "title": "Réservation de voiture",
+        "description": "Finalisez votre location. Vérifiez les détails du véhicule et confirmez votre réservation."
+      },
+      "hotels": {
+        "title": "Hôtels",
+        "description": "Découvrez des hôtels et resorts sélectionnés dans le monde — du boutique au cinq étoiles."
+      },
+      "hotel-search": {
+        "title": "Recherche d’hôtel",
+        "description": "Recherchez par destination, dates et équipements pour trouver le séjour idéal."
+      },
+      "hotelbooking": {
+        "title": "Réservation d’hôtel",
+        "description": "Confirmez votre chambre. Vérifiez les détails, les équipements et validez votre séjour."
+      },
+      "login": {
+        "title": "Connexion",
+        "description": "Connectez-vous à votre compte TravelTourUp pour gérer vos réservations et accéder aux offres."
+      },
+      "signup": {
+        "title": "Créer un compte",
+        "description": "Rejoignez TravelTourUp et profitez d’offres personnalisées et d’une réservation fluide."
+      },
+      "payment": {
+        "title": "Paiement",
+        "description": "Finalisez votre achat en toute sécurité. Chaque transaction est protégée par un chiffrement professionnel."
+      },
+      "privacy": {
+        "title": "Politique de confidentialité",
+        "description": "Découvrez comment nous collectons, utilisons et protégeons vos données personnelles."
+      },
+      "terms": {
+        "title": "Conditions d’utilisation",
+        "description": "Consultez les conditions régissant l’utilisation des services TravelTourUp."
+      },
+      "profile": {
+        "title": "Profil",
+        "description": "Consultez les informations de votre compte et vos préférences de voyage."
+      }
+    }
+  }
+}

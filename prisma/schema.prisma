@@ -1,0 +1,433 @@
+// TravelTourUp — Prisma + Supabase PostgreSQL
+//
+// Connection URLs (Prisma ORM 7+): set in prisma.config.ts at repo root (DIRECT_URL / DATABASE_URL for Migrate), not here.
+// Runtime PrismaClient uses DATABASE_URL via @prisma/adapter-pg — see src/lib/prisma.ts.
+//
+// Users & identity
+// - Supabase stores credentials and identity in auth.users (not modeled here).
+// - public.users (Prisma: User) is one app-owned row per auth user; User.id equals auth.users.id (UUID).
+// - Distinct from auth.users: this table holds app profile + relations (bookings, roles, etc.).
+//
+// RBAC (data-driven)
+// - Catalog: roles, permissions. Join: role_permissions (role ↔ permission), user_roles (user ↔ role).
+// - user_permission_grants: optional direct permission rows for a user (exceptions), unioned with role-derived permissions.
+// - Effective permissions for a user = ∪ permissions from all assigned roles ∪ user_permission_grants.
+// - Resolution in app: see src/lib/authz/server.ts (e.g. getAuthzContextForUserId).
+
+generator client {
+  provider      = "prisma-client-js"
+  /// App-local output so `PrismaClient` always matches `schema.prisma` (fixes IDE resolving a stale `@prisma/client`).
+  output        = "../src/generated/prisma"
+  /// Library engine is smaller and faster than the default binary engine — critical for serverless.
+  engineType    = "library"
+  /// Native = current OS (dev); rhel target = Vercel Amazon Linux 2023 runtime.
+  binaryTargets = ["native", "rhel-openssl-3.0.x"]
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+/// Stable string id (slug), e.g. admin | supplier | agent | customer | custom-vendor-1
+model Role {
+  id          String   @id
+  name        String
+  description String?  @db.Text
+  is_system   Boolean  @default(false) @map("is_system")
+  sort_order  Int      @default(0) @map("sort_order")
+  created_at  DateTime @default(now()) @map("created_at")
+  updated_at  DateTime @updatedAt @map("updated_at")
+
+  role_permissions RolePermission[]
+  user_roles       UserRole[]
+
+  @@map("roles")
+}
+
+/// Stable id slug, e.g. bookings:read_own — also unique on (resource, action)
+model Permission {
+  id          String   @id
+  resource    String
+  action      String
+  description String?  @db.Text
+  category    String?  @map("category")
+  is_system   Boolean  @default(false) @map("is_system")
+  created_at  DateTime @default(now()) @map("created_at")
+
+  role_permissions RolePermission[]
+  user_grants      UserPermissionGrant[]
+
+  @@unique([resource, action])
+  @@index([category])
+  @@map("permissions")
+}
+
+model RolePermission {
+  role_id       String @map("role_id")
+  permission_id String @map("permission_id")
+
+  role       Role       @relation(fields: [role_id], references: [id], onDelete: Cascade)
+  permission Permission @relation(fields: [permission_id], references: [id], onDelete: Cascade)
+
+  @@id([role_id, permission_id])
+  @@index([permission_id])
+  @@map("role_permissions")
+}
+
+/// Many-to-many: users can hold multiple roles; effective permissions = union(role permissions) ∪ user grants.
+model UserRole {
+  user_id    String   @map("user_id") @db.Uuid
+  role_id    String   @map("role_id")
+  is_primary Boolean  @default(false) @map("is_primary")
+  created_at DateTime @default(now()) @map("created_at")
+
+  user User @relation(fields: [user_id], references: [id], onDelete: Cascade)
+  role Role       @relation(fields: [role_id], references: [id], onDelete: Cascade)
+
+  @@id([user_id, role_id])
+  @@index([user_id])
+  @@index([role_id])
+  @@map("user_roles")
+}
+
+/// Additive permission grants for a user (not tied to a role). Use for exceptions / temporary access.
+model UserPermissionGrant {
+  user_id       String   @map("user_id") @db.Uuid
+  permission_id String   @map("permission_id")
+  created_at    DateTime @default(now()) @map("created_at")
+
+  user       User @relation(fields: [user_id], references: [id], onDelete: Cascade)
+  permission Permission  @relation(fields: [permission_id], references: [id], onDelete: Cascade)
+
+  @@id([user_id, permission_id])
+  @@index([user_id])
+  @@map("user_permission_grants")
+}
+
+/// Application user row; id mirrors Supabase auth.users.id (UUID).
+model User {
+  id                 String   @id @db.Uuid
+  first_name         String   @map("first_name")
+  last_name          String   @map("last_name")
+  phone              String?
+  phone_country_code String?  @map("phone_country_code")
+  country_code       String?  @map("country_code") @db.Char(3)
+  currency_id        String   @default("USD") @map("currency_id") @db.VarChar(3)
+  /// Path inside Storage bucket `user-uploads` (e.g. `{userId}/avatar`). Private; use signed URL to view.
+  avatar_path        String?  @map("avatar_path") @db.Text
+  created_at         DateTime @default(now()) @map("created_at")
+  updated_at         DateTime @updatedAt @map("updated_at")
+
+  user_roles               UserRole[]
+  permission_grants        UserPermissionGrant[]
+  bookings                 Booking[]
+  blog_posts               BlogPost[]
+  flight_search_sessions   FlightSearchSession[]
+  wishlist_items           WishlistItem[]
+
+  @@map("users")
+}
+
+/// Saved catalog items per user (flight offer id, hotel/car route id, etc.).
+model WishlistItem {
+  id         String   @id @default(cuid())
+  user_id    String   @map("user_id") @db.Uuid
+  /// Vertical: flight | hotel | car (matches customer routes).
+  type       String   @map("wishlist_type") @db.VarChar(16)
+  ref_id     String   @map("ref_id") @db.VarChar(512)
+  title      String?  @db.Text
+  subtitle   String?  @db.Text
+  image_url  String?  @map("image_url") @db.Text
+  metadata   Json?
+  created_at DateTime @default(now()) @map("created_at")
+  updated_at DateTime @updatedAt @map("updated_at")
+
+  user User @relation(fields: [user_id], references: [id], onDelete: Cascade)
+
+  @@unique([user_id, type, ref_id])
+  @@index([user_id])
+  @@index([user_id, type])
+  @@map("wishlist_items")
+}
+
+model Booking {
+  id             String   @id @default(cuid())
+  booking_ref_no String   @unique @map("booking_ref_no")
+  user_id        String?  @map("user_id") @db.Uuid
+  type           String
+  status         String
+  payment_status String   @map("payment_status")
+  total_amount   Decimal  @map("total_amount") @db.Decimal(12, 2)
+  currency       String   @db.VarChar(3)
+  guest_data     Json?    @map("guest_data")
+  /// Optional client idempotency for flight checkout (`POST /api/v1/flights/bookings`).
+  idempotency_key String? @unique @map("idempotency_key")
+  created_at     DateTime @default(now()) @map("created_at")
+  updated_at     DateTime @updatedAt @map("updated_at")
+
+  user                 User?                       @relation(fields: [user_id], references: [id], onDelete: SetNull)
+  flightBooking        FlightBooking?
+  hotelBooking         HotelBooking?
+  carBooking           CarBooking?
+  flightPaymentIntents FlightPaymentIntentRecord[]
+
+  @@map("bookings")
+}
+
+model FlightBooking {
+  id         String   @id @default(cuid())
+  booking_id String   @unique @map("booking_id")
+  payload    Json?
+
+  duffel_order_id             String?   @unique @map("duffel_order_id")
+  duffel_offer_id             String?   @map("duffel_offer_id")
+  duffel_offer_request_id     String?   @map("duffel_offer_request_id")
+  booking_reference           String?   @map("booking_reference")
+  live_mode                   Boolean?  @map("live_mode")
+  last_offer_total_amount     Decimal?  @map("last_offer_total_amount") @db.Decimal(14, 2)
+  last_offer_total_currency   String?   @map("last_offer_total_currency") @db.VarChar(3)
+  offer_expires_at            DateTime? @map("offer_expires_at")
+  itinerary_snapshot          Json?     @map("itinerary_snapshot")
+  order_raw                   Json?     @map("order_raw")
+
+  created_at DateTime @default(now()) @map("created_at")
+  updated_at DateTime @updatedAt @map("updated_at")
+
+  booking Booking @relation(fields: [booking_id], references: [id], onDelete: Cascade)
+  ancillaries BookingAncillary[]
+  orderCancellations FlightOrderCancellation[]
+
+  @@map("flight_bookings")
+}
+
+/// Duffel order cancellation (`ore_*`) — quote then confirm per Duffel API.
+model FlightOrderCancellation {
+  id                     String    @id @default(cuid())
+  flight_booking_id      String    @map("flight_booking_id")
+  duffel_cancellation_id String    @unique @map("duffel_cancellation_id") @db.VarChar(64)
+  duffel_order_id        String    @map("duffel_order_id") @db.VarChar(64)
+  status                 String    @map("status") @db.VarChar(24)
+  refund_amount          String?   @map("refund_amount") @db.VarChar(24)
+  refund_currency        String?   @map("refund_currency") @db.VarChar(3)
+  refund_to              String?   @map("refund_to") @db.VarChar(40)
+  quote_expires_at       DateTime? @map("quote_expires_at")
+  confirmed_at           DateTime? @map("confirmed_at")
+  raw                    Json?     @map("raw")
+  created_at             DateTime  @default(now()) @map("created_at")
+  updated_at             DateTime  @updatedAt @map("updated_at")
+
+  flightBooking FlightBooking @relation(fields: [flight_booking_id], references: [id], onDelete: Cascade)
+
+  @@index([flight_booking_id])
+  @@index([duffel_order_id])
+  @@map("flight_order_cancellations")
+}
+
+/// Confirmed ancillaries from Duffel order (seats, bags, etc.).
+model BookingAncillary {
+  id               String   @id @default(cuid())
+  flight_booking_id String  @map("flight_booking_id")
+  type             String   @map("type") @db.VarChar(32)
+  duffel_service_id String? @map("duffel_service_id") @db.VarChar(64)
+  passenger_id     String?  @map("passenger_id") @db.VarChar(64)
+  segment_id       String?  @map("segment_id") @db.VarChar(64)
+  amount           String?  @map("amount") @db.VarChar(24)
+  currency         String?  @map("currency") @db.VarChar(3)
+  status           String?  @map("status") @db.VarChar(32)
+  raw              Json?    @map("raw")
+  created_at       DateTime @default(now()) @map("created_at")
+  updated_at       DateTime @updatedAt @map("updated_at")
+
+  flightBooking FlightBooking @relation(fields: [flight_booking_id], references: [id], onDelete: Cascade)
+
+  @@index([flight_booking_id])
+  @@map("booking_ancillaries")
+}
+
+model FlightSearchSession {
+  id               String   @id @default(cuid())
+  user_id          String?  @map("user_id") @db.Uuid
+  offer_request_id String   @map("offer_request_id")
+  params_hash      String   @map("params_hash")
+  params_json      Json     @map("params_json")
+  expires_at       DateTime @map("expires_at")
+  created_at       DateTime @default(now()) @map("created_at")
+
+  user User? @relation(fields: [user_id], references: [id], onDelete: SetNull)
+
+  @@index([params_hash])
+  @@index([user_id])
+  @@map("flight_search_sessions")
+}
+
+/// Duffel Payment Intents for flight checkout (P2). Server-side idempotency and confirm gate.
+model FlightPaymentIntentRecord {
+  id               String  @id @default(cuid())
+  duffel_intent_id String  @unique @map("duffel_intent_id")
+  offer_id         String  @map("offer_id")
+  charge_amount    String  @map("charge_amount") @db.VarChar(24)
+  charge_currency  String  @map("charge_currency") @db.VarChar(3)
+  offer_amount     String  @map("offer_amount") @db.VarChar(24)
+  offer_currency   String  @map("offer_currency") @db.VarChar(3)
+  markup_amount    String  @map("markup_amount") @db.VarChar(24)
+  /// Sum of selected ancillary service amounts in `offer_currency` (Duffel major units).
+  services_subtotal_amount String? @map("services_subtotal_amount") @db.VarChar(24)
+  /// Snapshot of `{ id, quantity }[]` sent to Duffel `POST /air/orders` `services`.
+  ancillary_selection      Json?   @map("ancillary_selection")
+  status           String  @map("status") @db.VarChar(32)
+  client_token     String  @map("client_token") @db.Text
+  idempotency_key  String? @unique @map("idempotency_key")
+  booking_id       String? @map("booking_id")
+
+  created_at DateTime @default(now()) @map("created_at")
+  updated_at DateTime @updatedAt @map("updated_at")
+
+  booking Booking? @relation(fields: [booking_id], references: [id], onDelete: SetNull)
+
+  @@index([booking_id])
+  @@map("flight_payment_intent_records")
+}
+
+model DuffelWebhookEvent {
+  id           String    @id @default(cuid())
+  event_id     String    @unique @map("event_id")
+  type         String
+  payload      Json
+  received_at  DateTime  @default(now()) @map("received_at")
+  processed_at DateTime? @map("processed_at")
+  error        String?   @db.Text
+
+  @@map("duffel_webhook_events")
+}
+
+model HotelBooking {
+  id         String   @id @default(cuid())
+  booking_id String   @unique @map("booking_id")
+  payload    Json?
+
+  duffel_booking_id         String?   @unique @map("duffel_booking_id") @db.VarChar(64)
+  duffel_quote_id           String?   @map("duffel_quote_id") @db.VarChar(64)
+  stays_search_result_id    String?   @map("stays_search_result_id") @db.VarChar(64)
+  duffel_accommodation_id   String?   @map("duffel_accommodation_id") @db.VarChar(64)
+  booking_reference         String?   @map("booking_reference") @db.VarChar(64)
+  quote_expires_at          DateTime? @map("quote_expires_at")
+  accommodation_snapshot    Json?     @map("accommodation_snapshot")
+  stays_raw                 Json?     @map("stays_raw")
+
+  created_at DateTime @default(now()) @map("created_at")
+  updated_at DateTime @updatedAt @map("updated_at")
+
+  booking Booking @relation(fields: [booking_id], references: [id], onDelete: Cascade)
+
+  @@index([duffel_accommodation_id])
+  @@map("hotel_bookings")
+}
+
+model CarBooking {
+  id         String   @id @default(cuid())
+  booking_id String   @unique @map("booking_id")
+  payload    Json?
+  created_at DateTime @default(now()) @map("created_at")
+  updated_at DateTime @updatedAt @map("updated_at")
+
+  booking Booking @relation(fields: [booking_id], references: [id], onDelete: Cascade)
+
+  @@map("car_bookings")
+}
+
+model AdminHotel {
+  id          String   @id @default(cuid())
+  name        String
+  slug        String   @unique
+  description String?  @db.Text
+  stars       Int?
+  location    String?
+  address     String?  @db.Text
+  currency    String   @db.VarChar(3)
+  amenities   Json?
+  policy      String?  @db.Text
+  status      String   @default("active")
+  created_at  DateTime @default(now()) @map("created_at")
+  updated_at  DateTime @updatedAt @map("updated_at")
+
+  @@map("admin_hotels")
+}
+
+model AdminCar {
+  id            String   @id @default(cuid())
+  name          String
+  slug          String   @unique
+  description   String?  @db.Text
+  passengers    Int?
+  transmission  String?
+  price_per_day Decimal  @map("price_per_day") @db.Decimal(12, 2)
+  currency      String   @db.VarChar(3)
+  airport_code  String?  @map("airport_code") @db.VarChar(3)
+  status        String   @default("active")
+  created_at    DateTime @default(now()) @map("created_at")
+  updated_at    DateTime @updatedAt @map("updated_at")
+
+  @@map("admin_cars")
+}
+
+model BlogCategory {
+  id         String   @id @default(cuid())
+  name       String
+  slug       String   @unique
+  created_at DateTime @default(now()) @map("created_at")
+  updated_at DateTime @updatedAt @map("updated_at")
+
+  posts BlogPost[]
+
+  @@map("blog_categories")
+}
+
+model BlogPost {
+  id               String    @id @default(cuid())
+  title            String
+  slug             String    @unique
+  content          String    @db.Text
+  excerpt          String    @db.Text
+  tags             String[]  @default([])
+  status           String    @default("draft")
+  featured         Boolean   @default(false)
+  views_count      Int       @default(0) @map("views_count")
+  read_time        Int       @default(0) @map("read_time")
+  meta_title       String?   @map("meta_title") @db.Text
+  meta_description String?   @map("meta_description") @db.Text
+  published_at     DateTime? @map("published_at")
+  created_at       DateTime  @default(now()) @map("created_at")
+  updated_at       DateTime  @updatedAt @map("updated_at")
+
+  category_id String        @map("category_id")
+  category    BlogCategory  @relation(fields: [category_id], references: [id], onDelete: Restrict)
+
+  author_id String?      @map("author_id") @db.Uuid
+  author    User? @relation(fields: [author_id], references: [id], onDelete: SetNull)
+
+  images BlogPostImage[]
+
+  @@index([status, published_at])
+  @@index([category_id])
+  @@index([updated_at])
+  @@map("blog_posts")
+}
+
+/// Gallery images for a blog post; exactly one per post should have `is_featured` (card / OG hero).
+/// DB: partial unique index `blog_post_images_one_featured_per_post` is defined in migrations (Prisma cannot model WHERE ... yet).
+model BlogPostImage {
+  id           String   @id @default(cuid())
+  blog_post_id String   @map("blog_post_id")
+  url          String   @db.Text
+  alt          String
+  sort_order   Int      @default(0) @map("sort_order")
+  is_featured  Boolean  @default(false) @map("is_featured")
+  /// Optional Supabase `blogs_images` object key for admin storage cleanup.
+  storage_path String?  @map("storage_path") @db.Text
+  created_at   DateTime @default(now()) @map("created_at")
+
+  blog_post BlogPost @relation(fields: [blog_post_id], references: [id], onDelete: Cascade)
+
+  @@index([blog_post_id])
+  @@map("blog_post_images")
+}

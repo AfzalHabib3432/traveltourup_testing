@@ -1,0 +1,33 @@
+{
+  "data": {
+    "id": "off_test_fixture_001",
+    "total_amount": "350.50",
+    "total_currency": "USD",
+    "expires_at": "2026-05-01T12:00:00.000Z",
+    "live_mode": false,
+    "passengers": [
+      { "id": "pas_test_adult_1", "type": "adult" }
+    ],
+    "slices": [
+      {
+        "id": "sli_test_fixture_slice_1",
+        "origin": { "iata_code": "LHR" },
+        "destination": { "iata_code": "JFK" },
+        "segments": [
+          {
+            "id": "seg_test_fixture_1",
+            "origin": { "iata_code": "LHR" },
+            "destination": { "iata_code": "JFK" },
+            "departing_at": "2026-06-01T10:00:00",
+            "arriving_at": "2026-06-01T18:00:00",
+            "duration": "PT8H",
+            "marketing_carrier": { "iata_code": "BA" },
+            "operating_carrier": { "iata_code": "BA" },
+            "marketing_carrier_flight_number": "0178",
+            "passengers": [{ "cabin_class": "economy" }]
+          }
+        ]
+      }
+    ]
+  }
+}

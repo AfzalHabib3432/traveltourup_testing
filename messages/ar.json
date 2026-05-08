@@ -1,0 +1,1496 @@
+{
+  "Nav": {
+    "home": "الرئيسية",
+    "about": "من نحن",
+    "flights": "الطيران",
+    "cars": "السيارات",
+    "hotels": "الفنادق",
+    "contact": "اتصل بنا",
+    "phoneDisplay": "+92 (321)-9400142",
+    "emailDisplay": "info@traveltourup.com",
+    "theme": "المظهر",
+    "currency": "العملة",
+    "language": "اللغة",
+    "account": "الحساب",
+    "profile": "الملف الشخصي",
+    "bookings": "الحجوزات",
+    "wishlists": "قوائم الرغبات",
+    "adminConsole": "لوحة الإدارة",
+    "logout": "تسجيل الخروج",
+    "login": "تسجيل الدخول",
+    "signup": "إنشاء حساب",
+    "navigationSection": "التنقل",
+    "languageCurrencyHeading": "اللغة والعملة",
+    "toggleMenu": "فتح القائمة",
+    "closeMenu": "إغلاق القائمة",
+    "themeSettingsAria": "إعدادات المظهر",
+    "lightModeAria": "الوضع الفاتح",
+    "darkModeAria": "الوضع الداكن",
+    "adminPanel": "لوحة الإدارة"
+  },
+  "Footer": {
+    "rights": "جميع الحقوق محفوظة.",
+    "stayTitle": "ابقَ على اطلاع",
+    "staySubtitle": "احصل على عروض حصرية ونصائح سفر وإلهام في بريدك.",
+    "subscribedTitle": "تم!",
+    "subscribedSubtitle": "تحقق من بريدك للرسالة الترحيبية.",
+    "emailPlaceholder": "بريدك الإلكتروني",
+    "subscribe": "اشترك",
+    "subscribing": "جاري الاشتراك…",
+    "noSpam": "بدون إزعاج. يمكنك إلغاء الاشتراك في أي وقت.",
+    "tagline": "شريكك الموثوق لتجارب سفر لا تُنسى. احجز طيرانًا وفنادق وسيارات وجولات بعروض حصرية حول العالم.",
+    "quickLinksTitle": "روابط سريعة",
+    "servicesTitle": "الخدمات",
+    "contactTitle": "تواصل",
+    "copyright": "TravelTourUp. جميع الحقوق محفوظة.",
+    "weAccept": "نقبل",
+    "privacy": "سياسة الخصوصية",
+    "terms": "شروط الخدمة",
+    "quick_home": "الرئيسية",
+    "quick_flights": "الطيران",
+    "quick_about": "من نحن",
+    "quick_blog": "المدونة",
+    "quick_contact": "اتصل بنا",
+    "svc_hotels": "حجز فندق",
+    "svc_flights": "تذاكر طيران",
+    "svc_cars": "تأجير سيارات",
+    "svc_tours": "باقات جولات",
+    "svc_faqs": "الأسئلة الشائعة",
+    "newsletterEmailInvalid": "يرجى إدخال بريد إلكتروني صالح.",
+    "newsletterEmailRequired": "يرجى إدخال بريدك الإلكتروني.",
+    "newsletterEmailAria": "البريد للنشرة الإخبارية",
+    "social_twitter": "Twitter",
+    "social_facebook": "Facebook",
+    "social_instagram": "Instagram",
+    "social_linkedin": "LinkedIn",
+    "brandAlt": "TravelTourUp"
+  },
+  "Common": {
+    "clearAll": "مسح الكل",
+    "filters": "عوامل التصفية",
+    "applyFilters": "تطبيق المرشحات",
+    "previous": "السابق",
+    "next": "التالي",
+    "close": "إغلاق",
+    "loading": "جاري التحميل…",
+    "bookNow": "احجز الآن",
+    "select": "اختيار",
+    "freeCancellation": "إلغاء مجاني"
+  },
+  "Hero": {
+    "headlinePrefix": "اكتشف العالم و",
+    "tagline": "مغامرتك القادمة بنقرة واحدة — تجارب لا تُنسى وعروض لا تُضاهى.",
+    "rotate0": "اكتشف",
+    "rotate1": "مغامرة",
+    "rotate2": "استكشف",
+    "rotate3": "سافر",
+    "rotate4": "تجوّل",
+    "rotate5": "عِش",
+    "rotate6": "احلم",
+    "rotate7": "اهرب",
+    "rotate8": "احتفل",
+    "rotate9": "استرخِ",
+    "rotate10": "استمتع",
+    "tabFlights": "طيران",
+    "tabCars": "سيارات",
+    "tabHotels": "فنادق",
+    "tabMore": "المزيد"
+  },
+  "Blog": {
+    "indexH1": "أدلة سفر ونصائح للطيران والفنادق والرحلات",
+    "featuredStoryLabel": "دليل مميز",
+    "hubLinksAria": "احجز سفرك على TravelTourUp",
+    "hubLinksTitle": "خطط لرحلتك القادمة",
+    "hubLinksFlights": "البحث عن رحلات",
+    "hubLinksHotels": "تصفح الفنادق",
+    "hubLinksCars": "استئجار سيارة"
+  },
+  "Featured": {
+    "flightsHeading": "رحلات مميزة",
+    "flightsSubtitle": "للإلهام — أسعار مخزنة مؤقتًا من شريكنا",
+    "flightsHeroTitle": "رحلات مميزة",
+    "flightsHeroDescription": "عروض لوجهات شائعة — أسعار من البحث المباشر (حدّث بانتظام).",
+    "flightsCta": "عرض كل الرحلات",
+    "hotelsHeading": "فنادق مميزة",
+    "hotelsSubtitle": "أماكن استثنائية بأسعار مناسبة",
+    "hotelsEmptyTitle": "فنادق مميزة",
+    "hotelsEmptySubtitle": "لا توجد فنادق متاحة حاليًا.",
+    "hotelsLoadingAria": "جاري تحميل الفنادق المميزة",
+    "hotelsDiscoverTitle": "استفد من عروض رائعة",
+    "hotelsDiscoverSubtitle": "على فنادق حول العالم",
+    "hotelsViewMore": "عرض المزيد",
+    "hotelsAdAlt": "عروض فنادق رائعة حول العالم",
+    "hotelsFallbackBanner": "عروض فنادق"
+  },
+  "Categories": {
+    "title": "التصنيفات",
+    "subtitle": "اكتشف أماكن استثنائية لمغامرتك القادمة",
+    "prevAria": "التصنيفات السابقة",
+    "nextAria": "التصنيفات التالية",
+    "goToSlide": "الانتقال إلى الشريحة {n}"
+  },
+  "RecommendedCars": {
+    "sectionTitle": "سيارات نقل موصى بها",
+    "sectionSubtitle": "نقل مريح وموثوق لجميع تنقلاتك",
+    "featuredFallbackTitle": "نقل فاخر بالسيارة",
+    "featuredFallbackDesc": "راحة وفخامة مع سائقين محترفين",
+    "exploreAll": "عرض كل السيارات",
+    "placeholderBanner": "تأجير سيارات",
+    "bannerAlt": "نقل فاخر — راحة وفخامة لرحلتك"
+  },
+  "WinterSpecial": {
+    "title": "عرض الشتاء الخاص",
+    "subtitle": "خطط واحجز وانطلق في مغامرة أحلامك مع إرشاد خبرائنا وتجارب مصممة خصيصًا لك.",
+    "priceFrom": "من {price}",
+    "cardImageAlt": "وجهة مميزة",
+    "destSwitzerland": "سويسرا",
+    "destNorway": "النرويج",
+    "destIceland": "آيسلندا",
+    "destAustria": "النمسا",
+    "destFinland": "فنلندا"
+  },
+  "Stats": {
+    "hotelsTitle": "فنادق حول العالم",
+    "hotelsDesc": "إقامات فاخرة بأفضل الأسعار",
+    "destinationsTitle": "الوجهات",
+    "destinationsDesc": "استكشف أماكن استثنائية",
+    "satisfactionTitle": "رضا العملاء",
+    "satisfactionDesc": "مسافرون راضون وتقييمات إيجابية"
+  },
+  "FAQ": {
+    "title": "الأسئلة الشائعة",
+    "subtitle": "إجابات عن الأسئلة المتكررة حول خدماتنا والحجوزات والسياسات",
+    "items": [
+      {
+        "question": "كيف أعدّل أو ألغي حجز رحلة طيران؟",
+        "answer": "سجّل الدخول إلى حسابك وافتح الحجوزات. التعديل أو الإلغاء يخضع لشروط ورسوم شركة الطيران."
+      },
+      {
+        "question": "ما المستندات المطلوبة للسفر الدولي؟",
+        "answer": "عادةً: جواز سفر ساري، وتأشيرة إن لزم، ومستندات صحية حسب الدولة. تحقق من شروط الدخول قبل السفر."
+      },
+      {
+        "question": "كيف أعرف إن كان تذكرتي قابلة للاسترداد؟",
+        "answer": "يعتمد على قواعد السعر. راجع تأكيد الحجز أو تواصل مع الدعم."
+      },
+      {
+        "question": "هل يمكنني اختيار مقعدي عند الحجز؟",
+        "answer": "غالبًا أثناء الحجز؛ وإلا غالبًا عند إتمام تسجيل الوصول عبر الإنترنت."
+      },
+      {
+        "question": "ماذا أفعل عند تأخير أو إلغاء رحلة؟",
+        "answer": "غالبًا تُعلِمك شركة الطيران عبر البريد أو الرسائل. تحقق أيضًا من الحالة على موقعنا أو التطبيق. تواصل مع الدعم لتذكرة بديلة."
+      },
+      {
+        "question": "كيف أحجز لمجموعة؟",
+        "answer": "حدّد عدد المسافرين أثناء الحجز. لأكثر من 10 أشخاص تواصل مع فريق المجموعات للأسعار والمساعدة."
+      },
+      {
+        "question": "هل توجد رسوم مخفية على الطيران؟",
+        "answer": "نعرض الضرائب والرسوم الإلزامية في السعر النهائي. الخيارات (أمتعة، مقعد…) قد تُحسب بشكل منفصل."
+      },
+      {
+        "question": "كيف أعرف حصتي من الأمتعة؟",
+        "answer": "تختلف حسب شركة الطيران والسعر. راجع التأكيد أو موقع الشركة."
+      },
+      {
+        "question": "هل الحجز عبر موقعكم آمٍ؟",
+        "answer": "نعم، يستخدم موقعنا تشفيرًا آمِنًا لبياناتك ومدفوعاتك."
+      },
+      {
+        "question": "هل يمكنني الحجز لشخص آخر بحسابي؟",
+        "answer": "نعم. أدخل بيانات المسافر أثناء الحجز."
+      }
+    ]
+  },
+  "Reviews": {
+    "prevAria": "التقييم السابق",
+    "nextAria": "التقييم التالي",
+    "goToSlide": "الانتقال إلى الشريحة {n}",
+    "items": [
+      {
+        "name": "Maria Smantha",
+        "role": "مطوّرة ويب",
+        "text": "جعل TravelTourUp الحجز سهلًا جدًا. وجدت الفندق المثالي في دقائق وكل شيء سار بسلاسة. الأسعار أفضل من غيره.",
+        "image": "https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp"
+      },
+      {
+        "name": "Lisa Cudrow",
+        "role": "مصممة جرافيك",
+        "text": "منصة واضحة وممتعة. قارنت الفنادق والطيران دون ارتباك. عروض جيدة ودعم سريع.",
+        "image": "https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp"
+      },
+      {
+        "name": "John Smith",
+        "role": "مسؤول تسويق",
+        "text": "تجربة رائعة: طيران بأسعار مناسبة وفندق مريح. سأستخدم TravelTourUp مجددًا.",
+        "image": "https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp"
+      }
+    ]
+  },
+  "MoreServices": {
+    "message": "خدمات إضافية قريبًا…"
+  },
+  "About": {
+    "historyTitle": "اكتشف العالم معنا",
+    "historySubtitle": "منذ 1998",
+    "historyDescription": "هدفنا خدمات سفر موثوقة ومريحة. اليوم نقدّم مجموعة واسعة من المركبات الفاخرة لرحلاتك.",
+    "feat1": "خيارات واسعة من سيارات الفخامة",
+    "feat2": "فنادق فاخرة بحالة ممتازة",
+    "feat3": "حجز بسيط وبديهي",
+    "feat4": "دعم عملاء متميز"
+  },
+  "Flights": {
+    "pageH1": "ابحث واحجز رحلات جوية حول العالم",
+    "tab": {
+      "tripOneWay": "ذهاب فقط",
+      "tripRoundTrip": "ذهاب وإياب",
+      "tripMultiCity": "مدن متعددة",
+      "advancedOptions": "خيارات متقدمة",
+      "classLabel": "الدرجة",
+      "cabinEconomy": "اقتصادية",
+      "cabinPremiumEconomy": "اقتصادية ممتازة",
+      "cabinBusiness": "رجال الأعمال",
+      "cabinFirstClass": "الدرجة الأولى",
+      "maxConnectionsLabel": "أقصى توقفات",
+      "maxConnectionsAny": "أي عدد",
+      "maxConnectionsDirect": "0 (مباشر فقط)",
+      "maxConnectionsOne": "1",
+      "maxConnectionsTwo": "2",
+      "supplierTimeoutLabel": "مهلة المزود (مللي ثانية)",
+      "supplierTimeoutHint": "ينتظر Duffel حتى هذا الحد لاستجابات العروض.",
+      "preferredAirlinesLabel": "شركات الطيران المفضلة",
+      "preferredAirlinesHint": "اختياري — تصفية حسب الناقل مع البحث.",
+      "flyingFromLabel": "المغادرة من",
+      "destinationToLabel": "الوجهة إلى",
+      "filterPlaceholder": "اكتب للتصفية",
+      "popularAirportsHint": "مطارات شائعة — اكتب حرفين أو أكثر للبحث عبر Duffel",
+      "ariaOriginAirports": "مطارات المغادرة",
+      "ariaDestinationAirports": "مطارات الوصول",
+      "noMatchingAirports": "لا مطارات مطابقة",
+      "swapDestinationsTitle": "تبديل الوجهات",
+      "removeFlightTitle": "إزالة رحلة",
+      "departDateLabel": "تاريخ المغادرة",
+      "departureDateLabel": "تاريخ المغادرة",
+      "returnDateLabel": "تاريخ العودة",
+      "selectDate": "اختر التاريخ",
+      "travelerCount": "{count, plural, one {مسافر واحد} other {# مسافرين}}",
+      "adultsLabel": "بالغون",
+      "childrenLabel": "أطفال",
+      "infantsLabel": "رضع",
+      "childAgeHint": "يجب أن يكون عمر الطفل صالحًا لمدة الرحلة بالكامل.",
+      "childLabel": "طفل {n}",
+      "yearsOld": "{years} سنة",
+      "addAnotherFlight": "إضافة رحلة أخرى",
+      "searchFlightsAria": "البحث عن رحلات",
+      "calendarDaySun": "أح",
+      "calendarDayMon": "إث",
+      "calendarDayTue": "ثل",
+      "calendarDayWed": "أر",
+      "calendarDayThu": "خم",
+      "calendarDayFri": "جم",
+      "calendarDaySat": "سب",
+      "selectCity": "اختر المدينة",
+      "flightTimeSummaryAny": "في أي وقت",
+      "flightTimeSummaryTakeoff": "إقلاع {from}–{to}",
+      "flightTimeSummaryLanding": "هبوط {from}–{to}",
+      "sliceTakeoffLabel": "إقلاع",
+      "sliceLandingLabel": "هبوط",
+      "timeAxisAnyTime": "في أي وقت",
+      "flightTimeConfirm": "تأكيد"
+    },
+    "sort": {
+      "best": "أفضل تطابق",
+      "price_asc": "الأرخص",
+      "price_desc": "الأغلى",
+      "duration_asc": "أقصر مدة",
+      "duration_desc": "أطول مدة",
+      "sortBy": "ترتيب حسب"
+    },
+    "stops": {
+      "any": "أي عدد توقفات",
+      "direct": "مباشر فقط",
+      "one": "توقف واحد كحد أقصى",
+      "two": "توقفتان كحد أقصى",
+      "label": "التوقفات"
+    },
+    "filters": {
+      "title": "عوامل التصفية",
+      "price": "السعر",
+      "airlines": "شركات الطيران",
+      "flightNumber": "رقم الرحلة",
+      "flightNumberPlaceholder": "مثال AF 123",
+      "flightTime": "أوقات الرحلة",
+      "flightTimeHint": "إقلاع أول مقطع / وصول آخر مقطع (التوقيت المحلي)",
+      "airlineComboAll": "كل شركات الطيران",
+      "airlineComboCount": "{count} شركات طيران",
+      "airlineComboPlaceholder": "اكتب للتصفية",
+      "airlineComboNoMatches": "لا نتائج",
+      "airlineComboNoAirlinesInResultSet": "لا شركات طيران في هذه النتائج"
+    },
+    "offerDetail": {
+      "unavailableTitle": "العرض غير متاح",
+      "expiredMessage": "لم يعد هذا العرض متاحًا.",
+      "returnToSearchHint": "ارجع إلى البحث واختر رحلة أخرى.",
+      "invalidOffer": "عرض غير صالح",
+      "couldNotLoadOffer": "تعذّر تحميل هذا العرض"
+    },
+    "detail": {
+      "labelAirline": "شركة الطيران",
+      "labelFlightType": "نوع الرحلة",
+      "labelFareCabin": "السعر / الدرجة",
+      "labelCancellation": "الإلغاء",
+      "labelFlightChange": "تغيير الرحلة",
+      "labelSeatsBaggage": "المقاعد والأمتعة",
+      "labelInflightFeatures": "ميزات على متن الطائرة",
+      "labelTotal": "الإجمالي",
+      "valueNonstop": "مباشر",
+      "valueStopCount": "{count, plural, one {توقف واحد} other {# توقفات}}",
+      "valueNonRefundableFee": "غير قابل للاسترداد (تطبق رسوم)",
+      "valueFreeChange": "تغيير مجاني",
+      "valueFeeApplies": "تطبق رسوم",
+      "inflightSectionTitle": "ميزات على متن الطائرة",
+      "inflightSectionDescription": "استمتع برحلة مريحة مع هذه التسهيلات على متن الطائرة."
+    },
+    "checkout": {
+      "errorCouldNotLoadOffer": "تعذّر تحميل العرض",
+      "backToFlights": "العودة إلى الرحلات",
+      "title": "إتمام الدفع",
+      "offerSubtitle": "العرض {offerId} · {currency} {amount}",
+      "stepPayment": "الخطوة: الدفع",
+      "backToOffer": "العودة إلى العرض ←",
+      "payNowOrHoldTitle": "ادفع الآن أو احجز مؤقتًا",
+      "payNowOrHoldIntro": "الدفع الآن يؤكد الحجز فورًا مع شركة الطيران. الحجز المؤقت يحجز السعر بينما تنهي الترتيبات (عند تفعيل هذه الميزة لحسابك).",
+      "payNowTitle": "ادفع الآن",
+      "payNowDescription": "ادفع بالبطاقة عبر Duffel. يُؤكَّد حجزك بعد نجاح الدفع.",
+      "holdOrderTitle": "طلب بالحجز المؤقت",
+      "holdOrderDescription": "ضع حجزًا مؤقتًا دون خصم من بطاقتك. ادفع لاحقًا قبل انتهاء المهلة.",
+      "holdDisabledHint": "إتمام الحجز المؤقت غير مفعّل بعد. عيّن FLIGHT_HOLD_BACKEND وNEXT_PUBLIC_FLIGHT_HOLD_BACKEND عندما يدعم حساب Duffel لديك طلبات الحجز المؤقت.",
+      "passengerDetailsTitle": "بيانات المسافرين",
+      "passengerIndex": "المسافر {current} من {total}",
+      "referenceLabel": "المرجع",
+      "passengerTypeGeneric": "مسافر",
+      "passengerTypeAdult": "بالغ",
+      "passengerTypeChild": "طفل",
+      "passengerTypeInfant": "رضيع",
+      "titleFieldLabel": "اللقب",
+      "genderFieldLabel": "الجنس",
+      "titleMr": "السيد",
+      "titleMrs": "السيدة",
+      "titleMs": "الآنسة",
+      "titleMiss": "آنسة",
+      "titleDr": "الدكتور",
+      "genderMale": "ذكر",
+      "genderFemale": "أنثى",
+      "givenNameLabel": "الاسم الأول (كما في الهوية)",
+      "familyNameLabel": "اسم العائلة (كما في الهوية)",
+      "dobLabel": "تاريخ الميلاد (YYYY-MM-DD)",
+      "infantAdultLabel": "مسافر بالغ (رضيع على الحضن)",
+      "selectAdultPassenger": "اختر مسافرًا بالغًا",
+      "contactDetailsTitle": "بيانات الاتصال",
+      "contactDetailsHint": "تُستخدم لتأكيد الحجز وللاتصال من شركة الطيران (المسافر الرئيسي).",
+      "emailLabel": "البريد الإلكتروني",
+      "phoneOptionalLabel": "الهاتف (اختياري)",
+      "continueToPayment": "المتابعة إلى الدفع",
+      "placeHold": "تأكيد الحجز المؤقت",
+      "preparingPayment": "جاري تجهيز الدفع…",
+      "placingHold": "جاري وضع الحجز المؤقت…",
+      "paymentSectionTitle": "الدفع",
+      "confirmingBooking": "جاري تأكيد حجزك…",
+      "pciNotice": "تُعالَج المدفوعات بأمان عبر Duffel. تُعالَج بيانات بطاقتك وفق معايير PCI.",
+      "cardDetailsTitle": "بيانات البطاقة",
+      "hintIncompleteForm": "أدخل كل الأسماء وتاريخ الميلاد، وبريدًا صالحًا للمسافر الرئيسي، واربط أي رضيع بمسافر بالغ عند الحاجة.",
+      "hintHoldNoCharge": "لا يُخصم من البطاقة بعد — أكمل الدفع من «حجوزاتي» قبل انتهاء الحجز المؤقت.",
+      "hintPayExtrasOnOffer": "تم اختيار الأمتعة والمقاعد في صفحة العرض. يمكنك الرجوع لتعديلها قبل الدفع.",
+      "orderSummaryTitle": "ملخص الطلب",
+      "summaryTypeFlight": "رحلة",
+      "summaryTypeHotel": "فندق",
+      "summaryTypeCar": "سيارة",
+      "summaryBookingWord": "حجز",
+      "offerTotalLabel": "إجمالي العرض",
+      "totalAmountLabel": "المبلغ الإجمالي",
+      "includesFareExtras": "يشمل السعر والإضافات المختارة عند التسعير",
+      "secureCheckout": "دفع آمن 100٪",
+      "viewOrderSummaryAria": "عرض ملخص الطلب",
+      "sheetOrderSummaryTitle": "ملخص الطلب",
+      "defaultSummaryTitle": "حجز رحلة",
+      "successHoldPlaced": "تم وضع الحجز المؤقت",
+      "successBookingConfirmed": "تم تأكيد الحجز",
+      "successHoldBodyPrefix": "طلبك قيد الحجز المؤقت. أكمل الدفع قبل انتهاء العرض. المرجع",
+      "successReferencePrefix": "المرجع",
+      "successAirlinePnr": "رمز الحجز لدى شركة الطيران",
+      "viewYourBooking": "عرض حجزك",
+      "errorMissingCheckoutData": "بيانات الدفع ناقصة.",
+      "errorCouldNotStartPayment": "تعذّر بدء الدفع",
+      "errorCouldNotPlaceHold": "تعذّر وضع الحجز المؤقت",
+      "errorBookingFailedAfterPayment": "فشل الحجز بعد الدفع",
+      "errorCardPaymentFailed": "فشل دفع البطاقة"
+    },
+    "results": {
+      "searchFailed": "فشل البحث عن الرحلات",
+      "roundTripTotal": "إجمالي ذهاب وإياب",
+      "oneWayTotal": "إجمالي اتجاه واحد",
+      "roundTripSteps": "مراحل الرحلة",
+      "outbound": "الذهاب",
+      "inbound": "العودة",
+      "returnStep": "العودة",
+      "changeOutbound": "تغيير الذهاب",
+      "loadingResults": "جاري تحميل النتائج…",
+      "noMatching": "لا توجد رحلات مطابقة",
+      "listView": "عرض قائمة",
+      "gridView": "عرض شبكة",
+      "filtersSortButton": "عوامل التصفية والفرز",
+      "mobileFilters": "عوامل التصفية",
+      "done": "تم",
+      "startSearchTitle": "ابدأ بحث الرحلات",
+      "startSearchBody": "استخدم النموذج أعلاه لاختيار المسار والتواريخ والمسافرين.",
+      "noFlightsTitle": "لا توجد رحلات",
+      "noFlightsBody": "جرّب تعديل المرشحات",
+      "clearFilters": "مسح المرشحات",
+      "showingRange": "عرض {start}–{end} من {total} رحلات",
+      "paginationPage": "صفحة {page} من {total}",
+      "prevPage": "الصفحة السابقة",
+      "nextPage": "الصفحة التالية",
+      "importantTitle": "معلومات مهمة",
+      "importantSubtitle": "ما يجب معرفته قبل تأكيد رحلتك.",
+      "baggageTitle": "الأمتعة",
+      "baggageBody": "تختلف الحصص بحسب شركة الطيران والسعر — راجع العرض والشروط.",
+      "requirementsTitle": "متطلبات السفر",
+      "requirementsBody": "تحقق من التأشيرات والدخول والمتطلبات الصحية لوجهتك.",
+      "flexibleTitle": "حجز مرن",
+      "flexibleBody": "الاستبدال والاسترداد وفق شروط السعر — اقرأ قبل الدفع.",
+      "paginationNav": "ترقيم صفحات نتائج الرحلات",
+      "editSearchModalTitle": "تعديل البحث",
+      "editSearchButton": "تعديل البحث",
+      "editSearchCancel": "إلغاء",
+      "editSearchTitleRoundTrip": "ذهاب وإياب إلى {destination}",
+      "editSearchTitleOneWay": "ذهاب فقط إلى {destination}",
+      "editSearchTitleMultiCity": "رحلة متعددة المدن",
+      "editSearchRouteRound": "{origin} ⇌ {destination} • ذهاب وإياب",
+      "editSearchRouteOneWay": "{origin} → {destination} • ذهاب فقط",
+      "editSearchDatesRound": "{depart} – {returnDate} • {passengers}",
+      "editSearchDatesOneWay": "{depart} • {passengers}",
+      "editSearchDatesMultiCity": "{depart} • {passengers}",
+      "editSearchPassengers": "{count, plural, zero {# مسافر} one {# مسافر} two {# مسافران} few {# مسافرين} many {# مسافرًا} other {# مسافر}}"
+    }
+  },
+  "Hotels": {
+    "pageH1": "اعثر على فنادق وأماكن إقامة حول العالم",
+    "tab": {
+      "alertSelectDestination": "يرجى اختيار الوجهة.",
+      "alertSelectDates": "يرجى اختيار تواريخ الوصول والمغادرة.",
+      "alertDestinationUnavailable": "هذه الوجهة غير متاحة بعد للبحث المباشر عن الفنادق.",
+      "searchFailed": "فشل البحث. أعد المحاولة أو تحقق من الإعدادات.",
+      "destinationLabel": "الوجهة",
+      "destinationPlaceholder": "اكتب للتصفية",
+      "popularSection": "وجهات شائعة",
+      "popularHint": "وجهات شائعة — اكتب حرفين على الأقل للبحث عبر Duffel",
+      "noMatching": "لا توجد أماكن مطابقة",
+      "roomsTravelers": "الغرف والمسافرون",
+      "nationality": "الجنسية",
+      "nationalityComboPlaceholder": "ابحث عن دولة أو رمز",
+      "nationalityComboNoMatches": "لا توجد دول مطابقة",
+      "searchHotels": "بحث عن فنادق",
+      "selectDestination": "اختر وجهة",
+      "selectDate": "اختر تاريخًا",
+      "checkIn": "الوصول",
+      "checkOut": "المغادرة",
+      "checkInDateLabel": "تاريخ الوصول",
+      "checkOutDateLabel": "تاريخ المغادرة",
+      "destinationsAria": "وجهات الفنادق",
+      "roomsGuestsLabel": "الغرف والمسافرون",
+      "roomsCounterLabel": "الغرف",
+      "roomSingular": "غرفة",
+      "roomsPlural": "غرف",
+      "travelerSingular": "مسافر",
+      "travelersPlural": "مسافرون",
+      "adults": "بالغون",
+      "children": "أطفال"
+    },
+    "results": {
+      "sortLabel": "ترتيب حسب:",
+      "sortPlaceholder": "ترتيب حسب",
+      "loadingResults": "جاري تحميل النتائج…",
+      "noMatching": "لا توجد منشآت مطابقة",
+      "showingRange": "عرض {start}–{end} من {total}",
+      "propertySingular": "منشأة",
+      "propertyPlural": "منشآت",
+      "totalInParens": " ({total} إجمالًا)",
+      "filtersSortButton": "عوامل التصفية والفرز",
+      "filtersTitle": "عوامل التصفية",
+      "done": "تم",
+      "showFiltersButton": "عرض المرشحات",
+      "applyFilters": "تطبيق المرشحات",
+      "sortOpenMenuAria": "ترتيب حسب، فتح القائمة",
+      "sortByFallback": "ترتيب حسب",
+      "clearAllFilters": "مسح الكل",
+      "filterPricePerNightTitle": "السعر لليلة (دولار أمريكي)",
+      "filterMinLabel": "الحد الأدنى",
+      "filterMaxLabel": "الحد الأقصى",
+      "filterStarRatingTitle": "التقييم بالنجوم",
+      "filterSearchRadiusTitle": "نطاق البحث",
+      "filterSearchRadiusAria": "نطاق البحث",
+      "radiusSelectionSummary": "نطاق {km} كم ({count, plural, one {# منشأة} other {# منشآت}})",
+      "radiusKmOption": "{km, plural, one {1 كيلومتر} other {# كيلومتر}}",
+      "mapLocationsTitle": "مواقع المنشآت",
+      "mapSidebarHint": "{count} معروضة على الخريطة (تتحدث عند تغيير عوامل التصفية).",
+      "mapModalFootnote": "{count, plural, one {منشأة واحدة تطابق عوامل التصفية الحالية (كما في خريطة الشريط الجانبي).} other {# منشآت تطابق عوامل التصفية الحالية (كما في خريطة الشريط الجانبي).}}",
+      "closeMapAria": "إغلاق الخريطة",
+      "cardSeeRoomRates": "شاهد أسعار الغرف",
+      "cardShownAfterPickRoom": "يُعرض بعد اختيار غرفة",
+      "cardPriceOnRoomStep": "السعر عند خطوة الغرفة",
+      "cardReserveNowPayLater": "احجز الآن، ادفع لاحقًا",
+      "sort": {
+        "best": "الأفضل",
+        "price_low": "السعر (تصاعدي)",
+        "price_high": "السعر (تنازلي)",
+        "rating": "تقييم الضيوف",
+        "stars": "النجوم",
+        "distance": "المسافة"
+      },
+      "editSearchModalTitle": "تعديل البحث",
+      "editSearchButton": "تعديل البحث",
+      "editSearchCancel": "إلغاء",
+      "editSearchHeadlineStays": "إقامات في {destination}",
+      "editSearchStayDatesGuests": "{checkIn} – {checkOut} • {rooms} غرف · {guests} ضيوف",
+      "editSearchStayGuestsOnly": "{guests} ضيفًا"
+    },
+    "detail": {
+      "labelLocation": "الموقع",
+      "labelRating": "التقييم",
+      "labelPropertyType": "نوع المنشأة",
+      "labelMealPlan": "خطة الوجبات",
+      "labelCancellation": "الإلغاء",
+      "labelRooms": "الغرف",
+      "labelDistance": "المسافة",
+      "labelConfirmation": "التأكيد",
+      "labelArea": "المنطقة",
+      "fromCenter": "من المركز",
+      "fromAirport": "من المطار",
+      "ratingReviews": "{rating}/10 ({count, plural, one {مراجعة واحدة} other {# مراجعات}})",
+      "roomsLeftCount": "{count, plural, one {غرفة واحدة متبقية} other {# غرف متبقية}}",
+      "confirmationInstant": "فوري",
+      "confirmationWithin24": "خلال 24 ساعة",
+      "cancellationNonRefundable": "غير قابل للاسترداد",
+      "cancellationRefundHint": "قد تنطبق نوافذ استرداد — اختر سعرًا لرؤية المواعيد النهائية",
+      "cancellationRateCard": "غير قابل للاسترداد أو وفق سياسة بطاقة الأسعار",
+      "amenitiesSectionTitle": "مرافق الفندق",
+      "amenitiesSectionDescription": "استمتع بهذه المرافق خلال إقامتك.",
+      "aboutHotelHeading": "عن {name}",
+      "aboutLocationTitle": "الموقع",
+      "sectionDeals": "عروض",
+      "redirectToHotelsCountdown": "جارٍ إعادة التوجيه إلى الفنادق خلال {time}"
+    },
+    "checkout": {
+      "title": "إتمام الدفع",
+      "quoteLabel": "عرض السعر",
+      "headerPriceSeparator": "·",
+      "backToHotels": "العودة إلى الفنادق ←",
+      "guestDetailsTitle": "بيانات الضيف",
+      "guestIndex": "الضيف {current} من {total}",
+      "leadGuestBadge": "الضيف الرئيسي",
+      "firstNameLabel": "الاسم الأول",
+      "lastNameLabel": "اسم العائلة",
+      "dobLabel": "تاريخ الميلاد",
+      "contactDetailsTitle": "بيانات الاتصال",
+      "contactDetailsHint": "تُستخدم لتأكيد الحجز وللاتصال من الفندق.",
+      "emailLabel": "البريد الإلكتروني",
+      "phoneLabel": "الهاتف (E.164)",
+      "phonePlaceholder": "+442080160509",
+      "confirmBooking": "تأكيد الحجز",
+      "bookingInProgress": "جاري الحجز…",
+      "hintIncompleteForm": "أدخل الاسم الأول والعائلة وتاريخ الميلاد (YYYY-MM-DD) وبريدًا صالحًا وهاتفًا (E.164).",
+      "hintChargesDuffel": "الرسوم وفق حساب Duffel لديك (الرصيد افتراضيًا). الأسعار التفاوضية أو برامج الولاء قد تحتاج حقول بحث أو حجز إضافية حسب وثائق Duffel عند تفعيل المنتج.",
+      "errorMissingQuoteId": "معرّف عرض السعر مفقود.",
+      "errorFillAllFields": "يرجى تعبئة جميع الحقول ببريد صالح وتاريخ ميلاد صحيح.",
+      "errorBookingFailed": "فشل الحجز.",
+      "errorAppendNewQuote": "اطلب عرض سعر جديد من صفحة الفندق.",
+      "orderSummaryTitle": "ملخص الطلب",
+      "summaryTypeFlight": "رحلة",
+      "summaryTypeHotel": "فندق",
+      "summaryTypeCar": "سيارة",
+      "summaryBookingWord": "حجز",
+      "defaultSummaryTitle": "إقامة فندقية",
+      "rowLabelStay": "الإقامة",
+      "rowLabelQuote": "عرض السعر",
+      "quoteTotalLabel": "إجمالي العرض",
+      "totalAmountLabel": "المبلغ الإجمالي",
+      "includesRoomTaxes": "يشمل سعر الغرفة والضرائب حيث جُعِلت في العرض",
+      "viewOrderSummaryAria": "عرض ملخص الطلب",
+      "sheetOrderSummaryTitle": "ملخص الطلب",
+      "secureCheckout": "دفع آمن 100٪"
+    }
+  },
+  "Cars": {
+    "pageH1": "احجز سيارة لرحلتك",
+    "tab": {
+      "fromAirportLabel": "من المطار",
+      "searchPlaceholder": "ابحث عن مكان…",
+      "selectLocation": "اختر مكانًا",
+      "dateLabel": "التاريخ",
+      "selectDate": "اختر تاريخًا",
+      "travelersLabel": "المسافرون",
+      "adults": "بالغون",
+      "children": "أطفال",
+      "travelerSingular": "مسافر",
+      "travelerPlural": "مسافرون",
+      "searchCarsAria": "بحث عن سيارات"
+    },
+    "detail": {
+      "labelSupplier": "المورد",
+      "labelTransmission": "نوع ناقل الحركة",
+      "labelFuelType": "نوع الوقود",
+      "labelSeats": "المقاعد",
+      "labelBaggage": "الأمتعة",
+      "labelCategory": "الفئة",
+      "labelCancellation": "الإلغاء",
+      "labelPickupLocation": "موقع الاستلام",
+      "labelPickupHours": "أوقات الاستلام",
+      "labelRating": "التقييم",
+      "labelMileage": "المسافة المقطوعة",
+      "labelDoors": "الأبواب",
+      "seatsPassengers": "{count, plural, one {مسافر واحد} other {# مسافرين}}",
+      "bagsCount": "{count, plural, one {حقيبة واحدة} other {# حقائب}}",
+      "doorsCount": "{count, plural, one {باب واحد} other {# أبواب}}",
+      "cancellationFeeApplies": "تطبق رسوم",
+      "ratingReviews": "{rating}/10 ({count, plural, one {مراجعة واحدة} other {# مراجعات}})",
+      "reviewsParenthetical": "({count, plural, one {مراجعة واحدة} other {# مراجعات}})",
+      "featuresSectionTitle": "ميزات السيارة",
+      "featuresSectionDescription": "تشمل هذه المركبة الميزات التالية.",
+      "sectionIncluded": "يشمل",
+      "sectionPickupDetails": "تفاصيل الاستلام",
+      "aboutSupplierHeading": "عن {supplier}",
+      "sectionDeals": "عروض"
+    }
+  },
+  "Booking": {
+    "sidebar": {
+      "title": "تفاصيل الحجز",
+      "hotelPromptSelectRooms": "اختر الغرف من القائمة أدناه لعرض الإجمالي.",
+      "selectedRoomsHeading": "الغرف المختارة",
+      "confirmedQuoteHint": "إجمالي مؤكد بعد العرض. التدفق: بحث ← أسعار ← عرض ← حجز.",
+      "datesHotel": "الوصول / المغادرة",
+      "datesCar": "الاستلام / التسليم",
+      "datesFlight": "تواريخ السفر",
+      "guests": "الضيوف",
+      "travelers": "المسافرون",
+      "adults": "بالغون",
+      "children": "أطفال",
+      "rooms": "الغرف",
+      "bagsAndSeats": "الحقائب والمقاعد",
+      "extras": "إضافات",
+      "extraBaggage50": "أمتعة إضافية (+50$)",
+      "seatSelection25": "اختيار المقعد (+25$)",
+      "fare": "الأجرة",
+      "selectedExtrasEst": "إضافات مختارة (تقديرية)",
+      "totalEst": "الإجمالي (تقديري)",
+      "finalAmountDisclaimer": "المبلغ النهائي يُؤكد عند الدفع.",
+      "price": "السعر",
+      "total": "الإجمالي",
+      "totalColon": "الإجمالي:",
+      "hotelQuotePaymentHint": "اختر سعرًا وانتظر العرض قبل الدفع — وفق تدفق Duffel Stays.",
+      "gettingQuote": "جاري جلب العرض…",
+      "selectRoom": "اختر غرفة",
+      "proceedToPayment": "المتابعة إلى الدفع",
+      "selectRoomForTotal": "اختر غرفة لعرض الإجمالي",
+      "viewFlightAria": "عرض تفاصيل حجز الرحلة",
+      "viewHotelAria": "عرض تفاصيل حجز الفندق",
+      "sheetFlightTitle": "تفاصيل حجز الرحلة",
+      "sheetHotelTitle": "تفاصيل حجز الفندق",
+      "summaryTravelers": "المسافرون",
+      "summaryDates": "التواريخ",
+      "summaryExtras": "الإضافات",
+      "summaryGuests": "الضيوف",
+      "summaryRooms": "الغرف",
+      "summaryStay": "الإقامة",
+      "summaryRoom": "الغرفة",
+      "summaryRentalPeriod": "مدة الإيجار",
+      "partySummary": "{adults} بالغين، {children} أطفال",
+      "nightSingular": "ليلة",
+      "nightPlural": "ليالٍ",
+      "totalStayPhrase": "إجمالي الإقامة",
+      "extrasBagServices": "{qty} عنصر خدمة إضافية",
+      "extrasSeatsChosen": "{count} مقعد/مقاعد"
+    }
+  },
+  "Contact": {
+    "heading": "تواصل معنا",
+    "subheading": "يسعدني أن أسمع منك.",
+    "intro": "إذا كان لديك أي استفسارات أو ترغب في التحية، يرجى استخدام نموذج الاتصال.",
+    "addressLine1": "123 شارع السفر، مدينة الجولات",
+    "addressLine2": "بلد السفر، الرمز البريدي 12345",
+    "firstNameLabel": "الاسم الأول",
+    "lastNameLabel": "اسم العائلة",
+    "firstNamePlaceholder": "محمد",
+    "lastNamePlaceholder": "أحمد",
+    "emailLabel": "البريد الإلكتروني *",
+    "emailPlaceholder": "example@email.com",
+    "messageLabel": "الرسالة",
+    "messagePlaceholder": "اكتب رسالتك...",
+    "send": "إرسال",
+    "sending": "جاري الإرسال...",
+    "successMessage": "شكرًا لك! تم إرسال رسالتك.",
+    "errorGeneric": "حدث خطأ ما",
+    "errorSendFailed": "تعذر إرسال الرسالة",
+    "rateLimit": "أعد المحاولة خلال {seconds} ثانية",
+    "mapIframeTitle": "خريطة",
+    "socialInstagram": "إنستغرام",
+    "socialFacebook": "فيسبوك",
+    "socialTwitter": "تويتر",
+    "socialLinkedIn": "لينكدإن"
+  },
+  "Home": {
+    "hotels": [
+      {
+        "name": "منتجع وسبا شاطئ فاخر",
+        "location": "بالي، إندونيسيا",
+        "price": 299,
+        "rating": 4.8,
+        "reviews": "1.2 ألف",
+        "facilities": [
+          "واي فاي",
+          "مسبح",
+          "سبا",
+          "صالة رياضية"
+        ]
+      },
+      {
+        "name": "فندق غراند بالاس",
+        "location": "باريس، فرنسا",
+        "price": 320,
+        "rating": 4.9,
+        "reviews": "892",
+        "facilities": [
+          "واي فاي",
+          "مطعم",
+          "بار",
+          "سبا"
+        ]
+      },
+      {
+        "name": "منتجع إطلالة محيطية",
+        "location": "المالديف",
+        "price": 450,
+        "rating": 4.7,
+        "reviews": "1.5 ألف",
+        "facilities": [
+          "شاطئ",
+          "مسبح",
+          "سبا",
+          "غطس"
+        ]
+      },
+      {
+        "name": "ملاذ جبلي قمة",
+        "location": "جبال الألب السويسرية",
+        "price": 280,
+        "rating": 4.6,
+        "reviews": "734",
+        "facilities": [
+          "تزلج",
+          "سبا",
+          "مدفأة",
+          "واي فاي"
+        ]
+      },
+      {
+        "name": "أجنحة حضرية فاخرة",
+        "location": "نيويورك، الولايات المتحدة",
+        "price": 380,
+        "rating": 4.8,
+        "reviews": "2.1 ألف",
+        "facilities": [
+          "واي فاي",
+          "صالة رياضية",
+          "بار",
+          "مؤتمرات"
+        ]
+      },
+      {
+        "name": "منتجع واحة صحراوية",
+        "location": "دبي، الإمارات",
+        "price": 420,
+        "rating": 4.9,
+        "reviews": "1.8 ألف",
+        "facilities": [
+          "مسبح",
+          "سبا",
+          "غولف",
+          "شاطئ"
+        ]
+      }
+    ],
+    "categories": [
+      {
+        "key": "beach",
+        "name": "شاطئ"
+      },
+      {
+        "key": "desert",
+        "name": "صحراء"
+      },
+      {
+        "key": "mountain",
+        "name": "جبل"
+      },
+      {
+        "key": "temple",
+        "name": "معبد"
+      },
+      {
+        "key": "tower",
+        "name": "برج"
+      },
+      {
+        "key": "pyramid",
+        "name": "هرم"
+      },
+      {
+        "key": "city",
+        "name": "مدينة"
+      },
+      {
+        "key": "forest",
+        "name": "غابة"
+      },
+      {
+        "key": "waterfall",
+        "name": "شلال"
+      },
+      {
+        "key": "lake",
+        "name": "بحيرة"
+      },
+      {
+        "key": "island",
+        "name": "جزيرة"
+      },
+      {
+        "key": "canyon",
+        "name": "وادي ضيق"
+      }
+    ],
+    "featuredCar": {
+      "title": "نقل فاخر بالسيارة",
+      "description": "راحة وفخامة مع سائقين محترفين",
+      "buttonText": "عرض كل السيارات"
+    },
+    "featuredBlogsTitle": "قصص مميزة",
+    "featuredBlogsSubtitle": "اقرأ أحدث القصص وابقى على اطلاع بأخر الأخبار السفرية",
+    "featuredBlogsViewAll": "عرض جميع المقالات",
+    "cars": [
+      {
+        "name": "Toyota Camry",
+        "type": "سيدان",
+        "passengers": 4,
+        "luggage": 2,
+        "price": 45,
+        "originalPrice": 60,
+        "features": [
+          "تكييف",
+          "واي فاي",
+          "GPS"
+        ]
+      },
+      {
+        "name": "Honda Accord",
+        "type": "سيدان",
+        "passengers": 4,
+        "luggage": 3,
+        "price": 48,
+        "originalPrice": 65,
+        "features": [
+          "تكييف",
+          "USB",
+          "جلد"
+        ]
+      },
+      {
+        "name": "Toyota RAV4",
+        "type": "دفع رباعي",
+        "passengers": 5,
+        "luggage": 4,
+        "price": 65,
+        "originalPrice": 85,
+        "features": [
+          "تكييف",
+          "4x4",
+          "قضبان سقف"
+        ]
+      },
+      {
+        "name": "Ford Explorer",
+        "type": "دفع رباعي",
+        "passengers": 7,
+        "luggage": 5,
+        "price": 75,
+        "originalPrice": 95,
+        "features": [
+          "تكييف",
+          "7 مقاعد",
+          "صوت فاخر"
+        ]
+      },
+      {
+        "name": "Mercedes الفئة E",
+        "type": "فاخر",
+        "passengers": 4,
+        "luggage": 3,
+        "price": 120,
+        "originalPrice": 150,
+        "features": [
+          "جلد",
+          "سقف بانوراما",
+          "مقاعد تدليك"
+        ]
+      },
+      {
+        "name": "BMW الفئة 5",
+        "type": "فاخر",
+        "passengers": 4,
+        "luggage": 2,
+        "price": 125,
+        "originalPrice": 160,
+        "features": [
+          "بريميوم",
+          "مقاعد مدفأة",
+          "ترفيه"
+        ]
+      },
+      {
+        "name": "Toyota Sienna",
+        "type": "فان",
+        "passengers": 8,
+        "luggage": 6,
+        "price": 85,
+        "originalPrice": 110,
+        "features": [
+          "تكييف",
+          "8 مقاعد",
+          "أبواب منزلقة"
+        ]
+      },
+      {
+        "name": "Mercedes الفئة V",
+        "type": "فان",
+        "passengers": 8,
+        "luggage": 7,
+        "price": 110,
+        "originalPrice": 140,
+        "features": [
+          "فاخر",
+          "TV",
+          "ثلاجة"
+        ]
+      }
+    ]
+  },
+  "Auth": {
+    "loginTitle": "مرحبًا بعودتك",
+    "loginSubtitle": "سجّل الدخول بالبريد الإلكتروني",
+    "signupTitle": "إنشاء حساب",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "rememberMe": "تذكرني",
+    "forgotPassword": "نسيت كلمة المرور؟",
+    "signIn": "تسجيل الدخول",
+    "signUp": "إنشاء حساب",
+    "noAccount": "ليس لديك حساب؟",
+    "hasAccount": "لديك حساب بالفعل؟",
+    "orContinueWith": "أو تابع مع",
+    "terms": "شروط الخدمة",
+    "privacy": "سياسة الخصوصية",
+    "oauthRedirecting": "إعادة توجيه…",
+    "signInFailed": "فشل تسجيل الدخول. أعد المحاولة أو استخدم البريد وكلمة المرور.",
+    "passwordUpdated": "تم تحديث كلمة المرور. سجّل الدخول بكلمة المرور الجديدة."
+  },
+  "PrivacyPage": {
+    "topCards": [
+      {
+        "title": "الأمان",
+        "desc": "معاملات مشفرة ومقدمو خدمات موثوقون."
+      },
+      {
+        "title": "الشفافية",
+        "desc": "شرح واضح لجمع البيانات واستخدامها."
+      },
+      {
+        "title": "التحكم",
+        "desc": "الوصول إلى بياناتك وتحديثها وحذفها عند الطلب."
+      }
+    ],
+    "sections": [
+      {
+        "title": "١. مقدمة",
+        "content": "مرحبًا بك في TravelTourUp. نحترم خصوصيتك ونلتزم بحماية بياناتك الشخصية عند استخدام خدمات الحجز والسفر."
+      },
+      {
+        "title": "٢. المعلومات التي نجمعها",
+        "points": [
+          "بيانات شخصية مثل الاسم والبريد والهاتف",
+          "بيانات الحجز: الوجهة والتواريخ ومعلومات المسافرين",
+          "بيانات الدفع عبر مقدمي خدمات موثوقين",
+          "بيانات الجهاز والاستخدام لتحسين الأداء والاستقرار",
+          "بيانات الموقع لتوصيات مخصصة",
+          "سجل التواصل لتحسين دعم العملاء"
+        ]
+      },
+      {
+        "title": "٣. كيف نستخدم معلوماتك",
+        "content": "نستخدم بياناتك لمعالجة الحجوزات وتحسين المنتجات وتخصيص التجربة وإرسال إشعارات السفر الأساسية وتقديم الدعم."
+      },
+      {
+        "title": "٤. الأساس القانوني للمعالجة",
+        "points": [
+          "تنفيذ العقد (الحجوزات والخدمات)",
+          "الامتثال للقوانين والمتطلبات التنظيمية",
+          "بناءً على موافقتك للتسويق والخدمات الاختيارية",
+          "مصالح مشروعة مثل تحسين الخدمات"
+        ]
+      },
+      {
+        "title": "٥. مشاركة البيانات",
+        "content": "نشارك المعلومات مع شركات الطيران والفنادق ومعالجي الدفع فقط عند الضرورة لإتمام حجزك."
+      },
+      {
+        "title": "٦. مقدمو خدمات خارجيون",
+        "points": [
+          "شركات الطيران والنقل",
+          "الفنادق وشركاء الإقامة",
+          "بوابات الدفع والمؤسسات المالية",
+          "أدوات التحليل ومراقبة الأداء"
+        ]
+      },
+      {
+        "title": "٧. النقل الدولي للبيانات",
+        "content": "قد تُنقل بياناتك وتُعالج خارج بلد إقامتك لإتمام الحجوزات وتقديم الخدمات عالميًا."
+      },
+      {
+        "title": "٨. أمن البيانات",
+        "points": [
+          "تشفير SSL للمعاملات",
+          "بوابات دفع آمنة",
+          "مراقبة منتظمة للأنظمة",
+          "وصول داخلي مقيد",
+          "حماية ضد الوصول غير المصرح به"
+        ]
+      },
+      {
+        "title": "٩. ملفات تعريف الارتباط والتتبع",
+        "content": "تساعدنا ملفات تعريف الارتباط على تأمين المنصة وتذكر التفضيلات وفهم الزيارات لتحسين تجربتك."
+      },
+      {
+        "title": "١٠. أنواع ملفات تعريف الارتباط",
+        "points": [
+          "أساسية لتشغيل المنصة",
+          "أداء وتحليلات",
+          "وظيفية للتفضيلات",
+          "تسويقية لعروض مخصصة"
+        ]
+      },
+      {
+        "title": "١١. الاحتفاظ بالبيانات",
+        "content": "نحتفظ ببياناتك الشخصية فقط للمدة اللازمة قانونيًا وتشغيليًا."
+      },
+      {
+        "title": "١٢. الحسابات",
+        "points": [
+          "أنت مسؤول عن سرية حسابك",
+          "احتفظ ببيانات الدخول آمنة",
+          "أبلغنا فورًا عن أي وصول غير مصرح به"
+        ]
+      },
+      {
+        "title": "١٣. حقوقك",
+        "points": [
+          "الوصول إلى بياناتك الشخصية",
+          "طلب التصحيح",
+          "طلب الحذف",
+          "سحب الموافقة في أي وقت",
+          "الاعتراض على بعض أنواع المعالجة"
+        ]
+      },
+      {
+        "title": "١٤. التسويق",
+        "content": "قد نرسل عروضًا ترويجية. يمكنك إلغاء الاشتراك في أي وقت عبر الروابط أو إعدادات الحساب."
+      },
+      {
+        "title": "١٥. خصوصية الأطفال",
+        "content": "خدماتنا لا تستهدف من هم دون 18 عامًا، ولا نجمع عمدًا بيانات الأطفال."
+      },
+      {
+        "title": "١٦. روابط طرف ثالث",
+        "content": "قد تحتوي المنصة على روابط لخدمات خارجية؛ لا نتحكم في ممارسات الخصوصية لديها."
+      },
+      {
+        "title": "١٧. معلومات الدفع",
+        "points": [
+          "المدفوعات عبر بوابات آمنة لأطراف ثالثة",
+          "لا نخزن بيانات البطاقة الكاملة",
+          "المعاملات مشفرة ومراقبة"
+        ]
+      },
+      {
+        "title": "١٨. بيانات السفر",
+        "points": [
+          "جواز السفر والهوية للحجوزات",
+          "التفضيلات وسجل الرحلات",
+          "جهات اتصال للطوارئ",
+          "طلبات خاصة مثل الوجبات أو إمكانية الوصول"
+        ]
+      },
+      {
+        "title": "١٩. تحديثات السياسة",
+        "content": "قد نحدّث سياسة الخصوصية؛ ستُنشر التغييرات على هذه الصفحة مع تاريخ المراجعة."
+      },
+      {
+        "title": "٢٠. اتصل بنا",
+        "content": "للأسئلة حول هذه السياسة: support@traveltourup.com."
+      }
+    ]
+  },
+  "TermsPage": {
+    "topCards": [
+      {
+        "title": "استخدام عادل",
+        "desc": "معلومات صادقة واستخدام مشروع للمنصة."
+      },
+      {
+        "title": "قواعد المزودين",
+        "desc": "الحجوزات تخضع لشروط شركات الطيران والفنادق."
+      },
+      {
+        "title": "مدفوعات آمنة",
+        "desc": "معاملات عبر شركاء موثوقين."
+      }
+    ],
+    "sections": [
+      {
+        "title": "١. قبول الشروط",
+        "content": "باستخدام TravelTourUp فإنك توافق على شروط الخدمة والسياسات المشار إليها على المنصة."
+      },
+      {
+        "title": "٢. الأهلية",
+        "content": "يجب أن يكون عمرك 18 عامًا على الأقل وأن تكون مؤهلاً قانونيًا لإبرام عقود ملزمة."
+      },
+      {
+        "title": "٣. خدمات الحجز",
+        "content": "توفر TravelTourUp الدعم كوسيط بين المسافرين ومقدمي الخدمة من أطراف ثالثة مثل الطيران والفنادق والنقل."
+      },
+      {
+        "title": "٤. التسجيل",
+        "points": [
+          "قدّم معلومات دقيقة وكاملة",
+          "حافظ على سرية بيانات الدخول",
+          "أنت مسؤول عن كل النشاط تحت حسابك"
+        ]
+      },
+      {
+        "title": "٥. الدفع والأسعار",
+        "points": [
+          "المدفوعات عبر بوابات آمنة",
+          "قد تتغير الأسعار حسب التوفر والطلب",
+          "قد تنطبق ضرائب ورسوم وخدمات",
+          "تحويل العملة يعتمد على أسعار المزود"
+        ]
+      },
+      {
+        "title": "٦. تأكيد الحجز",
+        "content": "لا يُؤكد الحجز إلا بعد الدفع الكامل وتأكيد مقدم الخدمة."
+      },
+      {
+        "title": "٧. الإلغاء والاسترداد",
+        "content": "الإلغاء والاسترداد يعتمد على سياسة كل مزود؛ راجع شروط السعر قبل التأكيد."
+      },
+      {
+        "title": "٨. التعديلات",
+        "content": "تعديل التواريخ أو بيانات المسافرين يخضع لسياسات المزود وقد يترتب عليه رسوم إضافية."
+      },
+      {
+        "title": "٩. مسؤوليات المستخدم",
+        "points": [
+          "معلومات مسافر ودفع دقيقة",
+          "الالتزام بتأشيرات الهجرة والقوانين المحلية",
+          "وثائق سفر سارية",
+          "عدم إساءة الاستخدام أو الاحتيال أو الوصول غير المصرح به"
+        ]
+      },
+      {
+        "title": "١٠. الوثائق",
+        "content": "أنت مسؤول عن جوازات السفر والتأشيرات والتصاريح قبل الرحلة."
+      },
+      {
+        "title": "١١. مخاطر السفر",
+        "content": "السفر ينطوي على مخاطر؛ لا نتحمل التأخير أو الإلغاء الناجم عن عوامل خارجية."
+      },
+      {
+        "title": "١٢. أطراف ثالثة",
+        "content": "الخدمات يقدمها مزودون مستقلون؛ لا نتحمل أخطاءهم أو جودة خدمتهم."
+      },
+      {
+        "title": "١٣. حدود المسؤولية",
+        "content": "لا نتحمل الاضطرابات الناجمة عن أطراف ثالثة بما في ذلك التأخير والحجز الزائد والإلغاء والقوة القاهرة."
+      },
+      {
+        "title": "١٤. القوة القاهرة",
+        "content": "لا نتحمل التقصير بسبب أحداث خارجة عن إرادتنا مثل الكوارث أو الجوائح أو قرارات السلطات."
+      },
+      {
+        "title": "١٥. أنشطة محظورة",
+        "points": [
+          "حجوزات أو مدفوعات احتيالية",
+          "إساءة استخدام الأنظمة أو محاولات الاختراق",
+          "انتهاك القوانين",
+          "انتحال الهوية"
+        ]
+      },
+      {
+        "title": "١٦. الملكية الفكرية",
+        "content": "المحتوى والعلامات مملوكة لـ TravelTourUp؛ لا يجوز استخدامها دون إذن."
+      },
+      {
+        "title": "١٧. الإنهاء",
+        "content": "يجوز لنا تعليق أو إنهاء الحسابات المخالفة دون إشعار مسبق."
+      },
+      {
+        "title": "١٨. سياسة الخصوصية",
+        "content": "استخدامك يخضع أيضًا لسياسة الخصوصية التي توضح كيفية جمع واستخدام البيانات."
+      },
+      {
+        "title": "١٩. تعديل الشروط",
+        "content": "قد نحدّث الشروط في أي وقت؛ الاستمرار يعني الموافقة على النسخة المحدثة."
+      },
+      {
+        "title": "٢٠. اتصل بنا",
+        "content": "للأسئلة حول هذه الشروط: support@traveltourup.com."
+      }
+    ]
+  },
+  "AboutAchievements": {
+    "title": "وجهتك في انتظارك",
+    "subtitle": "ساعدنا آلاف المسافرين على استكشاف وجهات رائعة حول العالم. التزامنا بالجودة يعزز نجاحنا.",
+    "statCustomers": "12870+",
+    "statCustomersLabel": "عملاء سعداء",
+    "statSatisfied": "100%",
+    "statSatisfiedLabel": "رضا العملاء",
+    "connectText": "تواصل معنا لمزيد من المعلومات.",
+    "contactButton": "اتصل بنا"
+  },
+  "Seo": {
+    "routes": {
+      "home": {
+        "title": "TravelTourUp — احجز رحلات جوية وفنادق وسيارات حول العالم",
+        "description": "قارن واحجز رحلاتك وفندقك واستئجار سيارتك في مكان واحد. بحث واضح، دفع آمن، ودعم على مدار الساعة لرحلات العمل والسياحة.",
+        "ogTitle": "احجز رحلات وفنادق وسيارات — TravelTourUp",
+        "ogDescription": "ابحث عن الرحلات والإقامات والتأجير عالميًا بأسعار تنافسية واحجز بثقة."
+      },
+      "about": {
+        "title": "من نحن | TravelTourUp لحجز الطيران والفنادق",
+        "description": "تعرّف على كيف تساعد TravelTourUp المسافرين على حجز الرحلات والفنادق والسيارات عبر منصة بسيطة وآمنة مع دعم سريع الاستجابة.",
+        "ogTitle": "من نحن — TravelTourUp",
+        "ogDescription": "مهمتنا: جعل حجز السفر سهلاً وموثوقًا لكل رحلة."
+      },
+      "contact": {
+        "title": "اتصل بـ TravelTourUp | دعم العملاء والمساعدة",
+        "description": "تواصل مع TravelTourUp للمساعدة في الحجز، وأسئلة الرحلات والفنادق، والاسترداد، وتنظيم السفر.",
+        "ogTitle": "اتصل بنا — TravelTourUp",
+        "ogDescription": "تواصل مع فريقنا للحجوزات والفواتير ومساعدة المسافرين."
+      },
+      "faqs": {
+        "title": "الأسئلة الشائعة حول الحجز | رحلات وفنادق وسيارات — TravelTourUp",
+        "description": "إجابات عن حجز الرحلات والفنادق والسيارات، المدفوعات، التعديلات، والسياسات على TravelTourUp.",
+        "ogTitle": "الأسئلة الشائعة — TravelTourUp",
+        "ogDescription": "مساعدة الحجز، الاسترداد، الحساب والمزيد."
+      },
+      "flights": {
+        "title": "رحلات رخيصة وتذاكر طيران | احجز عبر الإنترنت — TravelTourUp",
+        "description": "ابحث عن رحلات دولية ومحلية، قارن الشركات والأسعار، واحجز تذاكرك بدفع آمن ودعم متخصص.",
+        "ogTitle": "احجز رحلات جوية عبر الإنترنت — TravelTourUp",
+        "ogDescription": "اعثر على عروض، قارن الخيارات، واحجز رحلتك القادمة."
+      },
+      "hotels": {
+        "title": "فنادق وإقامة | أفضل الأسعار والحجز — TravelTourUp",
+        "description": "اعثر على فنادق ومنتجعات وإقامات سياحية حول العالم. قارن الأسعار والمرافق والموقع واحجز غرفتك بأمان.",
+        "ogTitle": "احجز فنادق عالميًا — TravelTourUp",
+        "ogDescription": "من الاقتصادي إلى الفاخر: اعثر على إقامتك المثالية."
+      },
+      "cars": {
+        "title": "تأجير سيارات ومطار | قارن العروض — TravelTourUp",
+        "description": "استأجر سيارة لرحلتك — من الاقتصادي إلى الفاخر. قارن نقاط الاستلام بما في ذلك المطار واحجز بشفافية.",
+        "ogTitle": "عروض تأجير سيارات — TravelTourUp",
+        "ogDescription": "مركبات لرحلات العمل والسياحة."
+      },
+      "flightbooking": {
+        "title": "إتمام حجز الرحلة | TravelTourUp",
+        "description": "أكمل حجز رحلتك بأمان. راجع بيانات المسافرين والمسار قبل الدفع.",
+        "ogTitle": "إتمام حجز الطيران — TravelTourUp",
+        "ogDescription": "دفع آمن لإتمام حجز الرحلة."
+      },
+      "hotelbooking": {
+        "title": "إتمام حجز الفندق | TravelTourUp",
+        "description": "أكمل حجز فندقك بأمان. أكد التواريخ ونوع الغرفة وبيانات الضيوف.",
+        "ogTitle": "إتمام حجز الفندق — TravelTourUp",
+        "ogDescription": "دفع آمن لإتمام حجز الفندق."
+      },
+      "carbooking": {
+        "title": "إتمام حجز تأجير السيارة | TravelTourUp",
+        "description": "أكمل حجز تأجير السيارة بأمان. راجع المركبة ونقطة الاستلام قبل الدفع.",
+        "ogTitle": "إتمام حجز السيارة — TravelTourUp",
+        "ogDescription": "دفع آمن لإتمام التأجير."
+      },
+      "login": {
+        "title": "تسجيل الدخول | حساب TravelTourUp",
+        "description": "سجّل الدخول لإدارة حجوزات الطيران والفنادق والسيارات، والرحلات المحفوظة، وإعدادات الحساب.",
+        "ogTitle": "تسجيل الدخول — TravelTourUp",
+        "ogDescription": "الوصول إلى حساب المسافر."
+      },
+      "signup": {
+        "title": "إنشاء حساب | انضم إلى TravelTourUp",
+        "description": "أنشئ حساب TravelTourUp مجانًا للحجز بسرعة أكبر وتتبع الرحلات واستلام التحديثات.",
+        "ogTitle": "إنشاء حساب — TravelTourUp",
+        "ogDescription": "انضم إلى TravelTourUp وابدأ حجز رحلتك التالية."
+      },
+      "cars_payment": {
+        "title": "دفع تأجير السيارة | TravelTourUp",
+        "description": "أكمل دفع تأجير سيارتك بأمان عبر صفحة دفع مشفرة.",
+        "ogTitle": "دفع التأجير — TravelTourUp",
+        "ogDescription": "دفع آمن لتأجيرك."
+      },
+      "hotels_payment": {
+        "title": "دفع حجز الفندق | TravelTourUp",
+        "description": "أكمل دفع حجز فندقك بأمان عبر صفحة دفع مشفرة.",
+        "ogTitle": "دفع الفندق — TravelTourUp",
+        "ogDescription": "دفع آمن لإقامتك."
+      },
+      "flights_payment": {
+        "title": "دفع حجز الرحلة | TravelTourUp",
+        "description": "أكمل دفع حجز رحلتك بأمان عبر صفحة دفع مشفرة.",
+        "ogTitle": "دفع الرحلة — TravelTourUp",
+        "ogDescription": "دفع آمن لرحلتك."
+      },
+      "privacy": {
+        "title": "سياسة الخصوصية | TravelTourUp",
+        "description": "كيف تجمع TravelTourUp بياناتك وتستخدمها وتحميها عند حجز السفر.",
+        "ogTitle": "سياسة الخصوصية — TravelTourUp",
+        "ogDescription": "حماية البيانات وحقوق الخصوصية."
+      },
+      "terms": {
+        "title": "شروط الخدمة | TravelTourUp",
+        "description": "الشروط التي تحكم استخدام TravelTourUp للبحث وحجز الرحلات والفنادق والسيارات.",
+        "ogTitle": "شروط الخدمة — TravelTourUp",
+        "ogDescription": "شروط المنصة للمسافرين والحجوزات."
+      },
+      "blog": {
+        "title": "دلائل سفر ونصائح | رحلات وفنادق — TravelTourUp",
+        "description": "إلهام ودلائل عملية للطيران، اختيار الفنادق، رحلات الطريق، والحصول على أفضل قيمة من حجزك.",
+        "ogTitle": "أدلة وأخبار السفر — TravelTourUp",
+        "ogDescription": "نصائح لحجز رحلات وفنادق أفضل."
+      },
+      "forgot_password": {
+        "title": "إعادة تعيين كلمة المرور | TravelTourUp",
+        "description": "اطلب رابطًا آمنًا لإعادة تعيين كلمة مرور حساب TravelTourUp.",
+        "ogTitle": "إعادة تعيين كلمة المرور — TravelTourUp",
+        "ogDescription": "استعادة الوصول إلى حسابك."
+      },
+      "profile": {
+        "title": "ملفك الشخصي | TravelTourUp",
+        "description": "إدارة ملف المسافر والتفضيلات على TravelTourUp.",
+        "ogTitle": "الملف الشخصي — TravelTourUp",
+        "ogDescription": "نظرة عامة على حسابك."
+      },
+      "profile_bookings": {
+        "title": "حجوزاتي | TravelTourUp",
+        "description": "اعرض وأدر حجوزات الطيران والفندق والسيارة.",
+        "ogTitle": "حجوزاتي — TravelTourUp",
+        "ogDescription": "رحلاتك وتفاصيل الحجز."
+      },
+      "profile_booking_detail": {
+        "title": "تفاصيل الحجز | TravelTourUp",
+        "description": "تأكيد الحجز والمراجع لحجز TravelTourUp.",
+        "ogTitle": "تفاصيل الحجز — TravelTourUp",
+        "ogDescription": "تأكيد الحجز والتفاصيل."
+      }
+    }
+  },
+  "Breadcrumb": {
+    "home": "الرئيسية",
+    "ariaLabel": "مسار التنقل",
+    "detailHotel": "تفاصيل الفندق",
+    "detailFlight": "تفاصيل الرحلة",
+    "detailCar": "تفاصيل السيارة",
+    "pages": {
+      "about": {
+        "title": "من نحن",
+        "description": "تعرّف على هويتنا ورسالتنا والشغف الذي يصنع كل رحلة للمسافرين حول العالم."
+      },
+      "contact": {
+        "title": "اتصل بنا",
+        "description": "تواصل مع فريقنا للأسئلة أو الدعم أو خطط سفر مخصصة."
+      },
+      "faqs": {
+        "title": "الأسئلة الشائعة",
+        "description": "إجابات عن الأسئلة المتكررة حول خدماتنا والحجوزات والسياسات."
+      },
+      "flights": {
+        "title": "الطيران",
+        "description": "قارن واحجز رحلات لمئات الوجهات بأفضل الأسعار من شركات الطيران."
+      },
+      "flight-search": {
+        "title": "بحث الرحلات",
+        "description": "ابحث بين آلاف المسارات لتجد رحلتك المثالية بأفضل سعر."
+      },
+      "flightbooking": {
+        "title": "حجز الرحلة",
+        "description": "أكمل حجزك بأمان. راجع خط سير الرحلة وأكد الحجز."
+      },
+      "cars": {
+        "title": "تأجير سيارات",
+        "description": "تصفّح مركبات للمسافرين من الاقتصادي إلى الفاخر بأسعار منافسة."
+      },
+      "car-search": {
+        "title": "بحث عن سيارة",
+        "description": "اعثر على السيارة المناسبة لرحلتك. صفّح حسب النوع والسعر والميزات."
+      },
+      "carbooking": {
+        "title": "حجز السيارة",
+        "description": "أكمل التأجير. راجع تفاصيل المركبة وأكد الحجز."
+      },
+      "hotels": {
+        "title": "الفنادق",
+        "description": "اكتشف فنادق ومنتجعات مختارة حول العالم — من البوتيك إلى الخمس نجوم."
+      },
+      "hotel-search": {
+        "title": "بحث عن فندق",
+        "description": "ابحث حسب الوجهة والتواريخ والمرافق لتجد إقامتك المثالية."
+      },
+      "hotelbooking": {
+        "title": "حجز الفندق",
+        "description": "أكد غرفتك. راجع تفاصيل الفندق والمرافق ثم أكمل الحجز."
+      },
+      "login": {
+        "title": "تسجيل الدخول",
+        "description": "سجّل الدخول إلى حساب TravelTourUp لإدارة الحجوزات والاستفادة من العروض."
+      },
+      "signup": {
+        "title": "إنشاء حساب",
+        "description": "انضم إلى TravelTourUp اليوم واحصل على عروض مخصصة وحجز سلس."
+      },
+      "payment": {
+        "title": "الدفع",
+        "description": "أكمل الشراء بأمان. نحمي كل معاملة بتشفير وفق معايير الصناعة."
+      },
+      "privacy": {
+        "title": "سياسة الخصوصية",
+        "description": "تعرّف على كيفية جمع بياناتك واستخدامها وحمايتها في TravelTourUp."
+      },
+      "terms": {
+        "title": "شروط الخدمة",
+        "description": "اطّلع على الشروط التي تحكم استخدام خدمات TravelTourUp."
+      },
+      "profile": {
+        "title": "الملف الشخصي",
+        "description": "اعرض معلومات حسابك وتفضيلات السفر."
+      }
+    }
+  }
+}

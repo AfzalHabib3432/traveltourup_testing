@@ -1,0 +1,316 @@
+/**
+ * Writes scripts/locale-patches/legal/en.json from canonical English strings.
+ * Run: node scripts/gen-legal-en.mjs
+ */
+import { writeFileSync } from "node:fs";
+import { dirname, join } from "node:path";
+import { fileURLToPath } from "node:url";
+
+const PrivacyPage = {
+  topCards: [
+    {
+      title: "Security",
+      desc: "Encrypted transactions and trusted providers.",
+    },
+    {
+      title: "Transparency",
+      desc: "Clear explanation of data collection and usage.",
+    },
+    {
+      title: "Control",
+      desc: "Access, update, and request deletion of your data.",
+    },
+  ],
+  sections: [
+    {
+      title: "1. Introduction",
+      content:
+        "Welcome to TravelTourUp. We respect your privacy and are committed to protecting your personal data when you use our travel and booking services.",
+    },
+    {
+      title: "2. Information We Collect",
+      points: [
+        "Personal details such as name, email, and phone number",
+        "Booking data including destination, dates, and traveler information",
+        "Payment details processed securely through trusted providers",
+        "Device and usage data to improve performance and reliability",
+        "Location data for personalized travel suggestions",
+        "Communication history for customer support improvements",
+      ],
+    },
+    {
+      title: "3. How We Use Your Information",
+      content:
+        "We use your data to process bookings, improve products, personalize your experience, send essential travel notifications, and provide support when needed.",
+    },
+    {
+      title: "4. Legal Basis for Processing",
+      points: [
+        "To fulfill contractual obligations (bookings and services)",
+        "To comply with legal and regulatory requirements",
+        "Based on your consent for marketing and optional services",
+        "For legitimate business interests such as improving services",
+      ],
+    },
+    {
+      title: "5. Sharing Your Data",
+      content:
+        "We only share information with service partners such as airlines, hotels, and payment processors when necessary to fulfill your booking.",
+    },
+    {
+      title: "6. Third-Party Service Providers",
+      points: [
+        "Airlines and transport providers",
+        "Hotels and accommodation partners",
+        "Payment gateways and financial institutions",
+        "Analytics and performance monitoring tools",
+      ],
+    },
+    {
+      title: "7. International Data Transfers",
+      content:
+        "Your data may be transferred to and processed in countries outside your residence to complete bookings and provide services globally.",
+    },
+    {
+      title: "8. Data Security",
+      points: [
+        "SSL encryption for all transactions",
+        "Secure payment gateways",
+        "Regular system monitoring",
+        "Restricted internal data access",
+        "Protection against unauthorized access and breaches",
+      ],
+    },
+    {
+      title: "9. Cookies and Tracking Technologies",
+      content:
+        "Cookies help us keep the platform secure, remember your preferences, and understand traffic patterns so we can improve your experience.",
+    },
+    {
+      title: "10. Types of Cookies Used",
+      points: [
+        "Essential cookies for platform functionality",
+        "Performance cookies for analytics",
+        "Functional cookies to remember preferences",
+        "Marketing cookies for personalized offers",
+      ],
+    },
+    {
+      title: "11. Data Retention",
+      content:
+        "We retain your personal data only as long as necessary for legal, operational, and business purposes.",
+    },
+    {
+      title: "12. User Accounts",
+      points: [
+        "You are responsible for maintaining account confidentiality",
+        "Ensure your login credentials are secure",
+        "Notify us immediately of unauthorized access",
+      ],
+    },
+    {
+      title: "13. Your Rights",
+      points: [
+        "Access your personal data",
+        "Request corrections",
+        "Request deletion",
+        "Withdraw consent anytime",
+        "Object to certain types of data processing",
+      ],
+    },
+    {
+      title: "14. Marketing Communications",
+      content:
+        "We may send promotional emails and offers. You can opt out anytime through unsubscribe links or account settings.",
+    },
+    {
+      title: "15. Children's Privacy",
+      content:
+        "Our services are not intended for individuals under 18. We do not knowingly collect data from children.",
+    },
+    {
+      title: "16. Third-Party Links",
+      content:
+        "Our platform may contain links to third-party services. We are not responsible for their privacy practices.",
+    },
+    {
+      title: "17. Payment Information",
+      points: [
+        "Payments are processed via secure third-party gateways",
+        "We do not store full credit/debit card details",
+        "Transactions are encrypted and monitored",
+      ],
+    },
+    {
+      title: "18. Travel-Specific Data Usage",
+      points: [
+        "Passport and identification details for bookings",
+        "Travel preferences and history",
+        "Emergency contact information for trips",
+        "Special requests such as meals or accessibility needs",
+      ],
+    },
+    {
+      title: "19. Policy Updates",
+      content:
+        "We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated revision date.",
+    },
+    {
+      title: "20. Contact Us",
+      content:
+        "If you have any questions or concerns regarding this Privacy Policy, please contact us at support@traveltourup.com.",
+    },
+  ],
+};
+
+const TermsPage = {
+  topCards: [
+    {
+      title: "Fair Use",
+      desc: "Honest details and lawful use of the platform.",
+    },
+    {
+      title: "Provider Rules",
+      desc: "Bookings follow airline and hotel policy terms.",
+    },
+    {
+      title: "Secure Payments",
+      desc: "Transactions are processed through secure partners.",
+    },
+  ],
+  sections: [
+    {
+      title: "1. Acceptance of Terms",
+      content:
+        "By using TravelTourUp, you agree to these Terms of Service and any applicable policies referenced on this platform.",
+    },
+    {
+      title: "2. Eligibility",
+      content:
+        "You must be at least 18 years old and legally capable of entering into binding contracts to use our services.",
+    },
+    {
+      title: "3. Booking Services",
+      content:
+        "TravelTourUp provides booking support as an intermediary between travelers and third-party providers such as airlines, hotels, and transport partners.",
+    },
+    {
+      title: "4. Account Registration",
+      points: [
+        "Provide accurate and complete information",
+        "Maintain confidentiality of your account credentials",
+        "You are responsible for all activities under your account",
+      ],
+    },
+    {
+      title: "5. Payments and Pricing",
+      points: [
+        "Payments are processed through secure payment gateways",
+        "Displayed prices may change based on availability and demand",
+        "Taxes, service charges, and provider fees may apply",
+        "Currency conversions may vary based on provider rates",
+      ],
+    },
+    {
+      title: "6. Booking Confirmation",
+      content:
+        "Bookings are only confirmed after full payment and receipt of confirmation from the service provider.",
+    },
+    {
+      title: "7. Cancellations and Refunds",
+      content:
+        "Cancellation and refund eligibility depend on the policy of each provider. Please review fare conditions before confirming your booking.",
+    },
+    {
+      title: "8. Changes and Modifications",
+      content:
+        "Changes to bookings such as dates or traveler details are subject to provider policies and may incur additional charges.",
+    },
+    {
+      title: "9. User Responsibilities",
+      points: [
+        "Provide accurate traveler and payment information",
+        "Comply with visa, immigration, and local laws",
+        "Ensure valid travel documents",
+        "Avoid misuse, fraud, or unauthorized system access",
+      ],
+    },
+    {
+      title: "10. Travel Documentation",
+      content:
+        "You are responsible for obtaining passports, visas, and any required travel permits before your trip.",
+    },
+    {
+      title: "11. Travel Risks",
+      content:
+        "Travel involves inherent risks. TravelTourUp is not responsible for delays, cancellations, or disruptions caused by external factors.",
+    },
+    {
+      title: "12. Third-Party Providers",
+      content:
+        "All travel services are provided by independent third parties. We are not liable for their actions, errors, or service quality.",
+    },
+    {
+      title: "13. Limitation of Liability",
+      content:
+        "TravelTourUp is not liable for disruptions caused by third-party providers, including delays, overbookings, cancellations, or force majeure events.",
+    },
+    {
+      title: "14. Force Majeure",
+      content:
+        "We are not responsible for failure to perform obligations due to events beyond our control such as natural disasters, pandemics, or government actions.",
+    },
+    {
+      title: "15. Prohibited Activities",
+      points: [
+        "Fraudulent bookings or transactions",
+        "System abuse or hacking attempts",
+        "Violation of applicable laws",
+        "Impersonation or identity misuse",
+      ],
+    },
+    {
+      title: "16. Intellectual Property",
+      content:
+        "All content, branding, and platform materials are owned by TravelTourUp and may not be used without permission.",
+    },
+    {
+      title: "17. Termination",
+      content:
+        "We reserve the right to suspend or terminate accounts that violate these terms without prior notice.",
+    },
+    {
+      title: "18. Privacy Policy",
+      content:
+        "Your use of our services is also governed by our Privacy Policy, which explains how we collect and use your data.",
+    },
+    {
+      title: "19. Changes to Terms",
+      content:
+        "We may update these Terms of Service at any time. Continued use of the platform means you accept the updated terms.",
+    },
+    {
+      title: "20. Contact",
+      content:
+        "For questions regarding these terms, contact us at support@traveltourup.com.",
+    },
+  ],
+};
+
+const AboutAchievements = {
+  title: "Your Destination Awaits",
+  subtitle:
+    "We have helped thousands of travelers explore amazing destinations worldwide. Our dedication to quality service continues to grow our success.",
+  statCustomers: "12870+",
+  statCustomersLabel: "Happy Customers",
+  statSatisfied: "100%",
+  statSatisfiedLabel: "Client Satisfied",
+  connectText: "Let's connect. Reach out for more information.",
+  contactButton: "Contact us",
+};
+
+const out = { PrivacyPage, TermsPage, AboutAchievements };
+const dir = dirname(fileURLToPath(import.meta.url));
+const dest = join(dir, "locale-patches/legal/en.json");
+writeFileSync(dest, JSON.stringify(out, null, 2) + "\n", "utf8");
+console.log("Wrote", dest);

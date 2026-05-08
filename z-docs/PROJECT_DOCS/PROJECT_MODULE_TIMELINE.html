@@ -1,0 +1,1336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>TravelTourUp – Module-wise Roadmap & Timeline</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg: #ffffff;
+    --page-bg: #ffffff;
+    --ink: #1a1a1a;
+    --ink2: #444444;
+    --ink3: #888888;
+    --border: #e0e0e0;
+    --border-lt: #f0f0f0;
+    --accent: #16a34a;
+    --accent-dark: #15803d;
+    --accent-lt: #dcfce7;
+    --blue: #2563eb;
+    --blue-lt: #dbeafe;
+    --purple: #7c3aed;
+    --purple-lt: #ede9fe;
+    --orange: #ea580c;
+    --orange-lt: #fff7ed;
+    --cyan: #0891b2;
+    --cyan-lt: #ecfeff;
+    --amber: #d97706;
+    --amber-lt: #fffbeb;
+    --red: #dc2626;
+    --red-lt: #fef2f2;
+    --gray-50: #fafafa;
+    --gray-100: #f5f5f5;
+    --gray-200: #e5e5e5;
+
+    --phase-a: #2563eb;
+    --phase-b: #16a34a;
+    --phase-c: #7c3aed;
+    --phase-d: #ea580c;
+    --phase-e: #0891b2;
+  }
+
+  body {
+    font-family: 'Inter', -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    font-size: 14px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  /* ── TITLE PAGE ── */
+  .title-page {
+    text-align: center;
+    padding: 80px 40px 60px;
+    border-bottom: 3px solid var(--ink);
+    margin-bottom: 0;
+    position: relative;
+  }
+  .title-page::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 30px;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 40px;
+    background: var(--ink);
+  }
+  .title-page h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    color: var(--ink);
+    margin-top: 20px;
+  }
+  .title-page .subtitle {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+    color: var(--ink2);
+    margin-top: 6px;
+  }
+  .title-project-info {
+    margin-top: 36px;
+    font-size: 13px;
+    color: var(--ink2);
+    line-height: 1.8;
+  }
+  .title-project-info strong {
+    color: var(--ink);
+    font-weight: 600;
+  }
+
+  .objective-box {
+    max-width: 720px;
+    margin: 20px auto 0;
+    text-align: left;
+    padding: 20px 24px;
+    background: var(--gray-50);
+    border-left: 4px solid var(--ink);
+    font-size: 13.5px;
+    color: var(--ink2);
+    line-height: 1.7;
+  }
+  .objective-box strong { color: var(--ink); }
+
+  /* ── SECTION CONTAINER ── */
+  .content-area {
+    padding: 0 40px 60px;
+  }
+
+  /* ── PROJECT MODULES TITLE ── */
+  .modules-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--ink);
+    margin-top: 48px;
+    margin-bottom: 32px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--ink);
+  }
+
+  /* ── PHASE BLOCK ── */
+  .phase-section {
+    margin-bottom: 40px;
+    page-break-inside: avoid;
+  }
+  .phase-header-bar {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    margin-bottom: 14px;
+  }
+  .phase-header-bar h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--accent-dark);
+    line-height: 1.4;
+  }
+  .phase-header-bar h3 a {
+    color: var(--accent-dark);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+  }
+  .phase-header-bar h3 a:hover { text-decoration-thickness: 2px; }
+
+  .phase-purpose {
+    font-size: 13.5px;
+    color: var(--ink2);
+    margin-bottom: 16px;
+  }
+  .phase-purpose strong { color: var(--ink); }
+
+  .phase-sub-heading {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--ink);
+    margin-top: 16px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .phase-sub-heading::before {
+    content: '●';
+    color: var(--accent);
+    font-size: 8px;
+  }
+
+  .phase-list {
+    list-style: none;
+    padding-left: 20px;
+    margin-bottom: 6px;
+  }
+  .phase-list li {
+    position: relative;
+    padding: 2px 0 2px 24px;
+    font-size: 13px;
+    color: var(--ink2);
+    line-height: 1.7;
+  }
+  .phase-list li .num {
+    position: absolute;
+    left: 0;
+    font-weight: 600;
+    color: var(--ink3);
+    font-size: 12px;
+    font-family: 'JetBrains Mono', monospace;
+    min-width: 18px;
+  }
+
+  .phase-timeline {
+    margin-top: 12px;
+    font-size: 13px;
+    color: var(--ink);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .phase-timeline::before {
+    content: '●';
+    color: var(--accent);
+    font-size: 8px;
+  }
+  .phase-timeline span { font-weight: 400; color: var(--ink2); }
+
+  .phase-divider {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: 0;
+  }
+
+  /* ── GANTT CHART ── */
+  .gantt-section {
+    margin-top: 48px;
+    margin-bottom: 40px;
+  }
+  .gantt-section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--ink);
+  }
+  .gantt-wrap {
+    background: var(--page-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .gantt-title-row {
+    background: var(--ink);
+    color: #fff;
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 10px 16px;
+    gap: 8px;
+  }
+  .gantt-months {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    font-size: 10px;
+    text-align: center;
+  }
+  .gantt-row {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    border-bottom: 1px solid var(--border-lt);
+    gap: 8px;
+    padding: 6px 16px;
+    align-items: center;
+  }
+  .gantt-row:last-child { border-bottom: none; }
+  .gantt-row:nth-child(even) { background: var(--gray-50); }
+  .gantt-label {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--ink);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .gantt-label .phase-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 3px;
+    flex-shrink: 0;
+  }
+  .gantt-label .est {
+    font-size: 10px;
+    font-weight: 400;
+    color: var(--ink3);
+    margin-left: auto;
+    white-space: nowrap;
+  }
+  .gantt-bar-area {
+    position: relative;
+    height: 22px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .gantt-grid-line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: var(--border-lt);
+  }
+  .gantt-bar {
+    position: absolute;
+    height: 16px;
+    top: 3px;
+    border-radius: 4px;
+    opacity: 0.85;
+    transition: opacity 0.2s;
+  }
+  .gantt-bar:hover { opacity: 1; }
+
+  .gantt-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px 24px;
+    margin-top: 14px;
+    font-size: 12px;
+    color: var(--ink2);
+  }
+  .gantt-legend span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .legend-dot {
+    width: 12px;
+    height: 10px;
+    border-radius: 2px;
+    flex-shrink: 0;
+  }
+
+  /* ── FLOW DIAGRAM ── */
+  .flow-section {
+    margin-top: 48px;
+  }
+  .flow-section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--ink);
+  }
+  .flow-wrap {
+    background: var(--page-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 32px 24px;
+    overflow-x: auto;
+  }
+  .flow-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+    max-width: 100%;
+  }
+  .flow-card {
+    background: var(--gray-50);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 14px 12px;
+    text-align: center;
+    font-size: 11.5px;
+    transition: transform 0.2s;
+  }
+  .flow-card:hover { transform: translateY(-2px); box-shadow: 0 4px 12px rgba(0,0,0,0.06); }
+  .flow-card-phase {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 3px 8px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 8px;
+  }
+  .flow-card-title {
+    font-weight: 600;
+    font-size: 12px;
+    color: var(--ink);
+    margin-bottom: 4px;
+  }
+  .flow-card-items {
+    font-size: 10.5px;
+    color: var(--ink3);
+    line-height: 1.5;
+  }
+  .flow-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: var(--ink3);
+  }
+
+  /* ── PROFESSIONAL FLOW (vertical) ── */
+  .pro-flow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    padding: 20px 0;
+  }
+  .pro-flow-node {
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 14px 28px;
+    text-align: center;
+    max-width: 340px;
+    width: 100%;
+    position: relative;
+  }
+  .pro-flow-node .role {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+  .pro-flow-node .action {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--ink);
+  }
+  .pro-flow-node .detail {
+    font-size: 11px;
+    color: var(--ink3);
+    margin-top: 2px;
+  }
+  .pro-flow-arrow {
+    width: 2px;
+    height: 28px;
+    background: var(--ink3);
+    position: relative;
+  }
+  .pro-flow-arrow::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid var(--ink3);
+  }
+
+  /* ── TABLES ── */
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    background: var(--page-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .data-table thead th {
+    background: var(--ink);
+    color: #fff;
+    text-align: left;
+    padding: 10px 14px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  .data-table tbody tr { border-bottom: 1px solid var(--border-lt); }
+  .data-table tbody tr:last-child { border-bottom: none; }
+  .data-table tbody td { padding: 10px 14px; vertical-align: top; }
+  .data-table tbody tr:nth-child(even) td { background: var(--gray-50); }
+  .data-table tbody td:first-child { font-weight: 500; }
+
+  /* status badges */
+  .badge {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 3px 8px;
+    border-radius: 20px;
+    margin-right: 6px;
+    white-space: nowrap;
+    letter-spacing: 0.02em;
+  }
+  .badge-green  { background: var(--accent-lt); color: var(--accent-dark); }
+  .badge-blue   { background: var(--blue-lt); color: var(--blue); }
+  .badge-amber  { background: var(--amber-lt); color: var(--amber); }
+  .badge-red    { background: var(--red-lt); color: var(--red); }
+  .badge-gray   { background: var(--gray-100); color: var(--ink3); }
+  .badge-purple { background: var(--purple-lt); color: var(--purple); }
+
+  /* ── TIMELINE SUMMARY ── */
+  .timeline-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+    background: var(--page-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  .timeline-table thead th {
+    background: var(--ink);
+    color: #fff;
+    padding: 10px 14px;
+    text-align: left;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+  .timeline-table tbody tr { border-bottom: 1px solid var(--border-lt); }
+  .timeline-table tbody tr:last-child { border-bottom: none; }
+  .timeline-table tbody td { padding: 10px 14px; vertical-align: middle; }
+  .timeline-table tbody tr:nth-child(even) td { background: var(--gray-50); }
+  .phase-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+  }
+  .phase-pill-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 3px;
+    flex-shrink: 0;
+  }
+
+  /* ── ADVANCED TABLE ── */
+  .adv-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12.5px;
+    background: var(--page-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 16px;
+  }
+  .adv-table thead th {
+    background: var(--gray-100);
+    padding: 9px 14px;
+    text-align: left;
+    font-size: 10.5px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--ink3);
+    border-bottom: 1px solid var(--border);
+  }
+  .adv-table tbody tr { border-bottom: 1px solid var(--border-lt); }
+  .adv-table tbody tr:last-child { border-bottom: none; }
+  .adv-table tbody td { padding: 9px 14px; vertical-align: top; }
+  .adv-table tbody tr:hover td { background: var(--gray-50); }
+
+  .mod-id {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 2px 8px;
+    border-radius: 4px;
+    color: #fff;
+    white-space: nowrap;
+  }
+
+  /* ── BACKLOG PILLS ── */
+  .backlog-wrap { margin-top: 20px; }
+  .backlog-label {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--ink2);
+    margin-bottom: 10px;
+  }
+  .backlog-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .backlog-pill {
+    background: var(--gray-50);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 5px 14px;
+    font-size: 12px;
+    color: var(--ink2);
+    transition: background 0.15s;
+  }
+  .backlog-pill:hover { background: var(--gray-100); }
+
+  /* ── CALLOUT ── */
+  .callout {
+    border-left: 3px solid var(--accent);
+    background: var(--accent-lt);
+    padding: 12px 16px;
+    border-radius: 0 6px 6px 0;
+    font-size: 12.5px;
+    color: var(--ink2);
+    margin: 16px 0;
+  }
+  .callout strong { color: var(--ink); }
+
+  /* ── TECH STACK ── */
+  .tech-section { margin-top: 48px; }
+  .tech-section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--ink);
+  }
+  .tech-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+  .tech-card {
+    background: var(--gray-50);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 18px 16px;
+  }
+  .tech-card-title {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--ink);
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--accent);
+  }
+  .tech-card ul {
+    list-style: none;
+    padding: 0;
+  }
+  .tech-card li {
+    font-size: 12.5px;
+    color: var(--ink2);
+    padding: 3px 0 3px 14px;
+    position: relative;
+  }
+  .tech-card li::before {
+    content: '●';
+    position: absolute;
+    left: 0;
+    font-size: 6px;
+    color: var(--accent);
+    top: 7px;
+  }
+
+  /* ── FOOTER ── */
+  .doc-footer {
+    margin-top: 60px;
+    padding: 20px 40px;
+    border-top: 2px solid var(--ink);
+    font-size: 11.5px;
+    color: var(--ink3);
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* ── SECTION LABEL ── */
+  .section-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink3);
+    margin-bottom: 14px;
+    margin-top: 48px;
+  }
+
+  @media print {
+    body { background: #fff; }
+    .page { padding: 16px; }
+    .title-page { padding: 40px 20px 30px; }
+    .content-area { padding: 0 20px 30px; }
+    .phase-section { page-break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- ═══════════════════════ TITLE PAGE ═══════════════════════ -->
+  <div class="title-page">
+    <h1>TravelTourUp</h1>
+    <div class="subtitle">Travel Management Platform</div>
+
+    <div class="title-project-info">
+      <strong>Project Steps for Custom Travel Booking System</strong>
+    </div>
+
+    <div class="objective-box">
+      <strong>Objective:</strong>
+      Develop a travel booking platform to streamline flight, hotel, and car rental management across Customer, Admin, and Agent verticals with role-based access, end-to-end booking workflows, and multi-currency/multi-language support.
+    </div>
+  </div>
+
+  <div class="content-area">
+
+    <!-- ═══════════════════════ MODULES HEADING ═══════════════════════ -->
+    <h2 class="modules-heading">Project Modules and Estimated Timeline (Phase-wise)</h2>
+
+    <!-- ── PHASE A1 ── -->
+    <div class="phase-section">
+      <div class="phase-header-bar">
+        <h3><a>Phase A1: Duffel Flights &amp; Stays Integration (Weeks 1–4) — In Progress</a></h3>
+      </div>
+      <div class="phase-purpose"><strong>Purpose:</strong> End-to-end flight and hotel booking via Duffel API</div>
+
+      <div class="phase-sub-heading">Workflow Stages:</div>
+      <ol class="phase-list">
+        <li><span class="num">1.</span>Search → Offer selection → Seat/bags add-ons → Payment → Confirmation</li>
+        <li><span class="num">2.</span>Order sync with Duffel webhooks</li>
+        <li><span class="num">3.</span>Cancellation and refund processing</li>
+        <li><span class="num">4.</span>Admin booking visibility and management</li>
+      </ol>
+
+      <div class="phase-sub-heading">Key Features:</div>
+      <ol class="phase-list">
+        <li><span class="num">1.</span>Flight search with filters (dates, class, stops, airlines)</li>
+        <li><span class="num">2.</span>Hotel/stays search with date and room selection</li>
+        <li><span class="num">3.</span>Seat map selection and baggage add-ons</li>
+        <li><span class="num">4.</span>Secure payment processing and order confirmation</li>
+        <li><span class="num">5.</span>Order status sync via Duffel webhooks</li>
+        <li><span class="num">6.</span>Cancellation/refund request workflow</li>
+        <li><span class="num">7.</span>Admin panel integration for booking oversight</li>
+      </ol>
+
+      <div class="phase-sub-heading">Data Management:</div>
+      <ol class="phase-list">
+        <li><span class="num">1.</span>Booking records (flights + stays)</li>
+        <li><span class="num">2.</span>Passenger/traveler details</li>
+        <li><span class="num">3.</span>Payment transaction logs</li>
+        <li><span class="num">4.</span>Webhook event history</li>
+        <li><span class="num">5.</span>Refund and cancellation records</li>
+      </ol>
+
+      <div class="phase-timeline">Timeline: <span>3–4 weeks</span></div>
+    </div>
+    <hr class="phase-divider"/>
+
+    <!-- ── PHASE A2 ── -->
+    <div class="phase-section">
+      <div class="phase-header-bar">
+        <h3><a>Phase A2: Marketing &amp; Trust Pages (Weeks 1–2) — In Progress</a></h3>
+      </div>
+      <div class="phase-purpose"><strong>Purpose:</strong> Public-facing marketing pages for SEO, brand trust, and lead generation</div>
+
+      <div class="phase-sub-heading">Key Features:</div>
+      <ol class="phase-list">
+        <li><span class="num">1.</span>Home page sections polish and hero optimization</li>
+        <li><span class="num">2.</span>About Us — company story and team</li>
+        <li><span class="num">3.</span>Blog CRUD with SEO metadata and rich content</li>
+        <li><span class="num">4.</span>Contact Us page with form submission</li>
+        <li><span class="num">5.</span>Privacy Policy and Terms of Service pages</li>
+        <li><span class="num">6.</span>FAQs page with searchable categories</li>
+      </ol>
+
+      <div class="phase-sub-heading">Workflow:</div>
+      <ol class="phase-list">
+        <li><span class="num">1.</span>Admin manages blog posts and CMS content</li>
+        <li><span class="num">2.</span>SEO metadata auto-generation per page</li>
+        <li><span class="num">3.</span>Contact form submissions → Admin notifications</li>
+        <li><span class="num">4.</span>Trust pages accessible from footer navigation</li>
+      </ol>
+
+      <div class="phase-timeline">Timeline: <span>1–1.5 weeks</span></div>
+    </div>
+    <hr class="phase-divider"/>
+
+    <!-- ── PHASE A3 ── -->
+    <div class="phase-section">
+      <div class="phase-header-bar">
+        <h3><a>Phase A3: Cars — Third-party API Integration (Weeks 2–4) — Pending</a></h3>
+      </div>
+      <div class="phase-purpose"><strong>Purpose:</strong> Real B2B car rental API integration for end-to-end car booking</div>
+
+      <div class="phase-sub-heading">Workflow Stages:</div>
+      <ol class="phase-list">
+        <li><span class="num">1.</span>Partner API search → Vehicle selection → Book → Pay → Ticket/Receipt</li>
+        <li><span class="num">2.</span>Admin hooks for booking management</li>
+        <li><span class="num">3.</span>Provider onboarding (start in parallel with A1)</li>
+      </ol>
+
+      <div class="phase-sub-heading">Key Features:</div>
+      <ol class="phase-list">
+        <li><span class="num">1.</span>Car search by location, dates, and vehicle type</li>
+        <li><span class="num">2.</span>Vehicle listing with pricing, images, and specs</li>
+        <li><span class="num">3.</span>Booking and payment flow (same checkout pattern as flights)</li>
+        <li><span class="num">4.</span>Digital ticket/receipt generation</li>
+        <li><span class="num">5.</span>Cancellation and modification support</li>
+        <li><span class="num">6.</span>Admin panel integration for car bookings</li>
+      </ol>
+
+      <div class="phase-sub-heading">Recommended API Partners:</div>
+      <ol class="phase-list">
+        <li><span class="num">1.</span>CarTrawler — widely used behind airlines and OTAs globally</li>
+        <li><span class="num">2.</span>Booking.com / Rentalcars.com Connectivity — Booking Holdings ecosystem</li>
+        <li><span class="num">3.</span>Amadeus Car Rental APIs — single enterprise air + car story</li>
+      </ol>
+
+      <div class="phase-timeline">Timeline: <span>2–3 weeks</span></div>
+    </div>
+    <hr class="phase-divider"/>
+
+    <!-- ── PHASE A4 ── -->
+    <div class="phase-section">
+      <div class="phase-header-bar">
+        <h3><a>Phase A4: Customer Account Module (Weeks 2–5) — In Progress</a></h3>
+      </div>
+      <div class="phase-purpose"><strong>Purpose:</strong> Complete customer account lifecycle — auth, profile, bookings, and engagement</div>
+
+      <div class="phase-sub-heading">Workflow Stages:</div>
+      <ol class="phase-list">
+        <li><span class="num">1.</span>Auth hardening (login/signup/forgot password/2FA)</li>
+        <li><span class="num">2.</span>Profile management → My Bookings → My Reviews</li>
+        <li><span class="num">3.</span>Wishlists → Returns/Refunds UX → Wallet (credit/debit)</li>
+        <li><span class="num">4.</span>Account activity and notification preferences</li>
+      </ol>
+
+      <div class="phase-sub-heading">Key Features:</div>
+      <ol class="phase-list">
+        <li><span class="num">1.</span>Authentication hardening (OAuth, session management)</li>
+        <li><span class="num">2.</span>User profile with personal details and preferences</li>
+        <li><span class="num">3.</span>My Bookings — flight, hotel, car history with status</li>
+        <li><span class="num">4.</span>My Reviews — submit and manage reviews for trips</li>
+        <li><span class="num">5.</span>Wishlists — save flights, hotels, destinations</li>
+        <li><span class="num">6.</span>Returns/Refunds — request and track refund status</li>
+        <li><span class="num">7.</span>Wallet — credit balance, transaction history, apply to bookings</li>
+      </ol>
+
+      <div class="phase-sub-heading">Data Management:</div>
+      <ol class="phase-list">
+        <li><span class="num">1.</span>Customer profile (personal details, preferences)</li>
+        <li><span class="num">2.</span>Booking history across all verticals</li>
+        <li><span class="num">3.</span>Review and rating records</li>
+        <li><span class="num">4.</span>Wishlist items</li>
+        <li><span class="num">5.</span>Wallet transactions and balances</li>
+        <li><span class="num">6.</span>Refund request tracking</li>
+      </ol>
+
+      <div class="phase-timeline">Timeline: <span>3–4 weeks</span></div>
+    </div>
+    <hr class="phase-divider"/>
+
+    <!-- ── PHASE A5 ── -->
+    <div class="phase-section">
+      <div class="phase-header-bar">
+        <h3><a>Phase A5: Language &amp; Currency (Weeks 5–6) — Pending</a></h3>
+      </div>
+      <div class="phase-purpose"><strong>Purpose:</strong> Multi-language and multi-currency support across the platform</div>
+
+      <div class="phase-sub-heading">Key Features:</div>
+      <ol class="phase-list">
+        <li><span class="num">1.</span>Locale switch (language selector in header)</li>
+        <li><span class="num">2.</span>Translated UI strings (phased rollout)</li>
+        <li><span class="num">3.</span>Currency display formatting per locale</li>
+        <li><span class="num">4.</span>Checkout currency rules across verticals</li>
+        <li><span class="num">5.</span>Exchange rate integration for display pricing</li>
+        <li><span class="num">6.</span>Default: EN + PKR/USD — expand later</li>
+      </ol>
+
+      <div class="phase-sub-heading">Workflow:</div>
+      <ol class="phase-list">
+        <li><span class="num">1.</span>User selects language/currency → Stored in session/profile</li>
+        <li><span class="num">2.</span>All prices re-rendered in selected currency</li>
+        <li><span class="num">3.</span>Checkout locks to a single transactional currency</li>
+        <li><span class="num">4.</span>Admin manages supported locales and FX rates</li>
+      </ol>
+
+      <div class="phase-timeline">Timeline: <span>1.5–2 weeks</span></div>
+    </div>
+    <hr class="phase-divider"/>
+
+    <!-- ── PHASE A6 ── -->
+    <div class="phase-section">
+      <div class="phase-header-bar">
+        <h3><a>Phase A6: Admin Panel (Weeks 3–7) — In Progress</a></h3>
+      </div>
+      <div class="phase-purpose"><strong>Purpose:</strong> Full operational admin panel for managing platform operations</div>
+
+      <div class="phase-sub-heading">Key Features:</div>
+      <ol class="phase-list">
+        <li><span class="num">1.</span>Role-Based Access Control (RBAC) — Admin, Super Admin, Support</li>
+        <li><span class="num">2.</span>User and customer management (CRUD, status, account actions)</li>
+        <li><span class="num">3.</span>Booking operations — view, modify, cancel across all verticals</li>
+        <li><span class="num">4.</span>Payment management — transactions, settlements, refund approvals</li>
+        <li><span class="num">5.</span>PDF ticket/voucher generation and email delivery</li>
+        <li><span class="num">6.</span>Blog CMS — create, edit, publish, schedule posts</li>
+        <li><span class="num">7.</span>Audit logs — track all admin actions with timestamps</li>
+        <li><span class="num">8.</span>Dashboard analytics — booking volume, revenue, top routes</li>
+      </ol>
+
+      <div class="phase-sub-heading">System Controls:</div>
+      <ol class="phase-list">
+        <li><span class="num">1.</span>Platform settings and configuration</li>
+        <li><span class="num">2.</span>Commission and pricing rules</li>
+        <li><span class="num">3.</span>Notification templates management</li>
+        <li><span class="num">4.</span>API key and partner management</li>
+      </ol>
+
+      <div class="phase-sub-heading">Workflow:</div>
+      <ol class="phase-list">
+        <li><span class="num">1.</span>Admin login → Dashboard overview</li>
+        <li><span class="num">2.</span>Navigate verticals (flights, hotels, cars) for booking ops</li>
+        <li><span class="num">3.</span>Process refunds/cancellations with approval workflow</li>
+        <li><span class="num">4.</span>Generate reports and export data</li>
+      </ol>
+
+      <div class="phase-timeline">Timeline: <span>3–5 weeks (heaviest module — stagger by vertical)</span></div>
+    </div>
+    <hr class="phase-divider"/>
+
+    <!-- ── PHASE A7 ── -->
+    <div class="phase-section">
+      <div class="phase-header-bar">
+        <h3><a>Phase A7: Database Backups (Week 7) — Pending</a></h3>
+      </div>
+      <div class="phase-purpose"><strong>Purpose:</strong> Automated database backup, retention, and disaster recovery</div>
+
+      <div class="phase-sub-heading">Key Features:</div>
+      <ol class="phase-list">
+        <li><span class="num">1.</span>Automated daily/weekly snapshots</li>
+        <li><span class="num">2.</span>Retention policy (configurable window)</li>
+        <li><span class="num">3.</span>Restore drill — tested recovery procedure</li>
+        <li><span class="num">4.</span>Off-site copy to secondary region/cloud</li>
+        <li><span class="num">5.</span>Runbook documentation for operations team</li>
+      </ol>
+
+      <div class="phase-timeline">Timeline: <span>3–5 days</span></div>
+    </div>
+    <hr class="phase-divider"/>
+
+    <!-- ── PHASE B ── -->
+    <div class="phase-section">
+      <div class="phase-header-bar">
+        <h3><a>Phase B: Production Go-live &amp; Stabilization (Weeks 8–10) — Pending</a></h3>
+      </div>
+      <div class="phase-purpose"><strong>Purpose:</strong> Environment separation, real payment testing, and stability verification</div>
+
+      <div class="phase-sub-heading">Workflow Stages:</div>
+      <ol class="phase-list">
+        <li><span class="num">1.</span><strong>B1 — Prod Cutover (1 week):</strong> Environment separation, secrets management, rate limiting, monitoring setup, alerting</li>
+        <li><span class="num">2.</span><strong>B2 — UAT &amp; Bugfix (1–2 weeks):</strong> Real payment tests (test → pilot live), load smoke testing, fix P0/P1 issues only</li>
+      </ol>
+
+      <div class="phase-sub-heading">Key Features:</div>
+      <ol class="phase-list">
+        <li><span class="num">1.</span>Production environment with separate secrets</li>
+        <li><span class="num">2.</span>Monitoring and alerting (uptime, error rate, latency)</li>
+        <li><span class="num">3.</span>Real payment gateway testing (sandbox → pilot)</li>
+        <li><span class="num">4.</span>Load testing and performance benchmarks</li>
+        <li><span class="num">5.</span>P0/P1 bug triage and resolution</li>
+      </ol>
+
+      <div class="callout"><strong>Rule:</strong> No new major modules until P0 issues are cleared and payment/booking happy path is stable.</div>
+
+      <div class="phase-timeline">Timeline: <span>~2 weeks</span></div>
+    </div>
+    <hr class="phase-divider"/>
+
+    <!-- ── PHASE C ── -->
+    <div class="phase-section">
+      <div class="phase-header-bar">
+        <h3><a>Phase C: Mobile App — React Native (Weeks 10–18) — Pending</a></h3>
+      </div>
+      <div class="phase-purpose"><strong>Purpose:</strong> Cross-platform mobile app with full feature parity (except admin panel)</div>
+
+      <div class="phase-sub-heading">Workflow Stages:</div>
+      <ol class="phase-list">
+        <li><span class="num">1.</span><strong>C1 — Foundation (1–2 weeks):</strong> RN repo, envs, auth, navigation, API client parity, error/empty states</li>
+        <li><span class="num">2.</span><strong>C2 — Flights + Stays + Cars (3–5 weeks):</strong> Full search, checkout, payment, bookings — parity with web</li>
+        <li><span class="num">3.</span><strong>C3 — Account &amp; Growth (6–7 weeks):</strong> Profile, wishlist, reviews, wallet/refunds, push notifications</li>
+        <li><span class="num">4.</span><strong>C4 — i18n / Currency (2 weeks):</strong> Match web locale + currency strategy</li>
+      </ol>
+
+      <div class="phase-sub-heading">Key Features:</div>
+      <ol class="phase-list">
+        <li><span class="num">1.</span>Native mobile auth (biometric, social login)</li>
+        <li><span class="num">2.</span>Flight/hotel/car search and booking flow</li>
+        <li><span class="num">3.</span>Mobile-optimized checkout and payment</li>
+        <li><span class="num">4.</span>Push notifications for booking updates</li>
+        <li><span class="num">5.</span>Offline mode for saved bookings/itineraries</li>
+        <li><span class="num">6.</span>Profile, wishlist, reviews, and wallet</li>
+        <li><span class="num">7.</span>Multi-language and multi-currency parity with web</li>
+      </ol>
+
+      <div class="phase-timeline">Timeline: <span>~2 months (1 senior RN developer)</span></div>
+    </div>
+    <hr class="phase-divider"/>
+
+    <!-- ── PHASE D ── -->
+    <div class="phase-section">
+      <div class="phase-header-bar">
+        <h3><a>Phase D: Mobile Store Production — iOS &amp; Android (Weeks 18–20) — Pending</a></h3>
+      </div>
+      <div class="phase-purpose"><strong>Purpose:</strong> App store compliance, testing, and production release</div>
+
+      <div class="phase-sub-heading">Workflow Stages:</div>
+      <ol class="phase-list">
+        <li><span class="num">1.</span><strong>D1 — Compliance + Store Listings (1 week):</strong> Privacy, ATT (iOS), payments compliance, screenshots, store descriptions</li>
+        <li><span class="num">2.</span><strong>D2 — TestFlight + Play Testing (1 week):</strong> Internal/open testing, device matrix validation</li>
+        <li><span class="num">3.</span><strong>D3 — Review + Production Release (1 week):</strong> Store review cycles, production release</li>
+      </ol>
+
+      <div class="phase-timeline">Timeline: <span>2–3 weeks after Release Candidate</span></div>
+    </div>
+    <hr class="phase-divider"/>
+
+    <!-- ── PHASE E ── -->
+    <div class="phase-section">
+      <div class="phase-header-bar">
+        <h3><a>Phase E: Advanced Features — Web &amp; Mobile (Month 5+) — Future</a></h3>
+      </div>
+      <div class="phase-purpose"><strong>Purpose:</strong> Post-launch feature roadmap — sequence by revenue impact</div>
+
+      <table class="adv-table">
+        <thead>
+          <tr><th style="width:55px">ID</th><th style="width:200px">Module</th><th>Scope</th><th style="width:75px">Est.</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="mod-id" style="background:var(--phase-e)">E1</span></td>
+            <td style="font-weight:600">Flight + Hotel Bundles</td>
+            <td style="color:var(--ink2);font-size:12px">Cached bundle pricing, combined checkout, failure rollback</td>
+            <td style="font-weight:600">4–5 wks</td>
+          </tr>
+          <tr>
+            <td><span class="mod-id" style="background:var(--phase-e)">E2</span></td>
+            <td style="font-weight:600">Cross-sell: Flights ↔ Hotels</td>
+            <td style="color:var(--ink2);font-size:12px">Post-flight hotel suggestions, same-trip attach</td>
+            <td style="font-weight:600">3–4 wks</td>
+          </tr>
+          <tr>
+            <td><span class="mod-id" style="background:var(--phase-e)">E3</span></td>
+            <td style="font-weight:600">Packages</td>
+            <td style="color:var(--ink2);font-size:12px">Named packages, margins, inventory rules, CMS merchandising</td>
+            <td style="font-weight:600">3–5 wks</td>
+          </tr>
+          <tr>
+            <td><span class="mod-id" style="background:var(--phase-e)">E4</span></td>
+            <td style="font-weight:600">Advance Purchase Pricing</td>
+            <td style="color:var(--ink2);font-size:12px">Fare rules, calendars, cheapest window UX, caching</td>
+            <td style="font-weight:600">4–6 wks</td>
+          </tr>
+          <tr>
+            <td><span class="mod-id" style="background:var(--phase-e)">E5</span></td>
+            <td style="font-weight:600">Agent Portal (optional)</td>
+            <td style="color:var(--ink2);font-size:12px">Agent RBAC, book on behalf, commission, payout cycles</td>
+            <td style="font-weight:600">4–6 wks</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="backlog-wrap">
+        <div class="backlog-label">Competitive Parity Backlog (prioritize 2–3 per half-year):</div>
+        <div class="backlog-grid">
+          <span class="backlog-pill">Genius / loyalty tiers &amp; price alerts</span>
+          <span class="backlog-pill">Flexible dates search &amp; trip planner</span>
+          <span class="backlog-pill">Post-booking concierge &amp; travel insurance</span>
+          <span class="backlog-pill">Affiliate / referral program</span>
+          <span class="backlog-pill">Buy Now Pay Later</span>
+          <span class="backlog-pill">Corporate travel lite</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════ GANTT CHART ═══════════════════════ -->
+    <div class="gantt-section">
+      <div class="gantt-section-title">Phase Breakdown &amp; Timeline</div>
+      <div class="gantt-wrap">
+        <div class="gantt-title-row">
+          <div>Module / Phase</div>
+          <div class="gantt-months">
+            <span>Month 1</span><span>Month 2</span><span>Month 3</span>
+            <span>Month 4</span><span>Month 5</span><span>Month 6</span>
+          </div>
+        </div>
+        <div class="gantt-row">
+          <div class="gantt-label"><span class="phase-dot" style="background:#3b82f6"></span>A1 — Duffel Flights &amp; Stays<span class="est">3–4 wks</span></div>
+          <div class="gantt-bar-area">
+            <div class="gantt-grid-line" style="left:16.66%"></div><div class="gantt-grid-line" style="left:33.33%"></div><div class="gantt-grid-line" style="left:50%"></div><div class="gantt-grid-line" style="left:66.66%"></div><div class="gantt-grid-line" style="left:83.33%"></div>
+            <div class="gantt-bar" style="left:0%;width:22%;background:#3b82f6"></div>
+          </div>
+        </div>
+        <div class="gantt-row">
+          <div class="gantt-label"><span class="phase-dot" style="background:#60a5fa"></span>A2 — Marketing &amp; Trust<span class="est">1–1.5 wks</span></div>
+          <div class="gantt-bar-area">
+            <div class="gantt-grid-line" style="left:16.66%"></div><div class="gantt-grid-line" style="left:33.33%"></div><div class="gantt-grid-line" style="left:50%"></div><div class="gantt-grid-line" style="left:66.66%"></div><div class="gantt-grid-line" style="left:83.33%"></div>
+            <div class="gantt-bar" style="left:0%;width:7%;background:#60a5fa"></div>
+          </div>
+        </div>
+        <div class="gantt-row">
+          <div class="gantt-label"><span class="phase-dot" style="background:#93c5fd"></span>A3 — Cars (Third-party)<span class="est">2–3 wks</span></div>
+          <div class="gantt-bar-area">
+            <div class="gantt-grid-line" style="left:16.66%"></div><div class="gantt-grid-line" style="left:33.33%"></div><div class="gantt-grid-line" style="left:50%"></div><div class="gantt-grid-line" style="left:66.66%"></div><div class="gantt-grid-line" style="left:83.33%"></div>
+            <div class="gantt-bar" style="left:5%;width:16%;background:#93c5fd"></div>
+          </div>
+        </div>
+        <div class="gantt-row">
+          <div class="gantt-label"><span class="phase-dot" style="background:#bfdbfe"></span>A4 — Customer Account<span class="est">3–4 wks</span></div>
+          <div class="gantt-bar-area">
+            <div class="gantt-grid-line" style="left:16.66%"></div><div class="gantt-grid-line" style="left:33.33%"></div><div class="gantt-grid-line" style="left:50%"></div><div class="gantt-grid-line" style="left:66.66%"></div><div class="gantt-grid-line" style="left:83.33%"></div>
+            <div class="gantt-bar" style="left:8%;width:20%;background:#818cf8"></div>
+          </div>
+        </div>
+        <div class="gantt-row">
+          <div class="gantt-label"><span class="phase-dot" style="background:#a78bfa"></span>A5 — Language &amp; Currency<span class="est">1.5–2 wks</span></div>
+          <div class="gantt-bar-area">
+            <div class="gantt-grid-line" style="left:16.66%"></div><div class="gantt-grid-line" style="left:33.33%"></div><div class="gantt-grid-line" style="left:50%"></div><div class="gantt-grid-line" style="left:66.66%"></div><div class="gantt-grid-line" style="left:83.33%"></div>
+            <div class="gantt-bar" style="left:22%;width:10%;background:#a78bfa"></div>
+          </div>
+        </div>
+        <div class="gantt-row">
+          <div class="gantt-label"><span class="phase-dot" style="background:#1d4ed8"></span>A6 — Admin Panel<span class="est">3–5 wks</span></div>
+          <div class="gantt-bar-area">
+            <div class="gantt-grid-line" style="left:16.66%"></div><div class="gantt-grid-line" style="left:33.33%"></div><div class="gantt-grid-line" style="left:50%"></div><div class="gantt-grid-line" style="left:66.66%"></div><div class="gantt-grid-line" style="left:83.33%"></div>
+            <div class="gantt-bar" style="left:10%;width:25%;background:#1d4ed8"></div>
+          </div>
+        </div>
+        <div class="gantt-row">
+          <div class="gantt-label"><span class="phase-dot" style="background:#1e40af"></span>A7 — Database Backups<span class="est">3–5 days</span></div>
+          <div class="gantt-bar-area">
+            <div class="gantt-grid-line" style="left:16.66%"></div><div class="gantt-grid-line" style="left:33.33%"></div><div class="gantt-grid-line" style="left:50%"></div><div class="gantt-grid-line" style="left:66.66%"></div><div class="gantt-grid-line" style="left:83.33%"></div>
+            <div class="gantt-bar" style="left:30%;width:4%;background:#1e40af"></div>
+          </div>
+        </div>
+        <div class="gantt-row">
+          <div class="gantt-label"><span class="phase-dot" style="background:#22c55e"></span>B — Production &amp; Stabilization<span class="est">~2 wks</span></div>
+          <div class="gantt-bar-area">
+            <div class="gantt-grid-line" style="left:16.66%"></div><div class="gantt-grid-line" style="left:33.33%"></div><div class="gantt-grid-line" style="left:50%"></div><div class="gantt-grid-line" style="left:66.66%"></div><div class="gantt-grid-line" style="left:83.33%"></div>
+            <div class="gantt-bar" style="left:34%;width:10%;background:#22c55e"></div>
+          </div>
+        </div>
+        <div class="gantt-row">
+          <div class="gantt-label"><span class="phase-dot" style="background:#a855f7"></span>C — React Native Mobile<span class="est">~2 months</span></div>
+          <div class="gantt-bar-area">
+            <div class="gantt-grid-line" style="left:16.66%"></div><div class="gantt-grid-line" style="left:33.33%"></div><div class="gantt-grid-line" style="left:50%"></div><div class="gantt-grid-line" style="left:66.66%"></div><div class="gantt-grid-line" style="left:83.33%"></div>
+            <div class="gantt-bar" style="left:42%;width:32%;background:#a855f7"></div>
+          </div>
+        </div>
+        <div class="gantt-row">
+          <div class="gantt-label"><span class="phase-dot" style="background:#f97316"></span>D — Store Production<span class="est">2–3 wks</span></div>
+          <div class="gantt-bar-area">
+            <div class="gantt-grid-line" style="left:16.66%"></div><div class="gantt-grid-line" style="left:33.33%"></div><div class="gantt-grid-line" style="left:50%"></div><div class="gantt-grid-line" style="left:66.66%"></div><div class="gantt-grid-line" style="left:83.33%"></div>
+            <div class="gantt-bar" style="left:74%;width:12%;background:#f97316"></div>
+          </div>
+        </div>
+        <div class="gantt-row">
+          <div class="gantt-label"><span class="phase-dot" style="background:#06b6d4"></span>E — Advanced Features<span class="est">Ongoing</span></div>
+          <div class="gantt-bar-area">
+            <div class="gantt-grid-line" style="left:16.66%"></div><div class="gantt-grid-line" style="left:33.33%"></div><div class="gantt-grid-line" style="left:50%"></div><div class="gantt-grid-line" style="left:66.66%"></div><div class="gantt-grid-line" style="left:83.33%"></div>
+            <div class="gantt-bar" style="left:70%;width:30%;background:#06b6d4;border-radius:4px 0 0 4px"></div>
+          </div>
+        </div>
+      </div>
+      <div class="gantt-legend">
+        <span><span class="legend-dot" style="background:var(--phase-a)"></span>Phase A — Web MVP (A1–A7)</span>
+        <span><span class="legend-dot" style="background:var(--phase-b)"></span>Phase B — Go-live</span>
+        <span><span class="legend-dot" style="background:var(--phase-c)"></span>Phase C — Mobile</span>
+        <span><span class="legend-dot" style="background:var(--phase-d)"></span>Phase D — Store</span>
+        <span><span class="legend-dot" style="background:var(--phase-e)"></span>Phase E — Advanced</span>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════ COMPLETE PROFESSIONAL FLOW ═══════════════════════ -->
+    <div class="flow-section">
+      <div class="flow-section-title">Complete Professional Flow of TravelTourUp</div>
+      <div class="flow-wrap">
+        <div class="pro-flow">
+
+          <div class="pro-flow-node" style="border-color:var(--phase-a);background:#eff6ff">
+            <div class="role" style="color:var(--phase-a)">Customer</div>
+            <div class="action">Search Flights / Hotels / Cars</div>
+            <div class="detail">Browse offers, compare prices, select dates</div>
+          </div>
+          <div class="pro-flow-arrow"></div>
+
+          <div class="pro-flow-node" style="border-color:var(--phase-a);background:#eff6ff">
+            <div class="role" style="color:var(--phase-a)">Customer</div>
+            <div class="action">Select Offer &amp; Add-ons</div>
+            <div class="detail">Seat maps, baggage, room preferences</div>
+          </div>
+          <div class="pro-flow-arrow"></div>
+
+          <div class="pro-flow-node" style="border-color:#d97706;background:#fffbeb">
+            <div class="role" style="color:#d97706">Payment</div>
+            <div class="action">Checkout &amp; Payment</div>
+            <div class="detail">Secure payment processing, wallet credits</div>
+          </div>
+          <div class="pro-flow-arrow"></div>
+
+          <div class="pro-flow-node" style="border-color:var(--phase-b);background:#f0fdf4">
+            <div class="role" style="color:var(--phase-b)">System</div>
+            <div class="action">Order Confirmation &amp; Webhook Sync</div>
+            <div class="detail">Duffel order sync, PDF ticket generation</div>
+          </div>
+          <div class="pro-flow-arrow"></div>
+
+          <div class="pro-flow-node" style="border-color:var(--phase-c);background:#faf5ff">
+            <div class="role" style="color:var(--phase-c)">Admin / Support</div>
+            <div class="action">Booking Management &amp; Operations</div>
+            <div class="detail">View, modify, cancel, refund approval</div>
+          </div>
+          <div class="pro-flow-arrow"></div>
+
+          <div class="pro-flow-node" style="border-color:var(--phase-e);background:#ecfeff">
+            <div class="role" style="color:var(--phase-e)">Customer</div>
+            <div class="action">Post-Booking: Reviews, Refunds, Wallet</div>
+            <div class="detail">Submit reviews, request refunds, manage wallet</div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════ CODEBASE SNAPSHOT ═══════════════════════ -->
+    <div class="section-label">Current Position — Codebase Snapshot</div>
+    <table class="data-table">
+      <thead>
+        <tr><th>Area</th><th>Status</th><th>Details</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Next.js app structure</td><td><span class="badge badge-green">Strong</span></td><td>Booking routes (flights, hotels, cars), marketing, auth, admin shell all present</td></tr>
+        <tr><td>Duffel flights</td><td><span class="badge badge-blue">Advanced</span></td><td>Search, checkout, seat maps / bags paths in code; need E2E tightening, webhooks, refunds</td></tr>
+        <tr><td>Duffel stays (hotels)</td><td><span class="badge badge-amber">In Progress</span></td><td>Needs complete book + pay parity with flights</td></tr>
+        <tr><td>Marketing / CMS</td><td><span class="badge badge-blue">Substantial</span></td><td>Home, About, Blog, Contact, Privacy, Terms, FAQs pages present</td></tr>
+        <tr><td>Admin panel</td><td><span class="badge badge-amber">Scaffold</span></td><td>Users, roles, blogs, bookings, vertical lists exist; needs full ops + PDFs</td></tr>
+        <tr><td>Auth &amp; customer account</td><td><span class="badge badge-amber">Partial</span></td><td>Login/signup/profile/bookings exist; wishlists, reviews, wallet, refunds need depth</td></tr>
+        <tr><td>i18n / multi-currency</td><td><span class="badge badge-amber">Limited</span></td><td>Display formatting only; needs systematic locale + FX strategy</td></tr>
+        <tr><td>Cars (third-party)</td><td><span class="badge badge-gray">Mock</span></td><td>UI + mock flows — need real B2B car API integration end-to-end</td></tr>
+        <tr><td>Database backups</td><td><span class="badge badge-red">Not Started</span></td><td>Operational rollout needed</td></tr>
+      </tbody>
+    </table>
+
+    <!-- ═══════════════════════ TIMELINE OVERVIEW ═══════════════════════ -->
+    <div class="section-label">High-Level Timeline Overview</div>
+    <table class="timeline-table">
+      <thead>
+        <tr><th>Phase</th><th>Duration</th><th>Period (approx.)</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><div class="phase-pill"><span class="phase-pill-dot" style="background:var(--phase-a)"></span>A — Web MVP Completion</div></td>
+          <td>~2 months</td>
+          <td>Now → End of Month 3</td>
+        </tr>
+        <tr>
+          <td><div class="phase-pill"><span class="phase-pill-dot" style="background:var(--phase-b)"></span>B — Production &amp; Stabilization</div></td>
+          <td>~2 weeks</td>
+          <td>Month 3.5</td>
+        </tr>
+        <tr>
+          <td><div class="phase-pill"><span class="phase-pill-dot" style="background:var(--phase-c)"></span>C — React Native Mobile App</div></td>
+          <td>~2 months</td>
+          <td>Month 3.5 → Month 5.5</td>
+        </tr>
+        <tr>
+          <td><div class="phase-pill"><span class="phase-pill-dot" style="background:var(--phase-d)"></span>D — Store Production</div></td>
+          <td>~2 weeks</td>
+          <td>Month 5.5 → Month 6</td>
+        </tr>
+        <tr>
+          <td><div class="phase-pill"><span class="phase-pill-dot" style="background:var(--phase-e)"></span>E — Advanced Features</div></td>
+          <td>Ongoing (phased)</td>
+          <td>Month 5+</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- ═══════════════════════ TECH STACK ═══════════════════════ -->
+    <div class="tech-section">
+      <div class="tech-section-title">TravelTourUp System — Modern Tech Stack</div>
+      <div class="tech-grid">
+        <div class="tech-card">
+          <div class="tech-card-title">Frontend Layer</div>
+          <ul>
+            <li>Next.js 16+, React 19</li>
+            <li>TypeScript 5</li>
+            <li>Tailwind CSS</li>
+            <li>Shadcn/UI, Radix Primitives</li>
+            <li>React Hook Form, Zod</li>
+            <li>Responsive, component-based</li>
+          </ul>
+        </div>
+        <div class="tech-card">
+          <div class="tech-card-title">Backend Layer</div>
+          <ul>
+            <li>Next.js API Routes</li>
+            <li>Server Actions</li>
+            <li>Supabase + PostgreSQL</li>
+            <li>Supabase Auth (Auth)</li>
+            <li>Duffel API (Flights &amp; Stays)</li>
+            <li>Third-party Car API (TBD)</li>
+          </ul>
+        </div>
+        <div class="tech-card">
+          <div class="tech-card-title">Infrastructure</div>
+          <ul>
+            <li>Vercel (hosting &amp; CI/CD)</li>
+            <li>Supabase (database)</li>
+            <li>Cloudinary (media)</li>
+            <li>Resend / AWS SES (email)</li>
+            <li>React Native (mobile)</li>
+            <li>GitHub (version control)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════ GUIDELINES ═══════════════════════ -->
+    <div class="callout" style="margin-top:36px;">
+      <strong>Timeline Guidelines:</strong><br/>
+      • Timeline is based on <strong>one full-time full-stack developer</strong> unless noted.<br/>
+      • Calendar weeks are indicative — adjust for team size and vendor (Duffel / car API) approvals.<br/>
+      • Phases are sequential at the top level; modules within a phase can overlap where noted.
+    </div>
+
+  </div><!-- /content-area -->
+
+  <!-- FOOTER -->
+  <div class="doc-footer">
+    <span>TravelTourUp — Module-wise Roadmap &amp; Timeline</span>
+    <span>Document Version 1.0</span>
+  </div>
+
+</div>
+</body>
+</html>

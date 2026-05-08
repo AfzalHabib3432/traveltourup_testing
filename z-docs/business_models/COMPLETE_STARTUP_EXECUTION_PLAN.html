@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Bidding Platform Acquisition — Complete Startup Execution Plan</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  :root{
+    --bg:#fff;--ink:#1a1a1a;--ink2:#444;--ink3:#888;--border:#e0e0e0;--border-lt:#f0f0f0;
+    --accent:#16a34a;--accent-dk:#15803d;--accent-lt:#dcfce7;
+    --blue:#2563eb;--blue-lt:#dbeafe;--purple:#7c3aed;--purple-lt:#ede9fe;
+    --orange:#ea580c;--orange-lt:#fff7ed;--cyan:#0891b2;--cyan-lt:#ecfeff;
+    --amber:#d97706;--amber-lt:#fffbeb;--red:#dc2626;--red-lt:#fef2f2;
+    --g50:#fafafa;--g100:#f5f5f5;--g200:#e5e5e5;
+  }
+  body{font-family:'Inter',-apple-system,sans-serif;background:var(--bg);color:var(--ink);font-size:13.5px;line-height:1.6;-webkit-font-smoothing:antialiased}
+  .page{max-width:900px;margin:0 auto;padding:0}
+
+  /* TITLE PAGE */
+  .title-page{text-align:center;padding:70px 40px 50px;border-bottom:3px solid var(--ink);position:relative}
+  .title-page::before{content:'';position:absolute;left:50%;top:24px;transform:translateX(-50%);width:4px;height:36px;background:var(--ink)}
+  .title-page h1{font-family:'Playfair Display',serif;font-size:44px;font-weight:800;letter-spacing:-1px;margin-top:16px}
+  .title-page .subtitle{font-family:'Playfair Display',serif;font-size:17px;font-weight:400;font-style:italic;color:var(--ink2);margin-top:4px}
+  .meta-row{display:flex;justify-content:center;gap:24px;flex-wrap:wrap;margin-top:28px;font-size:12px;color:var(--ink3)}
+  .meta-row span{display:flex;align-items:center;gap:5px}
+  .meta-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+  .obj-box{max-width:720px;margin:24px auto 0;text-align:left;padding:16px 20px;background:var(--g50);border-left:4px solid var(--ink);font-size:13px;color:var(--ink2);line-height:1.7}
+  .obj-box strong{color:var(--ink)}
+
+  .content{padding:0 40px 50px}
+
+  /* SECTION HEADING */
+  .sec-heading{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;margin-top:44px;margin-bottom:28px;padding-bottom:10px;border-bottom:2px solid var(--ink)}
+
+  /* PHASE BLOCK */
+  .phase{margin-bottom:36px;page-break-inside:avoid}
+  .phase-hdr h3{font-size:15px;font-weight:700;color:var(--accent-dk);line-height:1.4;margin-bottom:10px}
+  .phase-hdr h3 a{color:var(--accent-dk);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:2px}
+  .purpose{font-size:13px;color:var(--ink2);margin-bottom:14px}
+  .purpose strong{color:var(--ink)}
+
+  .sub-h{font-size:12.5px;font-weight:600;color:var(--ink);margin-top:14px;margin-bottom:6px;display:flex;align-items:center;gap:5px}
+  .sub-h::before{content:'●';color:var(--accent);font-size:7px}
+
+  .p-list{list-style:none;padding-left:16px;margin-bottom:4px}
+  .p-list li{position:relative;padding:1.5px 0 1.5px 22px;font-size:12.5px;color:var(--ink2);line-height:1.65}
+  .p-list li .n{position:absolute;left:0;font-weight:600;color:var(--ink3);font-size:11.5px;font-family:'JetBrains Mono',monospace;min-width:18px}
+
+  .tl{margin-top:10px;font-size:12.5px;font-weight:600;display:flex;align-items:center;gap:5px}
+  .tl::before{content:'●';color:var(--accent);font-size:7px}
+  .tl span{font-weight:400;color:var(--ink2)}
+
+  hr.div{border:none;border-top:1px solid var(--border);margin:0}
+
+  /* TABLES */
+  .tbl{width:100%;border-collapse:collapse;font-size:12px;background:var(--bg);border:1px solid var(--border);border-radius:8px;overflow:hidden;margin:10px 0}
+  .tbl thead th{background:var(--ink);color:#fff;text-align:left;padding:8px 12px;font-size:10.5px;font-weight:600;letter-spacing:.04em;text-transform:uppercase}
+  .tbl tbody tr{border-bottom:1px solid var(--border-lt)}
+  .tbl tbody tr:last-child{border-bottom:none}
+  .tbl tbody td{padding:7px 12px;vertical-align:top}
+  .tbl tbody tr:nth-child(even) td{background:var(--g50)}
+  .tbl tbody td:first-child{font-weight:500}
+  .tbl.compact{font-size:11.5px}
+  .tbl.compact td,.tbl.compact th{padding:6px 10px}
+
+  .badge{display:inline-block;font-size:9.5px;font-weight:600;padding:2px 7px;border-radius:20px;margin-right:4px;white-space:nowrap}
+  .b-grn{background:var(--accent-lt);color:var(--accent-dk)}
+  .b-red{background:var(--red-lt);color:var(--red)}
+  .b-amb{background:var(--amber-lt);color:var(--amber)}
+  .b-blu{background:var(--blue-lt);color:var(--blue)}
+  .b-gry{background:var(--g100);color:var(--ink3)}
+
+  /* CALLOUT */
+  .callout{border-left:3px solid var(--accent);background:var(--accent-lt);padding:10px 14px;border-radius:0 6px 6px 0;font-size:12px;color:var(--ink2);margin:14px 0}
+  .callout strong{color:var(--ink)}
+
+  /* GANTT */
+  .gantt-wrap{border:1px solid var(--border);border-radius:8px;overflow:hidden;margin:10px 0}
+  .gantt-hdr{background:var(--ink);color:#fff;display:grid;grid-template-columns:200px 1fr;font-size:10.5px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;padding:8px 14px;gap:8px}
+  .gantt-months{display:grid;grid-template-columns:repeat(6,1fr);text-align:center;font-size:9.5px}
+  .gantt-row{display:grid;grid-template-columns:200px 1fr;border-bottom:1px solid var(--border-lt);gap:8px;padding:5px 14px;align-items:center}
+  .gantt-row:last-child{border-bottom:none}
+  .gantt-row:nth-child(even){background:var(--g50)}
+  .g-lbl{font-size:11.5px;font-weight:500;display:flex;align-items:center;gap:7px}
+  .g-dot{width:9px;height:9px;border-radius:2px;flex-shrink:0}
+  .g-est{font-size:9.5px;font-weight:400;color:var(--ink3);margin-left:auto;white-space:nowrap}
+  .g-bar-area{position:relative;height:18px}
+  .g-line{position:absolute;top:0;bottom:0;width:1px;background:var(--border-lt)}
+  .g-bar{position:absolute;height:14px;top:2px;border-radius:3px;opacity:.85}
+  .g-bar:hover{opacity:1}
+  .gantt-legend{display:flex;flex-wrap:wrap;gap:10px 20px;margin-top:10px;font-size:11px;color:var(--ink2)}
+  .gantt-legend span{display:flex;align-items:center;gap:5px}
+  .l-dot{width:10px;height:8px;border-radius:2px;flex-shrink:0}
+
+  /* FLOW */
+  .flow-wrap{border:1px solid var(--border);border-radius:8px;padding:24px 20px;margin:10px 0}
+  .flow-title{font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--ink3);margin-bottom:16px;text-align:center}
+  .pro-flow{display:flex;flex-direction:column;align-items:center;gap:0}
+  .pf-node{border:2px solid;border-radius:8px;padding:10px 24px;text-align:center;max-width:340px;width:100%}
+  .pf-node .role{font-size:9.5px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;margin-bottom:2px}
+  .pf-node .act{font-size:12.5px;font-weight:600;color:var(--ink)}
+  .pf-node .det{font-size:10.5px;color:var(--ink3);margin-top:1px}
+  .pf-arrow{width:2px;height:22px;background:var(--ink3);position:relative}
+  .pf-arrow::after{content:'';position:absolute;bottom:-3px;left:50%;transform:translateX(-50%);border-left:4px solid transparent;border-right:4px solid transparent;border-top:5px solid var(--ink3)}
+
+  /* TECH CARDS */
+  .tech-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:10px 0}
+  .tech-card{background:var(--g50);border:1px solid var(--border);border-radius:8px;padding:14px 14px}
+  .tc-title{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;margin-bottom:8px;padding-bottom:6px;border-bottom:2px solid var(--accent)}
+  .tech-card ul{list-style:none;padding:0}
+  .tech-card li{font-size:11.5px;color:var(--ink2);padding:2px 0 2px 12px;position:relative}
+  .tech-card li::before{content:'●';position:absolute;left:0;font-size:5px;color:var(--accent);top:6px}
+
+  /* KEY MESSAGE BOX */
+  .key-box{background:var(--g50);border:2px solid var(--ink);border-radius:10px;padding:24px 28px;margin:30px 0}
+  .key-box h3{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;margin-bottom:12px}
+  .key-box .highlight{font-size:14px;color:var(--accent-dk);font-weight:700;margin:8px 0}
+
+  /* FOOTER */
+  .doc-footer{margin-top:50px;padding:16px 40px;border-top:2px solid var(--ink);font-size:11px;color:var(--ink3);display:flex;justify-content:space-between}
+
+  @media print{body{background:#fff}.page{padding:0}.title-page{padding:30px 20px 20px}.content{padding:0 20px 20px}.phase{page-break-inside:avoid}}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- ══════════ TITLE PAGE ══════════ -->
+  <div class="title-page">
+    <h1>Bidding Platform Acquisition</h1>
+    <div class="subtitle">Complete Startup Execution Plan</div>
+    <div class="meta-row">
+      <span><span class="meta-dot" style="background:var(--accent)"></span>30-Day Planning</span>
+      <span><span class="meta-dot" style="background:var(--blue)"></span>Model 2: Bidding Acquisition</span>
+      <span><span class="meta-dot" style="background:var(--purple)"></span>Pakistan → USA SMBs</span>
+      <span><span class="meta-dot" style="background:var(--orange)"></span>April 2026</span>
+    </div>
+    <div class="obj-box">
+      <strong>Objective:</strong> Launch a Bidding Platform Acquisition model with expert-guided strategy, optimized profiles across 2–3 platforms, hired specialist bidders, clear SOPs, and pricing that ensures profit after platform fees. One full month committed to planning before active execution.
+    </div>
+  </div>
+
+  <div class="content">
+    <h2 class="sec-heading">Plan Sections & Execution Flow (19 Sections)</h2>
+
+    <!-- ── S1: EXECUTIVE SUMMARY ── -->
+    <div class="phase">
+      <div class="phase-hdr"><h3><a>Section 1: Executive Summary</a></h3></div>
+      <div class="purpose"><strong>Purpose:</strong> Strategic overview — why this model works despite competition</div>
+
+      <div class="sub-h">Our Competitive Strategy:</div>
+      <table class="tbl compact">
+        <thead><tr><th>Challenge</th><th>Our Strategy</th></tr></thead>
+        <tbody>
+          <tr><td>Competition is high</td><td><strong>Niche down hard</strong> — dominate 1–2 service categories</td></tr>
+          <tr><td>Platform fees 10–20%</td><td>Fees built into margin calculations — no surprises</td></tr>
+          <tr><td>Algorithm favors established</td><td>Invest in <strong>profile building phase</strong> before aggressive bidding</td></tr>
+          <tr><td>Race to the bottom</td><td>Compete on <strong>value, speed, specificity</strong> — not price</td></tr>
+          <tr><td>Account suspension risk</td><td><strong>Multiple profiles across platforms</strong> with strict compliance</td></tr>
+        </tbody>
+      </table>
+
+      <div class="sub-h">Key Success Factors:</div>
+      <ol class="p-list">
+        <li><span class="n">1.</span>Expert-guided strategy (3–4 consultations in Month 1)</li>
+        <li><span class="n">2.</span>Multiple optimized profiles across 2–3 platforms</li>
+        <li><span class="n">3.</span>Hired specialist bidders with proven track records</li>
+        <li><span class="n">4.</span>Clear SOPs and daily accountability systems</li>
+        <li><span class="n">5.</span>Pricing that ensures profit after platform fees</li>
+        <li><span class="n">6.</span>Rapid first-project delivery to build reviews</li>
+      </ol>
+    </div>
+    <hr class="div"/>
+
+    <!-- ── S2: 30-DAY TIMELINE ── -->
+    <div class="phase">
+      <div class="phase-hdr"><h3><a>Section 2: 30-Day Planning Timeline — Week-by-Week</a></h3></div>
+      <div class="purpose"><strong>Purpose:</strong> Structured planning phase before active execution begins</div>
+
+      <div class="sub-h">Week 1 (Days 1–7): Research & Expert Identification</div>
+      <ol class="p-list">
+        <li><span class="n">1.</span>Finalize 3–4 bidding experts; schedule consultations</li>
+        <li><span class="n">2.</span>Deep-dive research on Upwork, Fiverr Pro, Freelancer algorithms</li>
+        <li><span class="n">3.</span>Study top 20 competitor profiles per platform</li>
+        <li><span class="n">4.</span>Research fee structures, connect costs, membership tiers</li>
+        <li><span class="n">5.</span>Analyze 50+ successful proposals in our service categories</li>
+        <li><span class="n">6.</span>Identify target niches (highest demand + lowest competition)</li>
+        <li><span class="n">7.</span><strong>MEETING 1: Expert #1</strong> — Platform selection, algorithm insights</li>
+      </ol>
+
+      <div class="sub-h">Week 2 (Days 8–14): Expert Consultations & Strategy Formation</div>
+      <ol class="p-list">
+        <li><span class="n">1.</span>Draft profile content — descriptions, portfolio, offerings</li>
+        <li><span class="n">2.</span><strong>MEETING 2: Expert #2</strong> — Proposal writing, pricing, winning techniques</li>
+        <li><span class="n">3.</span>Shortlist 10+ potential bidder candidates</li>
+        <li><span class="n">4.</span><strong>MEETING 3: Expert #3</strong> — Hiring bidders, SOPs, daily operations</li>
+        <li><span class="n">5.</span>Consolidate expert recommendations into unified strategy</li>
+        <li><span class="n">6.</span>Finalize platform (2–3) and niche (2–3 categories) selection</li>
+        <li><span class="n">7.</span><strong>MEETING 4: Expert #4</strong> — Scaling, common mistakes, expectations</li>
+      </ol>
+
+      <div class="sub-h">Week 3 (Days 15–21): Profile Setup & Bidder Hiring</div>
+      <ol class="p-list">
+        <li><span class="n">1.</span>Finalize all profile content (descriptions, portfolios, pricing, tags)</li>
+        <li><span class="n">2.</span>Interview bidder candidates (3–4 per day)</li>
+        <li><span class="n">3.</span>Create & optimize profiles on 2–3 platforms</li>
+        <li><span class="n">4.</span>Send offers to 2–3 selected bidders</li>
+        <li><span class="n">5.</span>Draft SOPs, set up PM tools, tracking, CRM</li>
+      </ol>
+
+      <div class="sub-h">Week 4 (Days 22–30): Training & Soft Launch</div>
+      <ol class="p-list">
+        <li><span class="n">1.</span>Onboard bidders — access, tools, logins, communication</li>
+        <li><span class="n">2.</span>Training: Platform mechanics, proposal writing, pricing guidelines</li>
+        <li><span class="n">3.</span><strong>Soft Launch:</strong> Submit 30–40 proposals across platforms</li>
+        <li><span class="n">4.</span>Review quality, track responses, analyze early data</li>
+        <li><span class="n">5.</span><strong>Month-End Review:</strong> Retrospective + Month 2 execution plan</li>
+      </ol>
+    </div>
+    <hr class="div"/>
+
+    <!-- ── S3: EXPERT MEETINGS ── -->
+    <div class="phase">
+      <div class="phase-hdr"><h3><a>Section 3: Expert Meeting Strategy — 4 Consultations</a></h3></div>
+      <div class="purpose"><strong>Purpose:</strong> Expert-guided strategy to save months of trial-and-error</div>
+
+      <div class="sub-h">Expert Selection (Minimum Requirements):</div>
+      <ol class="p-list">
+        <li><span class="n">1.</span>3+ years active on Upwork/Fiverr/Freelancer</li>
+        <li><span class="n">2.</span>$100K+ earned through bidding platforms</li>
+        <li><span class="n">3.</span>30%+ proposal-to-interview rate</li>
+        <li><span class="n">4.</span>Agency experience (not just solo freelancers)</li>
+      </ol>
+
+      <table class="tbl">
+        <thead><tr><th>Meeting</th><th>Focus</th><th>Top Questions</th></tr></thead>
+        <tbody>
+          <tr><td style="white-space:nowrap"><strong>Meeting 1</strong></td><td>Platform Strategy & Algorithm</td><td>Which platforms give best ROI? How do algorithms rank? Multi-profile strategy? Offshore perception?</td></tr>
+          <tr><td style="white-space:nowrap"><strong>Meeting 2</strong></td><td>Proposal Writing & Pricing</td><td>Top converting templates? Ideal length/structure? Pricing positioning? Upsell to retainer?</td></tr>
+          <tr><td style="white-space:nowrap"><strong>Meeting 3</strong></td><td>Hiring & Managing Bidders</td><td>Hiring criteria? Compensation models? Daily capacity? QC workflow?</td></tr>
+          <tr><td style="white-space:nowrap"><strong>Meeting 4</strong></td><td>Scaling & Avoiding Pitfalls</td><td>Top 5 failure reasons? Multi-profile scaling? Profile health? Advanced tactics?</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <hr class="div"/>
+
+    <!-- ── S4: PLATFORM SELECTION ── -->
+    <div class="phase">
+      <div class="phase-hdr"><h3><a>Section 4: Platform Selection & Focus Strategy</a></h3></div>
+      <div class="purpose"><strong>Purpose:</strong> Data-driven platform selection for maximum ROI</div>
+
+      <table class="tbl compact">
+        <thead><tr><th>Factor</th><th>Upwork</th><th>Fiverr Pro</th><th>Freelancer</th><th>Clutch</th><th>Toptal</th></tr></thead>
+        <tbody>
+          <tr><td>Client Quality</td><td><span class="badge b-grn">High</span></td><td><span class="badge b-amb">Medium</span></td><td><span class="badge b-amb">Low–Med</span></td><td><span class="badge b-grn">High</span></td><td><span class="badge b-blu">Very High</span></td></tr>
+          <tr><td>Avg. Project</td><td>$2K–$15K</td><td>$200–$3K</td><td>$500–$5K</td><td>$5K–$50K+</td><td>$10K–$100K+</td></tr>
+          <tr><td>Competition</td><td><span class="badge b-red">Very High</span></td><td><span class="badge b-red">Very High</span></td><td><span class="badge b-amb">High</span></td><td><span class="badge b-grn">Medium</span></td><td><span class="badge b-grn">Low</span></td></tr>
+          <tr><td>Platform Fee</td><td>10%</td><td>20%</td><td>10% / $5</td><td>$500–$2K/yr</td><td>0%</td></tr>
+          <tr><td>Time to 1st Client</td><td>2–6 wks</td><td>1–4 wks</td><td>1–3 wks</td><td>2–4 mo</td><td>1–3 mo</td></tr>
+          <tr><td>Ease of Entry</td><td>Medium</td><td>Easy</td><td>Easy</td><td>Hard</td><td>Very Hard</td></tr>
+        </tbody>
+      </table>
+
+      <div class="sub-h">Recommended Priority:</div>
+      <ol class="p-list">
+        <li><span class="n">1.</span><strong>PRIMARY — Upwork (50%):</strong> Main revenue driver, highest volume quality jobs in our categories</li>
+        <li><span class="n">2.</span><strong>SECONDARY — Fiverr Pro (25%):</strong> Passive gig income + review building quickly</li>
+        <li><span class="n">3.</span><strong>TERTIARY — Freelancer (15%):</strong> Volume play, pipeline building, smaller projects</li>
+        <li><span class="n">4.</span><strong>LONG-TERM — Clutch (10%):</strong> Credibility profile, B2B leads in 3–6 months</li>
+      </ol>
+    </div>
+    <hr class="div"/>
+
+    <!-- ── S5: PROFILE STRATEGY ── -->
+    <div class="phase">
+      <div class="phase-hdr"><h3><a>Section 5: Profile Strategy — Setup & Optimization</a></h3></div>
+      <div class="purpose"><strong>Purpose:</strong> Build high-converting profiles across platforms</div>
+
+      <table class="tbl compact">
+        <thead><tr><th>Profile</th><th>Platform</th><th>Focus</th><th>Purpose</th></tr></thead>
+        <tbody>
+          <tr><td><strong>#1 Agency</strong></td><td>Upwork</td><td>Full Digital Marketing</td><td>Primary revenue</td></tr>
+          <tr><td><strong>#2 Specialist</strong></td><td>Upwork</td><td>Web Dev & WordPress</td><td>Target web dev projects</td></tr>
+          <tr><td><strong>#3 Specialist</strong></td><td>Fiverr Pro</td><td>SEO & GBP Optimization</td><td>Passive gigs + reviews</td></tr>
+          <tr><td><strong>#4 General</strong></td><td>Freelancer</td><td>Full Services</td><td>Volume bidding</td></tr>
+          <tr><td><strong>#5 Credibility</strong></td><td>Clutch</td><td>Agency listing</td><td>Long-term B2B</td></tr>
+        </tbody>
+      </table>
+
+      <div class="sub-h">Optimization Checklist:</div>
+      <ol class="p-list">
+        <li><span class="n">1.</span>Professional headshot/logo (300×300px minimum)</li>
+        <li><span class="n">2.</span>Title: <code>[Skill] | [Niche] | [Value Proposition]</code></li>
+        <li><span class="n">3.</span>Overview: 300–500 words (Hook → Services → Proof → CTA)</li>
+        <li><span class="n">4.</span>Portfolio: 6+ pieces (web dev, SEO results, design, case studies)</li>
+        <li><span class="n">5.</span>Rates: $20–$45/hr, start 15–25% below established competitors</li>
+        <li><span class="n">6.</span>Availability: 40+ hrs/week, US business hours overlap</li>
+      </ol>
+
+      <div class="sub-h">Warm-Up Strategy (First 30 Days After Profile Creation):</div>
+      <ol class="p-list">
+        <li><span class="n">1.</span><strong>Days 1–3:</strong> Complete 100% profile, portfolio, skill tests, verify identity</li>
+        <li><span class="n">2.</span><strong>Days 4–10:</strong> Bid 10–15 jobs/day, accept 1–2 small projects at lower margin</li>
+        <li><span class="n">3.</span><strong>Days 11–20:</strong> Deliver first 2–3 projects exceptionally, request reviews</li>
+        <li><span class="n">4.</span><strong>Days 21–30:</strong> Hit "Rising Talent" (Upwork), Level 1 (Fiverr)</li>
+      </ol>
+      <div class="tl">Warm-Up Budget: <span>$100–$300 in connects + 2–3 projects at ~20% profit for reviews</span></div>
+    </div>
+    <hr class="div"/>
+
+    <!-- ── S6: BUDGET ── -->
+    <div class="phase">
+      <div class="phase-hdr"><h3><a>Section 6: Budget Allocation</a></h3></div>
+      <div class="purpose"><strong>Purpose:</strong> Clear financial planning for planning and operational phases</div>
+
+      <div class="sub-h">Month 1 Budget (Planning Phase):</div>
+      <table class="tbl compact">
+        <thead><tr><th>Category</th><th>Cost (USD)</th><th>Notes</th></tr></thead>
+        <tbody>
+          <tr><td>Expert consultations (4×)</td><td><strong>$400–$1,200</strong></td><td>One-time</td></tr>
+          <tr><td>Platform memberships</td><td>$15–$45/mo</td><td>Upwork Plus, Freelancer</td></tr>
+          <tr><td>Connects (200–300)</td><td>$30–$45</td><td>~$0.15/connect</td></tr>
+          <tr><td>Portfolio development</td><td>$100–$300</td><td>One-time or in-house</td></tr>
+          <tr><td>Tools (CRM, tracking)</td><td>$50–$100</td><td>HubSpot free + sheets</td></tr>
+          <tr><td><strong>Total Month 1</strong></td><td><strong>$595–$1,690</strong></td><td></td></tr>
+        </tbody>
+      </table>
+
+      <div class="sub-h">Monthly Ongoing (Per Profile):</div>
+      <table class="tbl compact">
+        <thead><tr><th>Expense</th><th>Per Profile</th><th>3 Profiles</th><th>5 Profiles</th></tr></thead>
+        <tbody>
+          <tr><td>Connects/bids</td><td>$30–$60</td><td>$90–$180</td><td>$150–$300</td></tr>
+          <tr><td>Featured/boosts</td><td>$20–$50</td><td>$60–$150</td><td>$100–$250</td></tr>
+          <tr><td>Bidder salary</td><td>$200–$400</td><td>$600–$1,200</td><td>$1,000–$2,000</td></tr>
+          <tr><td><strong>Total/month</strong></td><td><strong>$250–$510</strong></td><td><strong>$750–$1,530</strong></td><td><strong>$1,250–$2,550</strong></td></tr>
+        </tbody>
+      </table>
+
+      <div class="callout"><strong>Recommended Bidder Pay:</strong> PKR 40,000–60,000 base + 5% commission on won project value (Salary + Commission model)</div>
+    </div>
+    <hr class="div"/>
+
+    <!-- ── S7: HIRING BIDDERS ── -->
+    <div class="phase">
+      <div class="phase-hdr"><h3><a>Section 7: Hiring Expert Bidders</a></h3></div>
+      <div class="purpose"><strong>Purpose:</strong> Recruit specialized sales professionals who understand platform psychology</div>
+
+      <div class="sub-h">Must-Have Skills:</div>
+      <ol class="p-list">
+        <li><span class="n">1.</span>Excellent written English (native-level proposals)</li>
+        <li><span class="n">2.</span>Platform knowledge (algorithms, connect strategy, optimization)</li>
+        <li><span class="n">3.</span>Speed + Quality (20–40 quality proposals per day)</li>
+        <li><span class="n">4.</span>Research skills (analyze jobs and client history quickly)</li>
+        <li><span class="n">5.</span>Sales instinct (identify pain points, close deals)</li>
+        <li><span class="n">6.</span>Niche understanding (SEO, web dev, digital marketing)</li>
+      </ol>
+
+      <div class="sub-h">9-Step Hiring Process:</div>
+      <ol class="p-list">
+        <li><span class="n">1.</span>Post job on 3–4 channels (LinkedIn, Rozee.pk, FB groups, referrals)</li>
+        <li><span class="n">2.</span>Screen resumes — English, platform exp, industry</li>
+        <li><span class="n">3.</span>Written test — 3 real job postings, write proposals</li>
+        <li><span class="n">4.</span>Score tests (personalization, persuasion, grammar, CTA)</li>
+        <li><span class="n">5.</span>Interview top scorers (verbal, attitude, platform quiz)</li>
+        <li><span class="n">6.</span>Reference check — verify results</li>
+        <li><span class="n">7.</span>2-week paid trial with daily quotas</li>
+        <li><span class="n">8.</span>Evaluate trial performance</li>
+        <li><span class="n">9.</span>Confirm hire or release</li>
+      </ol>
+
+      <div class="sub-h">Scaling Plan:</div>
+      <table class="tbl compact">
+        <thead><tr><th>Phase</th><th>Bidders</th><th>Profiles</th><th>Daily Proposals</th></tr></thead>
+        <tbody>
+          <tr><td>Month 1–2 (Start)</td><td>2</td><td>2–3</td><td>20–30</td></tr>
+          <tr><td>Month 3–4 (Growth)</td><td>3</td><td>3–4</td><td>30–50</td></tr>
+          <tr><td>Month 5–6 (Scale)</td><td>4–5</td><td>4–6</td><td>50–80</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <hr class="div"/>
+
+    <!-- ── S8: SOPs ── -->
+    <div class="phase">
+      <div class="phase-hdr"><h3><a>Section 8: SOPs — Standard Operating Procedures</a></h3></div>
+      <div class="purpose"><strong>Purpose:</strong> Standardized daily operations for consistent quality</div>
+
+      <div class="sub-h">SOP 1 — Daily Bidding Workflow (Per Bidder, US Hours):</div>
+      <table class="tbl compact">
+        <thead><tr><th>Time (PKT)</th><th>Activity</th><th>Duration</th></tr></thead>
+        <tbody>
+          <tr><td>6:00 PM</td><td><strong>Check-in:</strong> Log in, check messages, review yesterday's metrics</td><td>30 min</td></tr>
+          <tr><td>6:30 PM</td><td><strong>Job Scanning:</strong> Search categories, shortlist 25–35 relevant jobs</td><td>45 min</td></tr>
+          <tr><td>7:15 PM</td><td><strong>Proposal Writing:</strong> Write & submit 15–25 customized proposals</td><td>3–4 hrs</td></tr>
+          <tr><td>11:15 PM</td><td><strong>Follow-up:</strong> Follow up on 2–3 day old proposals, update CRM</td><td>30 min</td></tr>
+          <tr><td>11:45 PM</td><td><strong>Active Projects:</strong> Handle project communications</td><td>15 min</td></tr>
+          <tr><td>12:00 AM</td><td><strong>End-of-Day Report:</strong> Submit daily report to Team Lead</td><td>15 min</td></tr>
+        </tbody>
+      </table>
+
+      <div class="sub-h">SOP 2 — Proposal Quality Standards:</div>
+      <ol class="p-list">
+        <li><span class="n">1.</span><strong>Personalization:</strong> Must reference specific detail from job post</li>
+        <li><span class="n">2.</span><strong>Length:</strong> 150–250 words (300–400 for high-value)</li>
+        <li><span class="n">3.</span><strong>Grammar:</strong> Zero errors, native-level fluency</li>
+        <li><span class="n">4.</span><strong>Portfolio:</strong> 1–2 relevant examples matching needs</li>
+        <li><span class="n">5.</span><strong>Pricing:</strong> Clear price or range included</li>
+        <li><span class="n">6.</span><strong>CTA:</strong> Specific next step (call, question, deliverable)</li>
+      </ol>
+
+      <div class="sub-h">SOP 3 — Job Selection Criteria:</div>
+      <table class="tbl compact">
+        <thead><tr><th>Priority</th><th>Criteria</th><th>Action</th></tr></thead>
+        <tbody>
+          <tr><td><span class="badge b-grn">A — Must Bid</span></td><td>$1,000+ | Client hiring history | Exact service | Under 15 proposals</td><td>Bid immediately</td></tr>
+          <tr><td><span class="badge b-blu">B — Should Bid</span></td><td>$500–$999 | Client verified | Related service | Under 25</td><td>Bid with priority</td></tr>
+          <tr><td><span class="badge b-amb">C — Consider</span></td><td>$300–$499 | New client | General match</td><td>Bid if capacity</td></tr>
+          <tr><td><span class="badge b-red">Skip</span></td><td>Under $300 | Poor reviews | Vague scope | Outside capabilities</td><td>Do not bid</td></tr>
+        </tbody>
+      </table>
+
+      <div class="sub-h">SOP 4 — Escalation Matrix:</div>
+      <table class="tbl compact">
+        <thead><tr><th>Situation</th><th>Escalate To</th><th>Timeline</th></tr></thead>
+        <tbody>
+          <tr><td>Scope change mid-project</td><td>Project Manager</td><td>Immediately</td></tr>
+          <tr><td>Negative review threat</td><td>Team Lead + Leadership</td><td>Within 1 hour</td></tr>
+          <tr><td>Technical question</td><td>Technical Lead</td><td>Within 2 hours</td></tr>
+          <tr><td>Discount request > 20%</td><td>Team Lead</td><td>Before responding</td></tr>
+          <tr><td>Platform suspension notice</td><td>Leadership</td><td>Immediately</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <hr class="div"/>
+
+    <!-- ── S9: WORKFLOW ── -->
+    <div class="phase">
+      <div class="phase-hdr"><h3><a>Section 9: Workflow — Won Bid to Delivery</a></h3></div>
+      <div class="purpose"><strong>Purpose:</strong> Clear handoff process from bidder to delivery team</div>
+
+      <div class="flow-wrap">
+        <div class="flow-title">Project Handoff Flow</div>
+        <div class="pro-flow">
+          <div class="pf-node" style="border-color:var(--accent);background:var(--accent-lt)">
+            <div class="role" style="color:var(--accent-dk)">Bidder</div>
+            <div class="act">Wins Project → Notifies Team Lead</div>
+          </div>
+          <div class="pf-arrow"></div>
+          <div class="pf-node" style="border-color:var(--blue);background:var(--blue-lt)">
+            <div class="role" style="color:var(--blue)">Team Lead</div>
+            <div class="act">Reviews Scope → Assigns Project Manager</div>
+          </div>
+          <div class="pf-arrow"></div>
+          <div class="pf-node" style="border-color:var(--purple);background:var(--purple-lt)">
+            <div class="role" style="color:var(--purple)">Project Manager</div>
+            <div class="act">Kickoff Call → Creates Project → Assigns Delivery Team</div>
+          </div>
+          <div class="pf-arrow"></div>
+          <div class="pf-node" style="border-color:var(--orange);background:var(--orange-lt)">
+            <div class="role" style="color:var(--orange)">Delivery Team</div>
+            <div class="act">Executes → QA → Client Review → Revisions → Final Delivery</div>
+          </div>
+          <div class="pf-arrow"></div>
+          <div class="pf-node" style="border-color:var(--cyan);background:var(--cyan-lt)">
+            <div class="role" style="color:var(--cyan)">PM + Finance</div>
+            <div class="act">Request Review → Collect Payment via Platform</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sub-h">Bidder Accountability Targets:</div>
+      <table class="tbl compact">
+        <thead><tr><th>Metric</th><th>Daily</th><th>Weekly</th><th>Monthly</th></tr></thead>
+        <tbody>
+          <tr><td>Proposals submitted</td><td>15–25</td><td>75–125</td><td>300–500</td></tr>
+          <tr><td>Jobs scanned</td><td>30–50</td><td>150–250</td><td>600–1,000</td></tr>
+          <tr><td>Client responses</td><td>2–5</td><td>10–25</td><td>40–100</td></tr>
+          <tr><td>Interviews/shortlists</td><td>1–2</td><td>5–10</td><td>20–40</td></tr>
+          <tr><td>Projects won</td><td>—</td><td>1–2</td><td>4–8</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <hr class="div"/>
+
+    <!-- ── S10: PRICING ── -->
+    <div class="phase">
+      <div class="phase-hdr"><h3><a>Section 10: Project Pricing Strategy</a></h3></div>
+      <div class="purpose"><strong>Purpose:</strong> Ensure profit after platform fees on every project</div>
+
+      <div class="callout"><strong>Formula:</strong> Min Bid = (Delivery Cost + Overhead) ÷ (1 − Fee%) ÷ (1 − Profit%)<br/><strong>Example:</strong> $900 cost ÷ 0.90 ÷ 0.65 = <strong>$1,538 minimum bid</strong> → $450 profit (33%)</div>
+
+      <table class="tbl compact">
+        <thead><tr><th>Service</th><th>Floor</th><th>Standard</th><th>Premium</th><th>Our Cost</th><th>Margin</th></tr></thead>
+        <tbody>
+          <tr><td>Simple Website (5pg)</td><td>$1,200</td><td>$2K–$3.5K</td><td>$4K–$6K</td><td>$400–$700</td><td>35%+</td></tr>
+          <tr><td>WordPress Custom</td><td>$2,000</td><td>$3.5K–$6K</td><td>$7K–$12K</td><td>$700–$1.5K</td><td>40%+</td></tr>
+          <tr><td>SEO Audit</td><td>$300</td><td>$500–$1K</td><td>$1.5K–$2.5K</td><td>$100–$300</td><td>40%+</td></tr>
+          <tr><td>Monthly SEO</td><td>$500/mo</td><td>$800–$1.5K</td><td>$2K–$3K</td><td>$200–$500</td><td>45%+</td></tr>
+          <tr><td>Logo Design</td><td>$150</td><td>$300–$600</td><td>$800–$1.5K</td><td>$50–$150</td><td>50%+</td></tr>
+          <tr><td>E-commerce</td><td>$2,000</td><td>$3.5K–$6K</td><td>$8K–$15K</td><td>$800–$2K</td><td>35%+</td></tr>
+          <tr><td>Mobile App</td><td>$5,000</td><td>$8K–$15K</td><td>$20K–$40K</td><td>$2.5K–$7K</td><td>35%+</td></tr>
+        </tbody>
+      </table>
+
+      <div class="sub-h">Pricing by Profile Maturity:</div>
+      <table class="tbl compact">
+        <thead><tr><th>Stage</th><th>Strategy</th><th>Margin</th></tr></thead>
+        <tbody>
+          <tr><td><span class="badge b-amb">New (0–5 reviews)</span></td><td>Floor price — priority is winning and getting reviews</td><td>20–25%</td></tr>
+          <tr><td><span class="badge b-blu">Growing (5–15)</span></td><td>Standard price — credibility earned, normal margins</td><td>30–40%</td></tr>
+          <tr><td><span class="badge b-grn">Established (15+)</span></td><td>Premium price — strong reviews justify premium</td><td>40–50%</td></tr>
+          <tr><td><span class="badge" style="background:#ede9fe;color:#7c3aed">Top Rated</span></td><td>Premium+ — badge = trust, max margin</td><td>45–55%</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <hr class="div"/>
+
+    <!-- ── S11: TIMELINE TO FIRST PROJECT ── -->
+    <div class="phase">
+      <div class="phase-hdr"><h3><a>Section 11: Timeline to First Successful Project</a></h3></div>
+      <div class="purpose"><strong>Purpose:</strong> Realistic expectations for revenue generation</div>
+
+      <table class="tbl">
+        <thead><tr><th>Phase</th><th>Duration</th><th>Milestone</th></tr></thead>
+        <tbody>
+          <tr><td>Profile creation</td><td>Days 1–3</td><td>Fully optimized profiles live</td></tr>
+          <tr><td>Warm-up bidding</td><td>Days 4–14</td><td>First 1–2 small projects won</td></tr>
+          <tr><td>First delivery</td><td>Days 15–25</td><td>First 5-star review earned</td></tr>
+          <tr><td>Refined bidding</td><td>Days 25–40</td><td>3–5 proposals converting weekly</td></tr>
+          <tr><td><strong>First profitable project</strong></td><td><strong>Days 30–45</strong></td><td><strong>30%+ margin project won</strong></td></tr>
+          <tr><td>Consistent pipeline</td><td>Days 45–75</td><td>2–4 projects/month</td></tr>
+        </tbody>
+      </table>
+
+      <div class="sub-h">Time to First Revenue (Scenarios):</div>
+      <table class="tbl compact">
+        <thead><tr><th>Scenario</th><th>First Project</th><th>First Payment</th><th>First Profitable</th></tr></thead>
+        <tbody>
+          <tr><td><span class="badge b-grn">Best Case</span></td><td>Week 1–2</td><td>Week 2–3</td><td>Week 3–4</td></tr>
+          <tr><td><span class="badge b-blu">Realistic</span></td><td>Week 3–4</td><td>Week 4–6</td><td>Week 6–8</td></tr>
+          <tr><td><span class="badge b-red">Worst Case</span></td><td>Week 6–8</td><td>Week 8–12</td><td>Week 10–14</td></tr>
+        </tbody>
+      </table>
+      <div class="callout"><strong>Our Target:</strong> First project in Week 2–3 after active bidding starts (Week 6–7 from today, with Month 1 planning).</div>
+    </div>
+    <hr class="div"/>
+
+    <!-- ── S12: PROPOSAL FRAMEWORK ── -->
+    <div class="phase">
+      <div class="phase-hdr"><h3><a>Section 12: Proposal Writing Framework</a></h3></div>
+      <div class="purpose"><strong>Purpose:</strong> Standardized 6-part structure for winning proposals</div>
+
+      <table class="tbl">
+        <thead><tr><th>#</th><th>Part</th><th>What to Write</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td><strong>Personalized Hook</strong></td><td>1–2 sentences referencing something specific from the job post</td></tr>
+          <tr><td>2</td><td><strong>Understand Problem</strong></td><td>2–3 sentences restating their need — show you understand the pain</td></tr>
+          <tr><td>3</td><td><strong>Your Solution</strong></td><td>3–5 specific bullet points of what you'll deliver</td></tr>
+          <tr><td>4</td><td><strong>Proof / Social Proof</strong></td><td>1–2 sentences + link to relevant portfolio or results</td></tr>
+          <tr><td>5</td><td><strong>Pricing & Timeline</strong></td><td>Exact price, exact days — optional 2–3 tier approach</td></tr>
+          <tr><td>6</td><td><strong>Call to Action</strong></td><td>Specific next step — call, message, or calendly link</td></tr>
+        </tbody>
+      </table>
+
+      <div class="sub-h">Pricing Psychology Tips:</div>
+      <ol class="p-list">
+        <li><span class="n">1.</span>Never be the cheapest — cheapest = lowest quality perception</li>
+        <li><span class="n">2.</span>Use specific numbers — "$2,750" beats "$3,000"</li>
+        <li><span class="n">3.</span>Offer 2–3 tiers (Basic/Standard/Premium)</li>
+        <li><span class="n">4.</span>Anchor high: "US agencies charge $8K; we deliver same at $3,500"</li>
+        <li><span class="n">5.</span>Show ROI: "$1,500 SEO → $5K–$10K new business in 6 months"</li>
+      </ol>
+    </div>
+    <hr class="div"/>
+
+    <!-- ── S13: RISK ── -->
+    <div class="phase">
+      <div class="phase-hdr"><h3><a>Section 13: Risk Assessment & Mitigation</a></h3></div>
+      <div class="purpose"><strong>Purpose:</strong> Identify threats and prepare contingencies</div>
+
+      <table class="tbl compact">
+        <thead><tr><th>Risk</th><th>Level</th><th>Mitigation</th></tr></thead>
+        <tbody>
+          <tr><td>Account suspension</td><td><span class="badge b-red">HIGH</span></td><td>Strict compliance; no off-platform payments; no fake reviews</td></tr>
+          <tr><td>Algorithm change</td><td><span class="badge b-red">HIGH</span></td><td>Diversify 2–3 platforms; build direct relationships</td></tr>
+          <tr><td>Bidder leaves with clients</td><td><span class="badge b-red">HIGH</span></td><td>NDAs; PM owns relationship after handoff</td></tr>
+          <tr><td>Negative reviews</td><td><span class="badge b-red">HIGH</span></td><td>Quality first; clear scope; proactive communication</td></tr>
+          <tr><td>Race to bottom pricing</td><td><span class="badge b-amb">MEDIUM</span></td><td>Compete on value; niche specialization; strong reviews</td></tr>
+          <tr><td>Low interview rate</td><td><span class="badge b-amb">MEDIUM</span></td><td>A/B test proposals; expert feedback; daily quality reviews</td></tr>
+          <tr><td>Delivery quality issues</td><td><span class="badge b-red">HIGH</span></td><td>QA before delivery; PM oversight; scope docs</td></tr>
+        </tbody>
+      </table>
+
+      <div class="sub-h">Contingency Plans:</div>
+      <ol class="p-list">
+        <li><span class="n">1.</span>Profile suspended → Activate secondary; appeal; shift platforms</li>
+        <li><span class="n">2.</span>Bidder underperforms 2+ weeks → Performance plan (1 week); replace if needed</li>
+        <li><span class="n">3.</span>Zero wins in 30 days → Full review; re-consult expert; reduce pricing</li>
+        <li><span class="n">4.</span>Negative review → Outreach to resolve; dispute if unfair</li>
+        <li><span class="n">5.</span>Cash flow crisis → Reduce to essentials; focus best platform</li>
+      </ol>
+    </div>
+    <hr class="div"/>
+
+    <!-- ── S14: KPIs ── -->
+    <div class="phase">
+      <div class="phase-hdr"><h3><a>Section 14: KPIs & Performance Tracking</a></h3></div>
+      <div class="purpose"><strong>Purpose:</strong> Data-driven performance management</div>
+
+      <table class="tbl compact">
+        <thead><tr><th>KPI</th><th>Month 1–2</th><th>Month 3–4</th><th>Month 5–6</th></tr></thead>
+        <tbody>
+          <tr><td>Proposals/week</td><td>100–150</td><td>150–250</td><td>200–350</td></tr>
+          <tr><td>View→Interview</td><td>10–15%</td><td>15–20%</td><td>20–25%</td></tr>
+          <tr><td>Interview→Win</td><td>20–30%</td><td>30–40%</td><td>35–45%</td></tr>
+          <tr><td>Projects won/mo</td><td>2–4</td><td>4–8</td><td>8–15</td></tr>
+          <tr><td>Avg. project value</td><td>$1K–$2K</td><td>$2K–$3.5K</td><td>$3K–$5K</td></tr>
+          <tr><td><strong>Revenue (gross)</strong></td><td><strong>$2K–$8K</strong></td><td><strong>$8K–$28K</strong></td><td><strong>$24K–$75K</strong></td></tr>
+          <tr><td>Profit margin</td><td>20–30%</td><td>30–40%</td><td>35–45%</td></tr>
+          <tr><td>JSS</td><td>90%+</td><td>95%+</td><td>95%+</td></tr>
+          <tr><td>Avg. review rating</td><td>4.5+</td><td>4.7+</td><td>4.8+</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <hr class="div"/>
+
+    <!-- ── S15: TOOLS ── -->
+    <div class="phase">
+      <div class="phase-hdr"><h3><a>Section 15: Tools & Technology Stack</a></h3></div>
+      <div class="purpose"><strong>Purpose:</strong> Complete operational tool stack</div>
+
+      <div class="tech-grid">
+        <div class="tech-card">
+          <div class="tc-title">Platforms</div>
+          <ul>
+            <li>Upwork (primary)</li>
+            <li>Fiverr / Fiverr Pro</li>
+            <li>Freelancer</li>
+            <li>Clutch (long-term)</li>
+          </ul>
+        </div>
+        <div class="tech-card">
+          <div class="tc-title">Operations</div>
+          <ul>
+            <li>HubSpot CRM (Free)</li>
+            <li>Google Sheets / Airtable</li>
+            <li>ClickUp / Asana</li>
+            <li>Grammarly Premium</li>
+          </ul>
+        </div>
+        <div class="tech-card">
+          <div class="tc-title">Communication</div>
+          <ul>
+            <li>Slack (internal)</li>
+            <li>Zoom / Google Meet</li>
+            <li>Calendly</li>
+            <li>Loom (video proposals)</li>
+          </ul>
+        </div>
+      </div>
+      <div class="tl">Total Tool Cost: <span>$50–$200/month (before bidder salaries)</span></div>
+    </div>
+    <hr class="div"/>
+
+    <!-- ── S16: FINANCIAL PROJECTIONS ── -->
+    <div class="phase">
+      <div class="phase-hdr"><h3><a>Section 16: Financial Projections — 6-Month</a></h3></div>
+      <div class="purpose"><strong>Purpose:</strong> Revenue and profit forecasting for investment decisions</div>
+
+      <div class="sub-h">Conservative Scenario:</div>
+      <table class="tbl compact">
+        <thead><tr><th>Month</th><th>Proposals</th><th>Win%</th><th>Projects</th><th>Avg Val</th><th>Gross Rev</th><th>Net Profit</th></tr></thead>
+        <tbody>
+          <tr><td>Month 1</td><td>Planning</td><td>—</td><td>0</td><td>—</td><td>$0</td><td style="color:var(--red)">-$1,200</td></tr>
+          <tr><td>Month 2</td><td>300</td><td>1.5%</td><td>4–5</td><td>$1,000</td><td>$4,500</td><td>$2,025</td></tr>
+          <tr><td>Month 3</td><td>400</td><td>2%</td><td>8</td><td>$1,500</td><td>$12,000</td><td>$5,400</td></tr>
+          <tr><td>Month 4</td><td>450</td><td>3%</td><td>13</td><td>$2,000</td><td>$26,000</td><td>$11,700</td></tr>
+          <tr><td>Month 5</td><td>500</td><td>3.5%</td><td>17</td><td>$2,500</td><td>$42,500</td><td>$19,125</td></tr>
+          <tr><td>Month 6</td><td>550</td><td>4%</td><td>22</td><td>$3,000</td><td>$66,000</td><td>$29,700</td></tr>
+          <tr style="background:var(--accent-lt)"><td><strong>Total</strong></td><td></td><td></td><td></td><td></td><td><strong>$151,000</strong></td><td><strong>$67,950</strong></td></tr>
+        </tbody>
+      </table>
+
+      <div class="sub-h">Moderate Scenario:</div>
+      <table class="tbl compact">
+        <thead><tr><th>Month</th><th>Proposals</th><th>Win%</th><th>Projects</th><th>Avg Val</th><th>Gross Rev</th><th>Net Profit</th></tr></thead>
+        <tbody>
+          <tr><td>Month 1</td><td>Planning</td><td>—</td><td>0</td><td>—</td><td>$0</td><td style="color:var(--red)">-$1,500</td></tr>
+          <tr><td>Month 2</td><td>400</td><td>2%</td><td>8</td><td>$1,500</td><td>$12,000</td><td>$6,000</td></tr>
+          <tr><td>Month 3</td><td>500</td><td>3%</td><td>15</td><td>$2,000</td><td>$30,000</td><td>$15,000</td></tr>
+          <tr><td>Month 4</td><td>600</td><td>4%</td><td>24</td><td>$2,500</td><td>$60,000</td><td>$30,000</td></tr>
+          <tr><td>Month 5</td><td>650</td><td>4.5%</td><td>29</td><td>$3,000</td><td>$87,000</td><td>$43,500</td></tr>
+          <tr><td>Month 6</td><td>700</td><td>5%</td><td>35</td><td>$3,500</td><td>$122,500</td><td>$61,250</td></tr>
+          <tr style="background:var(--accent-lt)"><td><strong>Total</strong></td><td></td><td></td><td></td><td></td><td><strong>$311,500</strong></td><td><strong>$154,250</strong></td></tr>
+        </tbody>
+      </table>
+
+      <div class="callout"><strong>Break-even:</strong> Month 2 of active bidding — even in the conservative scenario, investment is recovered immediately.</div>
+
+      <div class="sub-h">Monthly Operating Costs:</div>
+      <table class="tbl compact">
+        <thead><tr><th>Category</th><th>Month 1</th><th>Month 2–3</th><th>Month 4–6</th></tr></thead>
+        <tbody>
+          <tr><td>Bidder salaries (2)</td><td>$0</td><td>$500–$700</td><td>$700–$1,000</td></tr>
+          <tr><td>Platform costs</td><td>$0</td><td>$50–$100</td><td>$100–$200</td></tr>
+          <tr><td>Tools</td><td>$50</td><td>$100–$150</td><td>$150–$200</td></tr>
+          <tr><td>Expert consultations</td><td>$400–$1,200</td><td>$0</td><td>$0–$200</td></tr>
+          <tr><td>Portfolio/design</td><td>$100–$300</td><td>$50</td><td>$50</td></tr>
+          <tr><td><strong>Total</strong></td><td><strong>$550–$1,550</strong></td><td><strong>$700–$1,000</strong></td><td><strong>$1,000–$1,650</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <hr class="div"/>
+
+    <!-- ── S17: MISSED ITEMS ── -->
+    <div class="phase">
+      <div class="phase-hdr"><h3><a>Section 17: Commonly Missed Items — Critical Checklist</a></h3></div>
+      <div class="purpose"><strong>Purpose:</strong> Avoid the 22 mistakes most teams make when launching bidding operations</div>
+
+      <div class="sub-h">Pre-Launch (6 Items):</div>
+      <ol class="p-list">
+        <li><span class="n">1.</span>Profile verification takes 3–7 days (Fiverr Pro: weeks) — start Day 1</li>
+        <li><span class="n">2.</span>Connect economics not tracked — budget burns fast without monitoring</li>
+        <li><span class="n">3.</span>No portfolio before bidding — build 6+ pieces during planning month</li>
+        <li><span class="n">4.</span>Timezone mismatch — bidders must work US hours (6 PM – 2 AM PKT)</li>
+        <li><span class="n">5.</span>No NDA/contract with bidders — sign before giving any access</li>
+        <li><span class="n">6.</span>No backup for suspension — maintain 2–3 active profiles</li>
+      </ol>
+
+      <div class="sub-h">Operational (6 Items):</div>
+      <ol class="p-list">
+        <li><span class="n">7.</span>Delivery team not ready when projects won — pre-assign capacity</li>
+        <li><span class="n">8.</span>No scope document template — vague scope = scope creep = loss</li>
+        <li><span class="n">9.</span>Ignoring JSS — below 90% kills visibility, monitor weekly</li>
+        <li><span class="n">10.</span>Not requesting reviews — clients don't leave them unless asked</li>
+        <li><span class="n">11.</span>No upsell strategy — create post-delivery upsell workflow</li>
+        <li><span class="n">12.</span>Not tracking which proposal styles win — tag and analyze</li>
+      </ol>
+
+      <div class="sub-h">Financial (5 Items):</div>
+      <ol class="p-list">
+        <li><span class="n">13.</span>Platform fees not factored into pricing</li>
+        <li><span class="n">14.</span>Revision costs not budgeted — "unlimited revisions" = unlimited cost</li>
+        <li><span class="n">15.</span>Currency fluctuation — price in USD, pay in PKR, monitor monthly</li>
+        <li><span class="n">16.</span>Tax obligations — consult advisor for Pakistan + US implications</li>
+        <li><span class="n">17.</span>Payment delays (Upwork: 10 days, Fiverr: 7–14) — maintain buffer</li>
+      </ol>
+
+      <div class="sub-h">Strategic (5 Items):</div>
+      <ol class="p-list">
+        <li><span class="n">18.</span>No exit from platform dependency — transition clients by Month 12</li>
+        <li><span class="n">19.</span>Not building email list — collect emails for direct outreach</li>
+        <li><span class="n">20.</span>Ignoring Clutch/website — invest from Month 1 for passive leads</li>
+        <li><span class="n">21.</span>No competitive intelligence — monthly competitor review</li>
+        <li><span class="n">22.</span>Bidder burnout — rotate categories, provide templates, manage workload</li>
+      </ol>
+    </div>
+    <hr class="div"/>
+
+    <!-- ── S18: EXECUTION ROADMAP ── -->
+    <div class="phase">
+      <div class="phase-hdr"><h3><a>Section 18: Post-Planning Execution Roadmap (Month 2–6)</a></h3></div>
+      <div class="purpose"><strong>Purpose:</strong> Month-by-month execution after the 30-day planning phase</div>
+
+      <table class="tbl">
+        <thead><tr><th>Period</th><th>Focus</th><th>Key Activities</th><th>Target</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Month 2</strong></td><td>Launch & Early Wins</td><td>Full-speed bidding (15–25/day), first deliveries, request reviews</td><td>4–6 projects won</td></tr>
+          <tr><td><strong>Month 3</strong></td><td>Growth & Standardize</td><td>A/B test proposals, raise prices 10–15%, formal bidder review</td><td>Improve interview rate 20%</td></tr>
+          <tr><td><strong>Month 4</strong></td><td>Acceleration</td><td>Hire 3rd bidder, upsell past clients, pursue badges</td><td>Top Rated / Fiverr Pro</td></tr>
+          <tr><td><strong>Month 5–6</strong></td><td>Scale & Diversify</td><td>$20K–$75K/mo, direct contracts, test secondary channels</td><td>3–5 profiles performing</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <hr class="div"/>
+
+    <!-- ── S19: DECISION MATRIX ── -->
+    <div class="phase">
+      <div class="phase-hdr"><h3><a>Section 19: Final Decision Matrix & Next Steps</a></h3></div>
+      <div class="purpose"><strong>Purpose:</strong> Go/No-Go checklist and immediate action items</div>
+
+      <div class="sub-h">Go/No-Go Checklist (10 Items):</div>
+      <ol class="p-list">
+        <li><span class="n">1.</span>All 4 expert meetings scheduled</li>
+        <li><span class="n">2.</span>Platform research complete</li>
+        <li><span class="n">3.</span>Niche/category selection finalized</li>
+        <li><span class="n">4.</span>Budget approved for 3 months minimum</li>
+        <li><span class="n">5.</span>At least 6 portfolio pieces ready</li>
+        <li><span class="n">6.</span>Bidder hiring process started</li>
+        <li><span class="n">7.</span>SOPs drafted and reviewed</li>
+        <li><span class="n">8.</span>Tracking systems configured</li>
+        <li><span class="n">9.</span>Delivery team capacity confirmed</li>
+        <li><span class="n">10.</span>Legal (NDA, contracts) prepared</li>
+      </ol>
+
+      <div class="sub-h">6-Month Investment Summary:</div>
+      <table class="tbl compact">
+        <thead><tr><th>Item</th><th>One-Time</th><th>Monthly</th><th>6-Month Total</th></tr></thead>
+        <tbody>
+          <tr><td>Expert consultations</td><td>$400–$1,200</td><td>$0</td><td>$400–$1,200</td></tr>
+          <tr><td>Portfolio development</td><td>$100–$300</td><td>$0</td><td>$100–$300</td></tr>
+          <tr><td>Platform costs</td><td>$0</td><td>$50–$200</td><td>$300–$1,200</td></tr>
+          <tr><td>Bidder salaries (2–3)</td><td>$0</td><td>$500–$1,000</td><td>$3,000–$6,000</td></tr>
+          <tr><td>Tools & subscriptions</td><td>$0</td><td>$50–$200</td><td>$300–$1,200</td></tr>
+          <tr style="background:var(--accent-lt)"><td><strong>Total</strong></td><td><strong>$500–$1,500</strong></td><td><strong>$600–$1,400</strong></td><td><strong>$4,100–$9,900</strong></td></tr>
+        </tbody>
+      </table>
+
+      <div class="sub-h">Expected 6-Month Return:</div>
+      <table class="tbl compact">
+        <thead><tr><th>Scenario</th><th>Gross Revenue</th><th>Net Profit</th><th>ROI</th></tr></thead>
+        <tbody>
+          <tr><td><span class="badge b-gry">Conservative</span></td><td>$151,000</td><td><strong>$67,950</strong></td><td>687–1,657%</td></tr>
+          <tr><td><span class="badge b-grn">Moderate</span></td><td>$311,500</td><td><strong>$154,250</strong></td><td>1,559–3,762%</td></tr>
+        </tbody>
+      </table>
+
+      <div class="sub-h">Immediate Next Steps (This Week):</div>
+      <table class="tbl compact">
+        <thead><tr><th>#</th><th>Action</th><th>Owner</th><th>Deadline</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>Confirm 3–4 bidding experts</td><td>Leadership</td><td>Day 1–2</td></tr>
+          <tr><td>2</td><td>Schedule Meeting 1 within 5 days</td><td>Leadership</td><td>Day 2</td></tr>
+          <tr><td>3</td><td>Assign research tasks to team</td><td>Team Lead</td><td>Day 1</td></tr>
+          <tr><td>4</td><td>Begin portfolio preparation</td><td>Design/Content</td><td>Day 3</td></tr>
+          <tr><td>5</td><td>Approve Month 1 budget ($550–$1,550)</td><td>Owner</td><td>Day 1</td></tr>
+          <tr><td>6</td><td>Set up Slack channel for bidding team</td><td>Operations</td><td>Day 1</td></tr>
+          <tr><td>7</td><td>Create shared tracking spreadsheet</td><td>Operations</td><td>Day 3</td></tr>
+          <tr><td>8</td><td>Draft bidder job description</td><td>HR</td><td>Day 3</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- ══════════ KEY MESSAGE BOX ══════════ -->
+    <div class="key-box">
+      <h3>Key Message for Owner & Manager</h3>
+      <p>The Bidding Platform Acquisition model is <strong>high-competition but high-reward</strong> when executed with expert guidance, proper planning, and operational discipline.</p>
+      <div class="highlight">$4,000–$10,000 investment → $67,000–$154,000+ net profit in 6 months</div>
+      <div class="sub-h" style="margin-top:14px">Critical Commitments:</div>
+      <ol class="p-list">
+        <li><span class="n">1.</span>Hire quality bidders — this is not a junior task</li>
+        <li><span class="n">2.</span>Maintain daily proposal volume of 20+ (scaling to 50+)</li>
+        <li><span class="n">3.</span>Deliver exceptional quality on every project — reviews are everything</li>
+        <li><span class="n">4.</span>Track KPIs religiously and adjust weekly</li>
+        <li><span class="n">5.</span>Never violate platform TOS — one suspension = months of setback</li>
+        <li><span class="n">6.</span>Diversify beyond platforms by Month 6 (direct clients, retainers)</li>
+      </ol>
+    </div>
+
+  </div><!-- /content -->
+
+  <div class="doc-footer">
+    <span>Bidding Platform Acquisition — Complete Startup Execution Plan</span>
+    <span>Version 1.0 | April 2026</span>
+  </div>
+
+</div>
+</body>
+</html>

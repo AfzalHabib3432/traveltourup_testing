@@ -1,0 +1,1496 @@
+{
+  "Nav": {
+    "home": "ہوم",
+    "about": "ہمارے بارے میں",
+    "flights": "پروازیں",
+    "cars": "کاریں",
+    "hotels": "ہوٹلز",
+    "contact": "رابطہ",
+    "phoneDisplay": "+92 (321)-9400142",
+    "emailDisplay": "info@traveltourup.com",
+    "theme": "تھیم",
+    "currency": "کرنسی",
+    "language": "زبان",
+    "account": "اکاؤنٹ",
+    "profile": "پروفائل",
+    "bookings": "بکنگز",
+    "wishlists": "وش لسٹس",
+    "adminConsole": "ایڈمن کنسول",
+    "logout": "لاگ آؤٹ",
+    "login": "لاگ ان",
+    "signup": "سائن اپ",
+    "navigationSection": "نیویگیشن",
+    "languageCurrencyHeading": "زبان اور کرنسی",
+    "toggleMenu": "مینو کھولیں",
+    "closeMenu": "مینو بند کریں",
+    "themeSettingsAria": "تھیم کی ترتیبات",
+    "lightModeAria": "لائٹ موڈ",
+    "darkModeAria": "ڈارک موڈ",
+    "adminPanel": "ایڈمن پینل"
+  },
+  "Footer": {
+    "rights": "تمام حقوق محفوظ ہیں۔",
+    "stayTitle": "اپ ڈیٹ رہیں",
+    "staySubtitle": "خصوصی ڈیلز، ٹریول ٹپس اور رہنمائی آپ کی ای میل پر۔",
+    "subscribedTitle": "سب ٹھیک!",
+    "subscribedSubtitle": "خوش آمدیدی ای میل کے لیے ان باکس چیک کریں۔",
+    "emailPlaceholder": "اپنی ای میل",
+    "subscribe": "سبسکرائب",
+    "subscribing": "سبسکرائب ہو رہا ہے…",
+    "noSpam": "اسپام نہیں۔ کسی بھی وقت ان سبسکرائب۔",
+    "tagline": "بھول نہ جانے والے سفر کے لیے آپ کا بھروسے مند شراکت دار۔ دنیا بھر میں خصوصی ڈیلز کے ساتھ پروازیں، ہوٹل، کاریں اور ٹورز بک کریں۔",
+    "quickLinksTitle": "فوری لنکس",
+    "servicesTitle": "خدمات",
+    "contactTitle": "رابطہ",
+    "copyright": "TravelTourUp. تمام حقوق محفوظ ہیں۔",
+    "weAccept": "ہم قبول کرتے ہیں",
+    "privacy": "پرائیویسی پالیسی",
+    "terms": "سروس کی شرائط",
+    "quick_home": "ہوم",
+    "quick_flights": "پروازیں",
+    "quick_about": "ہمارے بارے میں",
+    "quick_blog": "بلاگ",
+    "quick_contact": "ہم سے رابطہ",
+    "svc_hotels": "ہوٹل بکنگ",
+    "svc_flights": "پرواز کے ٹکٹ",
+    "svc_cars": "کار کرایہ",
+    "svc_tours": "ٹور پیکجز",
+    "svc_faqs": "اکثر پوچھے گئے سوالات",
+    "newsletterEmailInvalid": "درست ای میل درج کریں۔",
+    "newsletterEmailRequired": "اپنی ای میل درج کریں۔",
+    "newsletterEmailAria": "نیوز لیٹر کے لیے ای میل",
+    "social_twitter": "Twitter",
+    "social_facebook": "Facebook",
+    "social_instagram": "Instagram",
+    "social_linkedin": "LinkedIn",
+    "brandAlt": "TravelTourUp"
+  },
+  "Common": {
+    "clearAll": "سب صاف کریں",
+    "filters": "فلٹرز",
+    "applyFilters": "فلٹر لگائیں",
+    "previous": "پچھلا",
+    "next": "اگلا",
+    "close": "بند کریں",
+    "loading": "لوڈ ہو رہا ہے…",
+    "bookNow": "ابھی بک کریں",
+    "select": "منتخب کریں",
+    "freeCancellation": "مفت منسوخی"
+  },
+  "Hero": {
+    "headlinePrefix": "دنیا دریافت کریں اور",
+    "tagline": "آپ کا اگلا سفر ایک کلک دور ہے — ناقابل فراموش تجربے، بہترین ڈیلز۔",
+    "rotate0": "دریافت",
+    "rotate1": "مہم جوئی",
+    "rotate2": "تلاش",
+    "rotate3": "سفر",
+    "rotate4": "گھومنا",
+    "rotate5": "جینا",
+    "rotate6": "خواب",
+    "rotate7": "فرار",
+    "rotate8": "جشن",
+    "rotate9": "آرام",
+    "rotate10": "لطف",
+    "tabFlights": "پروازیں",
+    "tabCars": "کاریں",
+    "tabHotels": "ہوٹلز",
+    "tabMore": "مزید"
+  },
+  "Blog": {
+    "indexH1": "سفر کے رہنما، پرواز، ہوٹل اور سفر کے مشورے",
+    "featuredStoryLabel": "نمایاں رہنما",
+    "hubLinksAria": "TravelTourUp پر بکنگ",
+    "hubLinksTitle": "اگلا سفر منصوبہ بندی کریں",
+    "hubLinksFlights": "پروازیں تلاش کریں",
+    "hubLinksHotels": "ہوٹل دیکھیں",
+    "hubLinksCars": "کار کرایہ"
+  },
+  "Featured": {
+    "flightsHeading": "نمایاں پروازیں",
+    "flightsSubtitle": "تحریک — ہمارے پارٹنر سے مختصر کیش شدہ قیمتیں",
+    "flightsHeroTitle": "نمایاں پروازیں",
+    "flightsHeroDescription": "مقبول مقامات کی پیشکشیں — براہ راست تلاش سے قیمتیں (اکثر ریفریش کریں).",
+    "flightsCta": "تمام پروازیں دیکھیں",
+    "hotelsHeading": "نمایاں ہوٹلز",
+    "hotelsSubtitle": "بہترین جگہیں معقول قیمتوں پر",
+    "hotelsEmptyTitle": "نمایاں ہوٹلز",
+    "hotelsEmptySubtitle": "فی الوقت کوئی ہوٹل دستیاب نہیں۔",
+    "hotelsLoadingAria": "نمایاں ہوٹلز لوڈ ہو رہے ہیں",
+    "hotelsDiscoverTitle": "زبردست ڈیلز اٹھائیں",
+    "hotelsDiscoverSubtitle": "دنیا بھر کے ہوٹلز پر",
+    "hotelsViewMore": "مزید دیکھیں",
+    "hotelsAdAlt": "دنیا بھر میں ہوٹل ڈیلز",
+    "hotelsFallbackBanner": "ہوٹل ڈیلز"
+  },
+  "Categories": {
+    "title": "اقسام",
+    "subtitle": "اپنے اگلے سفر کے لیے انوکھی جگہیں دریافت کریں",
+    "prevAria": "پچھلے زمرے",
+    "nextAria": "اگلے زمرے",
+    "goToSlide": "سلائیڈ {n} پر جائیں"
+  },
+  "RecommendedCars": {
+    "sectionTitle": "تجویز کردہ ٹرانسفر کاریں",
+    "sectionSubtitle": "آپ کی تمام گزرگاہوں کے لیے آرام دہ اور قابل بھروسہ نقل و حمل",
+    "featuredFallbackTitle": "پریمیم کار ٹرانسفر",
+    "featuredFallbackDesc": "پروفیشنل ڈرائیورز کے ساتھ آرام اور عیش",
+    "exploreAll": "تمام کاریں دیکھیں",
+    "placeholderBanner": "کار کرایہ",
+    "bannerAlt": "پریمیم ٹرانسفر — سفر میں آرام اور عیش"
+  },
+  "WinterSpecial": {
+    "title": "سرما کا خاص پیکج",
+    "subtitle": "ہمارے ماہر رہنمائی اور اپنی ضرورت کے مطابق تجربات کے ساتھ اپنے خوابوں کی مہم جوئی کا منصوبہ بنائیں، بک کریں، اور نکلیں۔",
+    "priceFrom": "{price} سے",
+    "cardImageAlt": "نمایاں منزل",
+    "destSwitzerland": "سوئٹزرلینڈ",
+    "destNorway": "ناروے",
+    "destIceland": "آئس لینڈ",
+    "destAustria": "آسٹریا",
+    "destFinland": "فن لینڈ"
+  },
+  "Stats": {
+    "hotelsTitle": "دنیا بھر میں ہوٹلز",
+    "hotelsDesc": "بہترین قیمتوں پر عیش و آرام کی رہائش",
+    "destinationsTitle": "منزلیں",
+    "destinationsDesc": "انوکھی جگہیں دریافت کریں",
+    "satisfactionTitle": "کسٹمر کی مطمئنی",
+    "satisfactionDesc": "مطمئن مسافر اور مثبت جائزے"
+  },
+  "FAQ": {
+    "title": "اکثر پوچھے گئے سوالات",
+    "subtitle": "ہماری خدمات، بکنگ اور پالیسیوں سے متعلق عام سوالات کے جواب",
+    "items": [
+      {
+        "question": "میں پرواز کی بکنگ کیسے تبدیل یا منسوخ کروں؟",
+        "answer": "اپنے اکاؤنٹ میں سائن ان کریں اور بکنگز کھولیں۔ تبدیلی یا منسوخی ایئر لائن کی شرائط اور فیس پر منحصر ہے۔"
+      },
+      {
+        "question": "بین الاقوامی سفر کے لیے کون سے دستاویزات چاہیں؟",
+        "answer": "عام طور پر درست پاسپورٹ، ضرورت پر ویزا، اور ملک کی طبی ضروریات۔ روانگی سے پہلے داخلہ کی شرائط چیک کریں۔"
+      },
+      {
+        "question": "مجھے کیسے پتہ چلے کہ ٹکٹ واپسی ہے؟",
+        "answer": "یہ فیئر کی شرائط پر منحصر ہے۔ بکنگ کنفرمیشن دیکھیں یا سپورٹ سے رابطہ کریں۔"
+      },
+      {
+        "question": "کیا میں بکنگ کے وقت سیٹ منتخب کر سکتا ہوں؟",
+        "answer": "اکثر بکنگ کے دوران؛ ورنہ عام طور پر آن لائن چیک ان پر۔"
+      },
+      {
+        "question": "پرواز میں تاخیر یا منسوخی پر کیا کریں؟",
+        "answer": "ایئر لائن اکثر ای میل یا ایس ایم ایس سے بتاتی ہے۔ ہمارے سائٹ یا ایپ پر بھی اسٹیٹس چیک کریں۔ نئے ٹکٹ کے لیے سپورٹ سے رابطہ کریں۔"
+      },
+      {
+        "question": "مجموعہ کے لیے بکنگ کیسے کروں؟",
+        "answer": "بکنگ کے وقت مسافروں کی تعداد بتائیں۔ 10 سے زیادہ افراد کے لیے گروپ ٹیم سے رابطہ کریں۔"
+      },
+      {
+        "question": "کیا پروازوں پر چھپی فیس ہوتی ہے؟",
+        "answer": "ہم ٹیکس اور لازمی چارجز حتمی قیمت میں دکھاتے ہیں۔ اختیارات (سامان، سیٹ وغیرہ) الگ ہو سکتے ہیں۔"
+      },
+      {
+        "question": "سامان کی حد کیسے معلوم ہو؟",
+        "answer": "یہ ایئر لائن اور فیئر پر منحصر ہے۔ کنفرمیشن یا ایئر لائن کی ویب سائٹ دیکھیں۔"
+      },
+      {
+        "question": "کیا آپ کی سائٹ پر آن لائن بکنگ محفوظ ہے؟",
+        "answer": "جی ہاں، ڈیٹا اور ادائیگیوں کے لیے محفوظ انکرپشن استعمال ہوتی ہے۔"
+      },
+      {
+        "question": "کیا میں اپنے اکاؤنٹ سے کسی اور کے لیے بک کر سکتا ہوں؟",
+        "answer": "جی ہاں۔ بکنگ کے وقت مسافر کی تفصیلات درج کریں۔"
+      }
+    ]
+  },
+  "Reviews": {
+    "prevAria": "پچھلا جائزہ",
+    "nextAria": "اگلا جائزہ",
+    "goToSlide": "سلائیڈ {n} پر جائیں",
+    "items": [
+      {
+        "name": "Maria Smantha",
+        "role": "ویب ڈویلپر",
+        "text": "TravelTourUp نے بکنگ بہت آسان بنا دی۔ چند منٹوں میں بہترین ہوٹل مل گیا اور سب کچھ آسانی سے ہوا۔ قیمتیں دوسروں سے بہتر تھیں۔",
+        "image": "https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp"
+      },
+      {
+        "name": "Lisa Cudrow",
+        "role": "گرافک ڈیزائنر",
+        "text": "پلیٹ فارم واضح اور خوشگوار ہے۔ ہوٹل اور پروازیں بغیر الجھن کے موازنہ کیں۔ اچھی ڈیلز اور فوری سپورٹ۔",
+        "image": "https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp"
+      },
+      {
+        "name": "John Smith",
+        "role": "مارکیٹنگ مینیجر",
+        "text": "زبردست تجربہ: سستی پروازیں اور آرام دہ ہوٹل۔ میں دوبارہ TravelTourUp استعمال کروں گا۔",
+        "image": "https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp"
+      }
+    ]
+  },
+  "MoreServices": {
+    "message": "مزید خدمات جلد…"
+  },
+  "About": {
+    "historyTitle": "ہمارے ساتھ دنیا دریافت کریں",
+    "historySubtitle": "1998 سے",
+    "historyDescription": "ہمارا مقصد قابل اعتماد اور آرام دہ سفر کی خدمات ہیں۔ آج ہم آپ کی گزرگاہوں کے لیے اعلیٰ معیار کی گاڑیوں کا وسیع انتخاب پیش کرتے ہیں۔",
+    "feat1": "لگژری کاروں کا وسیع انتخاب",
+    "feat2": "عیش و آرام کے ہوٹل بہترین حالت میں",
+    "feat3": "بکنگ آسان اور سمجھنے میں آسان",
+    "feat4": "شاندار کسٹمر سپورٹ"
+  },
+  "Flights": {
+    "pageH1": "دنیا بھر میں پروازیں تلاش اور بک کریں",
+    "tab": {
+      "tripOneWay": "یک طرفہ",
+      "tripRoundTrip": "ذهاب وآمد",
+      "tripMultiCity": "متعدد شہری",
+      "advancedOptions": "اعلیٰ اختیارات",
+      "classLabel": "کلاس",
+      "cabinEconomy": "اکنامسی",
+      "cabinPremiumEconomy": "پریمیم اکنامسی",
+      "cabinBusiness": "بزنس",
+      "cabinFirstClass": "فرسٹ کلاس",
+      "maxConnectionsLabel": "زیادہ سے زیادہ اسٹاپ",
+      "maxConnectionsAny": "کوئی بھی",
+      "maxConnectionsDirect": "0 (صرف براہ راست)",
+      "maxConnectionsOne": "1",
+      "maxConnectionsTwo": "2",
+      "supplierTimeoutLabel": "سپلائر ٹائم آؤٹ (ms)",
+      "supplierTimeoutHint": "ڈافل اس وقت تک پیشکشوں کا انتظار کرتا ہے۔",
+      "preferredAirlinesLabel": "ترجیحی ائیر لائنز",
+      "preferredAirlinesHint": "اختیاری — سرچ سے کیریئر فلٹر کریں۔",
+      "flyingFromLabel": "کاں سے پرواز",
+      "destinationToLabel": "منزل تک",
+      "filterPlaceholder": "فلٹر کے لیے ٹائپ کریں",
+      "popularAirportsHint": "مقبول ہوائی اڈے — ڈافل سرچ کے لیے 2+ حرف",
+      "ariaOriginAirports": "ابتدائی ہوائی اڈے",
+      "ariaDestinationAirports": "منزل کے ہوائی اڈے",
+      "noMatchingAirports": "کوئی موزوں ہوائی اڈہ نہیں",
+      "swapDestinationsTitle": "منزلیں تبدیل کریں",
+      "removeFlightTitle": "پرواز ہٹائیں",
+      "departDateLabel": "روانگی کی تاریخ",
+      "departureDateLabel": "روانگی کی تاریخ",
+      "returnDateLabel": "واپسی کی تاریخ",
+      "selectDate": "تاریخ منتخب کریں",
+      "travelerCount": "{count, plural, one {# مسافر} other {# مسافر}}",
+      "adultsLabel": "بالغ",
+      "childrenLabel": "بچے",
+      "infantsLabel": "شیر خوار",
+      "childAgeHint": "بچے کی عمر پوری سفر کے لیے درست ہونی چاہیے۔",
+      "childLabel": "بچہ {n}",
+      "yearsOld": "{years} سال",
+      "addAnotherFlight": "ایک اور پرواز شامل کریں",
+      "searchFlightsAria": "پروازیں تلاش کریں",
+      "calendarDaySun": "ات",
+      "calendarDayMon": "سوم",
+      "calendarDayTue": "منگل",
+      "calendarDayWed": "بدھ",
+      "calendarDayThu": "جمعرات",
+      "calendarDayFri": "جمعہ",
+      "calendarDaySat": "ہفتہ",
+      "selectCity": "شہر منتخب کریں",
+      "flightTimeSummaryAny": "کسی بھی وقت",
+      "flightTimeSummaryTakeoff": "ٹیک آف {from}–{to}",
+      "flightTimeSummaryLanding": "لینڈنگ {from}–{to}",
+      "sliceTakeoffLabel": "ٹیک آف",
+      "sliceLandingLabel": "لینڈنگ",
+      "timeAxisAnyTime": "کسی بھی وقت",
+      "flightTimeConfirm": "تصدیق"
+    },
+    "sort": {
+      "best": "بہترین میچ",
+      "price_asc": "سست ترین",
+      "price_desc": "مہنگا ترین",
+      "duration_asc": "سب سے مختصر مدت",
+      "duration_desc": "سب سے لمبی مدت",
+      "sortBy": "ترتیب"
+    },
+    "stops": {
+      "any": "کوئی بھی اسٹاپ تعداد",
+      "direct": "صرف براہ راست",
+      "one": "زیادہ سے زیادہ 1 اسٹاپ",
+      "two": "زیادہ سے زیادہ 2 اسٹاپ",
+      "label": "اسٹاپس"
+    },
+    "filters": {
+      "title": "فلٹرز",
+      "price": "قیمت",
+      "airlines": "ایئر لائنز",
+      "flightNumber": "پرواز نمبر",
+      "flightNumberPlaceholder": "مثال AF 123",
+      "flightTime": "پرواز کے اوقات",
+      "flightTimeHint": "پہلے سگمنٹ کا روانگی / آخری سگمنٹ کی آمد (مقامی وقت)",
+      "airlineComboAll": "تمام ائیر لائنز",
+      "airlineComboCount": "{count} ائیر لائنز",
+      "airlineComboPlaceholder": "فلٹر کے لیے ٹائپ کریں",
+      "airlineComboNoMatches": "کوئی مماثل نہیں",
+      "airlineComboNoAirlinesInResultSet": "اس نتیجے میں کوئی ائیر لائن نہیں"
+    },
+    "offerDetail": {
+      "unavailableTitle": "پیشکش دستیاب نہیں",
+      "expiredMessage": "یہ پیشکش اب دستیاب نہیں۔",
+      "returnToSearchHint": "تلاش پر واپس جائیں اور کوئی اور پرواز چنیں۔",
+      "invalidOffer": "غلط پیشکش",
+      "couldNotLoadOffer": "یہ پیشکش لوڈ نہیں ہو سکی"
+    },
+    "detail": {
+      "labelAirline": "ایئر لائن",
+      "labelFlightType": "پرواز کی قسم",
+      "labelFareCabin": "کرایہ / کیبن",
+      "labelCancellation": "منسوخی",
+      "labelFlightChange": "پرواز میں تبدیلی",
+      "labelSeatsBaggage": "نشستیں اور سامان",
+      "labelInflightFeatures": "پرواز میں سہولیات",
+      "labelTotal": "کل",
+      "valueNonstop": "براہ راست",
+      "valueStopCount": "{count, plural, one {# اسٹاپ} other {# اسٹاپس}}",
+      "valueNonRefundableFee": "واپسی نہیں (فیس لاگو)",
+      "valueFreeChange": "مفت تبدیلی",
+      "valueFeeApplies": "فیس لاگو",
+      "inflightSectionTitle": "پرواز میں سہولیات",
+      "inflightSectionDescription": "ان سہولیات کے ساتھ سفر سے لطف اٹھائیں۔"
+    },
+    "checkout": {
+      "errorCouldNotLoadOffer": "آفر لوڈ نہیں ہو سکی",
+      "backToFlights": "پروازوں پر واپس جائیں",
+      "title": "چیک آؤٹ",
+      "offerSubtitle": "آفر {offerId} · {currency} {amount}",
+      "stepPayment": "مرحلہ: ادائیگی",
+      "backToOffer": "آفر پر واپس ←",
+      "payNowOrHoldTitle": "اب ادا کریں یا ہوڈ رکھیں",
+      "payNowOrHoldIntro": "اب ادائیگی سے ایر لائن کے ساتھ فوری تصدیق ہوتی ہے۔ ہوڈ کرایہ محفوظ رکھتا ہے جب تک آپ انتظامات مکمل کریں (جب آپ کے اکاؤنٹ پر یہ فعال ہو)۔",
+      "payNowTitle": "اب ادا کریں",
+      "payNowDescription": "ڈافل کے ذریعے کارڈ سے ادائیگی۔ ادائیگی کے کامیاب ہونے کے بعد آپ کی بکنگ تصدیق ہو جاتی ہے۔",
+      "holdOrderTitle": "ہوڈ آرڈر",
+      "holdOrderDescription": "کارڈ چارج کیے بغیر ہوڈ رکھیں۔ میعاد ختم ہونے سے پہلے بعد میں ادائیگی کریں۔",
+      "holdDisabledHint": "ہوڈ چیک آؤٹ ابھی فعال نہیں۔ جب آپ کا ڈافل اکاؤنٹ ہوڈ آرڈرز سپورٹ کرے تو FLIGHT_HOLD_BACKEND اور NEXT_PUBLIC_FLIGHT_HOLD_BACKEND سیٹ کریں۔",
+      "passengerDetailsTitle": "مسافروں کی تفصیلات",
+      "passengerIndex": "مسافر {current} از {total}",
+      "referenceLabel": "حوالہ",
+      "passengerTypeGeneric": "مسافر",
+      "passengerTypeAdult": "بالغ",
+      "passengerTypeChild": "بچہ",
+      "passengerTypeInfant": "شیر خوار",
+      "titleFieldLabel": "عنوان",
+      "genderFieldLabel": "جنس",
+      "titleMr": "مسٹر",
+      "titleMrs": "مسز",
+      "titleMs": "مس",
+      "titleMiss": "مس",
+      "titleDr": "ڈاکٹر",
+      "genderMale": "مرد",
+      "genderFemale": "عورت",
+      "givenNameLabel": "پہلا نام (شناختی دستاویز کے مطابق)",
+      "familyNameLabel": "خاندانی نام (شناختی دستاویز کے مطابق)",
+      "dobLabel": "پیدائش کی تاریخ (YYYY-MM-DD)",
+      "infantAdultLabel": "بالغ مسافر پر سفر (گود میں بچہ)",
+      "selectAdultPassenger": "بالغ مسافر منتخب کریں",
+      "contactDetailsTitle": "رابطے کی تفصیلات",
+      "contactDetailsHint": "بکنگ کی تصدیق اور ایر لائن رابطے کے لیے (Lead مسافر)۔",
+      "emailLabel": "ای میل",
+      "phoneOptionalLabel": "فون (اختیاری)",
+      "continueToPayment": "ادائیگی پر جاری رکھیں",
+      "placeHold": "ہوڈ رکھیں",
+      "preparingPayment": "ادائیگی تیار ہو رہی ہے…",
+      "placingHold": "ہوڈ رکھا جا رہا ہے…",
+      "paymentSectionTitle": "ادائیگی",
+      "confirmingBooking": "آپ کی بکنگ تصدیق ہو رہی ہے…",
+      "pciNotice": "ادائیگیاں ڈافل کے ذریعے محفوظ طریقے پر۔ کارڈ کی تفصیلات PCI معیارات کے مطابق سنبھالی جاتی ہیں۔",
+      "cardDetailsTitle": "کارڈ کی تفصیلات",
+      "hintIncompleteForm": "تمام نام اور تاریخ پیدائش، لیڈ مسافر کے لیے درست ای میل، اور ضرورت ہو تو شیر خوار کو بالغ سے جوڑیں۔",
+      "hintHoldNoCharge": "ابھی کارڈ پر چارج نہیں — ہوڈ ختم ہونے سے پہلے میری بکنگز سے ادائیگی مکمل کریں۔",
+      "hintPayExtrasOnOffer": "بیگ اور سیٹس آفر صفحہ پر منتخب کیے گئے۔ ادائیگی سے پہلے تبدیلی کے لیے واپس جا سکتے ہیں۔",
+      "orderSummaryTitle": "آرڈر خلاصہ",
+      "summaryTypeFlight": "پرواز",
+      "summaryTypeHotel": "ہوٹل",
+      "summaryTypeCar": "کار",
+      "summaryBookingWord": "بکنگ",
+      "offerTotalLabel": "آفر کل",
+      "totalAmountLabel": "کل رقم",
+      "includesFareExtras": "کرایہ اور منتخب اضافی شامل ہیں جہاں قیمت مقرر ہو",
+      "secureCheckout": "100٪ محفوظ چیک آؤٹ",
+      "viewOrderSummaryAria": "آرڈر خلاصہ دیکھیں",
+      "sheetOrderSummaryTitle": "آرڈر خلاصہ",
+      "defaultSummaryTitle": "پرواز بکنگ",
+      "successHoldPlaced": "ہوڈ رکھا گیا",
+      "successBookingConfirmed": "بکنگ تصدیق ہو گئی",
+      "successHoldBodyPrefix": "آپ کا آرڈر ہوڈ پر ہے۔ آفر ختم ہونے سے پہلے ادائیگی مکمل کریں۔ حوالہ",
+      "successReferencePrefix": "حوالہ",
+      "successAirlinePnr": "ایر لائن PNR",
+      "viewYourBooking": "اپنی بکنگ دیکھیں",
+      "errorMissingCheckoutData": "چیک آؤٹ ڈیٹا نامکمل ہے۔",
+      "errorCouldNotStartPayment": "ادائیگی شروع نہیں ہو سکی",
+      "errorCouldNotPlaceHold": "ہوڈ نہیں رکھا جا سکا",
+      "errorBookingFailedAfterPayment": "ادائیگی کے بعد بکنگ ناکام",
+      "errorCardPaymentFailed": "کارڈ ادائیگی ناکام"
+    },
+    "results": {
+      "searchFailed": "پروازوں کی تلاش ناکام",
+      "roundTripTotal": "کل راؤنڈ ٹرپ",
+      "oneWayTotal": "کل ایک طرفہ",
+      "roundTripSteps": "سفر کے مراحل",
+      "outbound": "جانا",
+      "inbound": "واپسی",
+      "returnStep": "واپسی",
+      "changeOutbound": "جانے کا راستہ بدلیں",
+      "loadingResults": "نتائج لوڈ ہو رہے ہیں…",
+      "noMatching": "کوئی موزوں پرواز نہیں",
+      "listView": "لسٹ ویو",
+      "gridView": "گرڈ ویو",
+      "filtersSortButton": "فلٹر اور ترتیب",
+      "mobileFilters": "فلٹرز",
+      "done": "ہو گیا",
+      "startSearchTitle": "پروازیں تلاش کریں",
+      "startSearchBody": "اوپر فارم سے راستہ، تاریخیں اور مسافر منتخب کریں۔",
+      "noFlightsTitle": "کوئی پرواز نہیں ملی",
+      "noFlightsBody": "فلٹر ایڈجسٹ کرنے کی کوشش کریں",
+      "clearFilters": "فلٹر صاف کریں",
+      "showingRange": "{total} پروازوں میں سے {start}–{end} دکھایا جا رہا ہے",
+      "paginationPage": "صفحہ {page} از {total}",
+      "prevPage": "پچھلا صفحہ",
+      "nextPage": "اگلا صفحہ",
+      "importantTitle": "اہم معلومات",
+      "importantSubtitle": "پرواز کنفرم کرنے سے پہلے جانیں۔",
+      "baggageTitle": "سامان",
+      "baggageBody": "حدود ایئر لائن اور فیئر پر منحصر ہیں — پیشکش اور قواعد چیک کریں۔",
+      "requirementsTitle": "سفر کی ضروریات",
+      "requirementsBody": "اپنی منزل کے ویزا، داخلہ اور صحت کی ضروریات چیک کریں۔",
+      "flexibleTitle": "لچکدار بکنگ",
+      "flexibleBody": "تبدیلی اور ریفنڈ فیئر کی شرائط پر — ادائیگی سے پہلے پڑھیں۔",
+      "paginationNav": "پرواز نتائج کا صفحہ بندی",
+      "editSearchModalTitle": "تلاش میں ترمیم",
+      "editSearchButton": "تلاش میں ترمیم",
+      "editSearchCancel": "منسوخ",
+      "editSearchTitleRoundTrip": "{destination} کے لیے جانے کا دورہ",
+      "editSearchTitleOneWay": "{destination} تک یک طرفہ",
+      "editSearchTitleMultiCity": "ملٹی سٹی سفر",
+      "editSearchRouteRound": "{origin} ⇌ {destination} • واپسی",
+      "editSearchRouteOneWay": "{origin} → {destination} • یک طرفہ",
+      "editSearchDatesRound": "{depart} – {returnDate} • {passengers}",
+      "editSearchDatesOneWay": "{depart} • {passengers}",
+      "editSearchDatesMultiCity": "{depart} • {passengers}",
+      "editSearchPassengers": "{count, plural, one {# مسافر} other {# مسافر}}"
+    }
+  },
+  "Hotels": {
+    "pageH1": "دنیا بھر میں ہوٹل اور قیام تلاش کریں",
+    "tab": {
+      "alertSelectDestination": "براہ کرم منزل منتخب کریں۔",
+      "alertSelectDates": "آمد اور روانگی کی تاریخیں منتخب کریں۔",
+      "alertDestinationUnavailable": "یہ منزل ابھی براہ راست ہوٹل تلاش کے لیے دستیاب نہیں۔",
+      "searchFailed": "تلاش ناکام۔ دوبارہ کوشش کریں یا ترتیب چیک کریں۔",
+      "destinationLabel": "منزل",
+      "destinationPlaceholder": "فلٹر کے لیے ٹائپ کریں",
+      "popularSection": "مقبول منزلیں",
+      "popularHint": "مقبول منزلیں — Duffel تلاش کے لیے کم از کم 2 حرف لکھیں",
+      "noMatching": "کوئی جگہ نہیں ملی",
+      "roomsTravelers": "کمرے اور مسافر",
+      "nationality": "قومیت",
+      "nationalityComboPlaceholder": "ملک یا کوڈ تلاش کریں",
+      "nationalityComboNoMatches": "کوئی ملک نہیں ملا",
+      "searchHotels": "ہوٹل تلاش کریں",
+      "selectDestination": "منزل چنیں",
+      "selectDate": "تاریخ چنیں",
+      "checkIn": "چیک ان",
+      "checkOut": "چیک آؤٹ",
+      "checkInDateLabel": "چیک ان تاریخ",
+      "checkOutDateLabel": "چیک آؤٹ تاریخ",
+      "destinationsAria": "ہوٹل منزلیں",
+      "roomsGuestsLabel": "کمرے اور مہمان",
+      "roomsCounterLabel": "کمرے",
+      "roomSingular": "کمرہ",
+      "roomsPlural": "کمرے",
+      "travelerSingular": "مسافر",
+      "travelersPlural": "مسافر",
+      "adults": "بالغ",
+      "children": "بچے"
+    },
+    "results": {
+      "sortLabel": "ترتیب:",
+      "sortPlaceholder": "ترتیب",
+      "loadingResults": "نتائج لوڈ ہو رہے ہیں…",
+      "noMatching": "کوئی موزوں جگہ نہیں",
+      "showingRange": "{total} میں سے {start}–{end} دکھایا جا رہا ہے",
+      "propertySingular": "پراپرٹی",
+      "propertyPlural": "پراپرٹیز",
+      "totalInParens": " ({total} کل)",
+      "filtersSortButton": "فلٹر اور ترتیب",
+      "filtersTitle": "فلٹرز",
+      "done": "ہو گیا",
+      "showFiltersButton": "فلٹر دکھائیں",
+      "applyFilters": "فلٹر لگائیں",
+      "sortOpenMenuAria": "ترتیب، مینو کھولیں",
+      "sortByFallback": "ترتیب",
+      "clearAllFilters": "سب صاف کریں",
+      "filterPricePerNightTitle": "فی رات قیمت (USD)",
+      "filterMinLabel": "کم از کم",
+      "filterMaxLabel": "زیادہ سے زیادہ",
+      "filterStarRatingTitle": "ستاروں کی درجہ بندی",
+      "filterSearchRadiusTitle": "تلاش کا رداس",
+      "filterSearchRadiusAria": "تلاش کا رداس",
+      "radiusSelectionSummary": "{km} کلومیٹر رداس ({count, plural, one {# پراپرٹی} other {# پراپرٹیز}})",
+      "radiusKmOption": "{km, plural, one {1 کلومیٹر} other {# کلومیٹر}}",
+      "mapLocationsTitle": "پراپرٹیوں کی جگہیں",
+      "mapSidebarHint": "نقشے پر {count} دکھائے گئے (فلٹر بدلنے پر اپ ڈیٹ ہوتا ہے)۔",
+      "mapModalFootnote": "{count, plural, one {# پراپرٹی آپ کے موجودہ فلٹر سے میل کھاتی ہے (سائیڈ بار نقشہ جیسا)۔} other {# پراپرٹیز آپ کے موجودہ فلٹر سے میل کھاتی ہیں (سائیڈ بار نقشہ جیسا)۔}}",
+      "closeMapAria": "نقشہ بند کریں",
+      "cardSeeRoomRates": "کمرے کی شرحیں دیکھیں",
+      "cardShownAfterPickRoom": "کمرہ چننے کے بعد دکھایا جاتا ہے",
+      "cardPriceOnRoomStep": "کمرے والے مرحلے پر قیمت",
+      "cardReserveNowPayLater": "ابھی بک کریں، بعد میں ادائیگی",
+      "sort": {
+        "best": "بہترین",
+        "price_low": "قیمت (کم سے زیادہ)",
+        "price_high": "قیمت (زیادہ سے کم)",
+        "rating": "گیسٹ ریٹنگ",
+        "stars": "ستارے",
+        "distance": "فاصلہ"
+      },
+      "editSearchModalTitle": "تلاش میں ترمیم",
+      "editSearchButton": "تلاش میں ترمیم",
+      "editSearchCancel": "منسوخ",
+      "editSearchHeadlineStays": "{destination} میں قیام",
+      "editSearchStayDatesGuests": "{checkIn} – {checkOut} • {rooms} کمرے · {guests} مہمان",
+      "editSearchStayGuestsOnly": "{guests} مہمان"
+    },
+    "detail": {
+      "labelLocation": "مقام",
+      "labelRating": "درجہ",
+      "labelPropertyType": "جائیداد کی قسم",
+      "labelMealPlan": "کھانے کا پلان",
+      "labelCancellation": "منسوخی",
+      "labelRooms": "کمرے",
+      "labelDistance": "فاصلہ",
+      "labelConfirmation": "تصدیق",
+      "labelArea": "علاقہ",
+      "fromCenter": "مرکز سے",
+      "fromAirport": "ایئرپورٹ سے",
+      "ratingReviews": "{rating}/10 ({count, plural, one {# جائزہ} other {# جائزے}})",
+      "roomsLeftCount": "{count, plural, one {# کمرہ باقی} other {# کمرے باقی}}",
+      "confirmationInstant": "فوری",
+      "confirmationWithin24": "24 گھنٹوں میں",
+      "cancellationNonRefundable": "غیر قابل واپسی",
+      "cancellationRefundHint": "ریفنڈ ونڈوز لاگو ہو سکتے ہیں — ڈیڈ لائن دیکھنے کے لیے نرخ منتخب کریں",
+      "cancellationRateCard": "غیر قابل واپسی یا شرح کارڈ پر پالیسی",
+      "amenitiesSectionTitle": "ہوٹل کی سہولیات",
+      "amenitiesSectionDescription": "قیام کے دوران ان سہولیات سے فائدہ اٹھائیں۔",
+      "aboutHotelHeading": "{name} کے بارے میں",
+      "aboutLocationTitle": "مقام",
+      "sectionDeals": "ڈیلز",
+      "redirectToHotelsCountdown": "ہوٹلز پر بھیجا جا رہا ہے {time} میں"
+    },
+    "checkout": {
+      "title": "چیک آؤٹ",
+      "quoteLabel": "اقتباس",
+      "headerPriceSeparator": "·",
+      "backToHotels": "ہوٹلز پر واپس ←",
+      "guestDetailsTitle": "مہمان کی تفصیلات",
+      "guestIndex": "مہمان {current} از {total}",
+      "leadGuestBadge": "مرکزی مہمان",
+      "firstNameLabel": "پہلا نام",
+      "lastNameLabel": "آخری نام",
+      "dobLabel": "پیدائش کی تاریخ",
+      "contactDetailsTitle": "رابطے کی تفصیلات",
+      "contactDetailsHint": "بکنگ کی تصدیق اور ہوٹل رابطے کے لیے۔",
+      "emailLabel": "ای میل",
+      "phoneLabel": "فون (E.164)",
+      "phonePlaceholder": "+442080160509",
+      "confirmBooking": "بکنگ تصدیق کریں",
+      "bookingInProgress": "بکنگ ہو رہی ہے…",
+      "hintIncompleteForm": "پہلا اور آخری نام، تاریخ پیدائش (YYYY-MM-DD)، درست ای میل، اور فون (E.164) درج کریں۔",
+      "hintChargesDuffel": "چارجز آپ کے Duffel اکاؤنٹ کے مطابق ہیں (ڈیفالٹ پر بیلنس)۔ وفاداری / مذاکراتی ریٹس کے لیے Duffel دستاویزات کے مطابق اضافی سرچ یا بکنگ فیلڈز درکار ہو سکتے ہیں جب پروڈکٹ انہیں فعال کرے۔",
+      "errorMissingQuoteId": "اقتباس آئی ڈی موجود نہیں۔",
+      "errorFillAllFields": "براہ کرم تمام فیلڈز درست ای میل اور تاریخ پیدائش کے ساتھ پُر کریں۔",
+      "errorBookingFailed": "بکنگ ناکام۔",
+      "errorAppendNewQuote": "ہوٹل صفحہ سے نیا اقتباس طلب کریں۔",
+      "orderSummaryTitle": "آرڈر خلاصہ",
+      "summaryTypeFlight": "پرواز",
+      "summaryTypeHotel": "ہوٹل",
+      "summaryTypeCar": "کار",
+      "summaryBookingWord": "بکنگ",
+      "defaultSummaryTitle": "ہوٹل قیام",
+      "rowLabelStay": "قیام",
+      "rowLabelQuote": "اقتباس",
+      "quoteTotalLabel": "اقتباس کل",
+      "totalAmountLabel": "کل رقم",
+      "includesRoomTaxes": "کمرے کی شرح اور ٹیکس شامل ہیں جہاں اقتباس میں قیمت تھی",
+      "viewOrderSummaryAria": "آرڈر خلاصہ دیکھیں",
+      "sheetOrderSummaryTitle": "آرڈر خلاصہ",
+      "secureCheckout": "100٪ محفوظ چیک آؤٹ"
+    }
+  },
+  "Cars": {
+    "pageH1": "اپنے سفر کے لیے کار کرایہ کریں",
+    "tab": {
+      "fromAirportLabel": "ایئرپورٹ سے",
+      "searchPlaceholder": "جگہ تلاش کریں…",
+      "selectLocation": "جگہ چنیں",
+      "dateLabel": "تاریخ",
+      "selectDate": "تاریخ چنیں",
+      "travelersLabel": "مسافر",
+      "adults": "بالغ",
+      "children": "بچے",
+      "travelerSingular": "مسافر",
+      "travelerPlural": "مسافر",
+      "searchCarsAria": "کاریں تلاش کریں"
+    },
+    "detail": {
+      "labelSupplier": "فراہم کنندہ",
+      "labelTransmission": "ٹرانس میشن",
+      "labelFuelType": "ایندھن کی قسم",
+      "labelSeats": "نشستیں",
+      "labelBaggage": "سامان",
+      "labelCategory": "زمرہ",
+      "labelCancellation": "منسوخی",
+      "labelPickupLocation": "پک اپ مقام",
+      "labelPickupHours": "پک اپ اوقات",
+      "labelRating": "درجہ",
+      "labelMileage": "مأیلیج",
+      "labelDoors": "دروازے",
+      "seatsPassengers": "{count, plural, one {# مسافر} other {# مسافر}}",
+      "bagsCount": "{count, plural, one {# بیگ} other {# بیگز}}",
+      "doorsCount": "{count, plural, one {# دروازہ} other {# دروازے}}",
+      "cancellationFeeApplies": "فیس لاگو",
+      "ratingReviews": "{rating}/10 ({count, plural, one {# جائزہ} other {# جائزے}})",
+      "reviewsParenthetical": "({count, plural, one {# جائزہ} other {# جائزے}})",
+      "featuresSectionTitle": "کار کی خصوصیات",
+      "featuresSectionDescription": "اس گاڑی میں یہ خصوصیات شامل ہیں۔",
+      "sectionIncluded": "شامل",
+      "sectionPickupDetails": "پک اپ کی تفصیلات",
+      "aboutSupplierHeading": "{supplier} کے بارے میں",
+      "sectionDeals": "ڈیلز"
+    }
+  },
+  "Booking": {
+    "sidebar": {
+      "title": "بکنگ کی تفصیلات",
+      "hotelPromptSelectRooms": "کل دیکھنے کے لیے نیچے سے کمرے منتخب کریں۔",
+      "selectedRoomsHeading": "منتخب کمرے",
+      "confirmedQuoteHint": "اقتباس کے بعد کل تصدیق شدہ۔ فلو: تلاش ← شرحیں ← اقتباس ← بکنگ۔",
+      "datesHotel": "چیک ان / چیک آؤٹ",
+      "datesCar": "پک اپ / ڈراپ آف",
+      "datesFlight": "سفر کی تاریخیں",
+      "guests": "مہمان",
+      "travelers": "مسافر",
+      "adults": "بالغ",
+      "children": "بچے",
+      "rooms": "کمرے",
+      "bagsAndSeats": "بیگ اور نشستیں",
+      "extras": "اضافی",
+      "extraBaggage50": "اضافی سامان (+$50)",
+      "seatSelection25": "نشست کا انتخاب (+$25)",
+      "fare": "کرایہ",
+      "selectedExtrasEst": "منتخب اضافی (تخمینہ)",
+      "totalEst": "کل (تخمینہ)",
+      "finalAmountDisclaimer": "حتمی رقم ادائیگی پر تصدیق ہوتی ہے۔",
+      "price": "قیمت",
+      "total": "کل",
+      "totalColon": "کل:",
+      "hotelQuotePaymentHint": "ادائیگی سے پہلے شرح منتخب کریں اور اقتباس کا انتظار کریں — Duffel Stays فلو۔",
+      "gettingQuote": "اقتباس لوڈ ہو رہا ہے…",
+      "selectRoom": "کمرہ منتخب کریں",
+      "proceedToPayment": "ادائیگی پر جائیں",
+      "selectRoomForTotal": "کل دیکھنے کے لیے کمرہ منتخب کریں",
+      "viewFlightAria": "پرواز بکنگ کی تفصیلات دکھائیں",
+      "viewHotelAria": "ہوٹل بکنگ کی تفصیلات دکھائیں",
+      "sheetFlightTitle": "پرواز بکنگ کی تفصیلات",
+      "sheetHotelTitle": "ہوٹل بکنگ کی تفصیلات",
+      "summaryTravelers": "مسافر",
+      "summaryDates": "تاریخیں",
+      "summaryExtras": "اضافی",
+      "summaryGuests": "مہمان",
+      "summaryRooms": "کمرے",
+      "summaryStay": "قیام",
+      "summaryRoom": "کمرہ",
+      "summaryRentalPeriod": "کرایہ کی مدت",
+      "partySummary": "{adults} بالغ، {children} بچے",
+      "nightSingular": "رات",
+      "nightPlural": "راتیں",
+      "totalStayPhrase": "کل قیام",
+      "extrasBagServices": "{qty} اضافی سروس یونٹ",
+      "extrasSeatsChosen": "{count} نشست/نشستیں"
+    }
+  },
+  "Contact": {
+    "heading": "رابطہ کریں",
+    "subheading": "آپ کی رائے سننا پسند کروں گا۔",
+    "intro": "کوئی سوال ہو یا صرف سلام کہنا ہو، براہ کرم رابطہ فارم استعمال کریں۔",
+    "addressLine1": "123 ٹریول سٹریٹ، ٹور سٹی",
+    "addressLine2": "ٹریول ملک، ڈاک خانہ 12345",
+    "firstNameLabel": "پہلا نام",
+    "lastNameLabel": "آخری نام",
+    "firstNamePlaceholder": "احمد",
+    "lastNamePlaceholder": "علی",
+    "emailLabel": "ای میل *",
+    "emailPlaceholder": "example@email.com",
+    "messageLabel": "پیغام",
+    "messagePlaceholder": "اپنا پیغام لکھیں...",
+    "send": "بھیجیں",
+    "sending": "بھیجا جا رہا ہے...",
+    "successMessage": "شکریہ! آپ کا پیغام بھیج دیا گیا۔",
+    "errorGeneric": "کچھ غلط ہوا",
+    "errorSendFailed": "پیغام نہیں بھیجا جا سکا",
+    "rateLimit": "{seconds} سیکنڈ بعد دوبارہ کوشش کریں",
+    "mapIframeTitle": "نقشہ",
+    "socialInstagram": "انسٹاگرام",
+    "socialFacebook": "فیس بک",
+    "socialTwitter": "تویتر",
+    "socialLinkedIn": "لنکڈ ان"
+  },
+  "Home": {
+    "hotels": [
+      {
+        "name": "لگژری بیچ ریزورٹ اینڈ اسپا",
+        "location": "بالی، انڈونیشیا",
+        "price": 299,
+        "rating": 4.8,
+        "reviews": "1.2k",
+        "facilities": [
+          "وائی فائی",
+          "پول",
+          "سپا",
+          "جم"
+        ]
+      },
+      {
+        "name": "Grand Palace ہوٹل",
+        "location": "پیرس، فرانس",
+        "price": 320,
+        "rating": 4.9,
+        "reviews": "892",
+        "facilities": [
+          "وائی فائی",
+          "ریستوران",
+          "بار",
+          "سپا"
+        ]
+      },
+      {
+        "name": "اوشن ویو پارڈائز ریزورٹ",
+        "location": "مالدیپ",
+        "price": 450,
+        "rating": 4.7,
+        "reviews": "1.5k",
+        "facilities": [
+          "ساحل",
+          "پول",
+          "سپا",
+          "ڈائیونگ"
+        ]
+      },
+      {
+        "name": "ماؤنٹین ٹاپ ریٹریٹ",
+        "location": "سوئس آلپس",
+        "price": 280,
+        "rating": 4.6,
+        "reviews": "734",
+        "facilities": [
+          "سکینگ",
+          "سپا",
+          "چمنی",
+          "وائی فائی"
+        ]
+      },
+      {
+        "name": "شہری لگژری سویٹس",
+        "location": "نیویارک، USA",
+        "price": 380,
+        "rating": 4.8,
+        "reviews": "2.1k",
+        "facilities": [
+          "وائی فائی",
+          "جم",
+          "بار",
+          "سیمینار"
+        ]
+      },
+      {
+        "name": "صحرائی ایکوا ریزورٹ",
+        "location": "دبئی، UAE",
+        "price": 420,
+        "rating": 4.9,
+        "reviews": "1.8k",
+        "facilities": [
+          "پول",
+          "سپا",
+          "گولف",
+          "ساحل"
+        ]
+      }
+    ],
+    "categories": [
+      {
+        "key": "beach",
+        "name": "ساحل"
+      },
+      {
+        "key": "desert",
+        "name": "صحرا"
+      },
+      {
+        "key": "mountain",
+        "name": "پہاڑ"
+      },
+      {
+        "key": "temple",
+        "name": "مندر"
+      },
+      {
+        "key": "tower",
+        "name": "مینار"
+      },
+      {
+        "key": "pyramid",
+        "name": "اہرام"
+      },
+      {
+        "key": "city",
+        "name": "شہر"
+      },
+      {
+        "key": "forest",
+        "name": "جنگل"
+      },
+      {
+        "key": "waterfall",
+        "name": "آبشار"
+      },
+      {
+        "key": "lake",
+        "name": "جھیل"
+      },
+      {
+        "key": "island",
+        "name": "جزیرہ"
+      },
+      {
+        "key": "canyon",
+        "name": "کھائی"
+      }
+    ],
+    "featuredCar": {
+      "title": "پریمیم کار ٹرانسفر",
+      "description": "پروفیشنل ڈرائیورز کے ساتھ آرام اور عیش",
+      "buttonText": "تمام کاریں دیکھیں"
+    },
+    "featuredBlogsTitle": "نمایاں کہانیاں",
+    "featuredBlogsSubtitle": "ہماری تازہ ترین کہانیاں پڑھیں اور سفر کی تازہ خبروں سے باخبر رہیں",
+    "featuredBlogsViewAll": "تمام پوسٹس دیکھیں",
+    "cars": [
+      {
+        "name": "Toyota Camry",
+        "type": "سڈان",
+        "passengers": 4,
+        "luggage": 2,
+        "price": 45,
+        "originalPrice": 60,
+        "features": [
+          "ایئر کن",
+          "وائی فائی",
+          "GPS"
+        ]
+      },
+      {
+        "name": "Honda Accord",
+        "type": "سڈان",
+        "passengers": 4,
+        "luggage": 3,
+        "price": 48,
+        "originalPrice": 65,
+        "features": [
+          "ایئر کن",
+          "USB",
+          "چمڑا"
+        ]
+      },
+      {
+        "name": "Toyota RAV4",
+        "type": "SUV",
+        "passengers": 5,
+        "luggage": 4,
+        "price": 65,
+        "originalPrice": 85,
+        "features": [
+          "ایئر کن",
+          "4x4",
+          "روف ریل"
+        ]
+      },
+      {
+        "name": "Ford Explorer",
+        "type": "SUV",
+        "passengers": 7,
+        "luggage": 5,
+        "price": 75,
+        "originalPrice": 95,
+        "features": [
+          "ایئر کن",
+          "7 سیٹیں",
+          "پریمیم آڈیو"
+        ]
+      },
+      {
+        "name": "Mercedes E-Class",
+        "type": "لگژری",
+        "passengers": 4,
+        "luggage": 3,
+        "price": 120,
+        "originalPrice": 150,
+        "features": [
+          "چمڑا",
+          "پینورامک روف",
+          "مساج سیٹیں"
+        ]
+      },
+      {
+        "name": "BMW 5 Series",
+        "type": "لگژری",
+        "passengers": 4,
+        "luggage": 2,
+        "price": 125,
+        "originalPrice": 160,
+        "features": [
+          "پریمیم",
+          "گرم سیٹیں",
+          "انٹرٹینمنٹ"
+        ]
+      },
+      {
+        "name": "Toyota Sienna",
+        "type": "منی وین",
+        "passengers": 8,
+        "luggage": 6,
+        "price": 85,
+        "originalPrice": 110,
+        "features": [
+          "ایئر کن",
+          "8 سیٹیں",
+          "سلائیڈنگ دروازے"
+        ]
+      },
+      {
+        "name": "Mercedes V-Class",
+        "type": "منی وین",
+        "passengers": 8,
+        "luggage": 7,
+        "price": 110,
+        "originalPrice": 140,
+        "features": [
+          "لگژری",
+          "TV",
+          "فریج"
+        ]
+      }
+    ]
+  },
+  "Auth": {
+    "loginTitle": "دوبارہ خوش آمدید",
+    "loginSubtitle": "ای میل سے سائن ان کریں",
+    "signupTitle": "اکاؤنٹ بنائیں",
+    "email": "ای میل",
+    "password": "پاس ورڈ",
+    "rememberMe": "مجھے یاد رکھیں",
+    "forgotPassword": "پاس ورڈ بھول گئے؟",
+    "signIn": "سائن ان",
+    "signUp": "سائن اپ",
+    "noAccount": "اکاؤنٹ نہیں؟",
+    "hasAccount": "پہلے سے اکاؤنٹ ہے؟",
+    "orContinueWith": "یا جاری رکھیں",
+    "terms": "استعمال کی شرائط",
+    "privacy": "پرائیویسی پالیسی",
+    "oauthRedirecting": "ری ڈائریکٹ…",
+    "signInFailed": "سائن ان ناکام۔ دوبارہ کوشش کریں یا ای میل اور پاس ورڈ استعمال کریں۔",
+    "passwordUpdated": "پاس ورڈ اپ ڈیٹ ہو گیا۔ نئے پاس ورڈ سے سائن ان کریں۔"
+  },
+  "PrivacyPage": {
+    "topCards": [
+      {
+        "title": "سیکیورٹی",
+        "desc": "خفیہ شدہ لین دین اور قابل اعتماد فراہم کنندگان۔"
+      },
+      {
+        "title": "شفافیت",
+        "desc": "ڈیٹا اکٹھا کرنے اور استعمال پر واضح وضاحت۔"
+      },
+      {
+        "title": "کنٹرول",
+        "desc": "اپنے ڈیٹا تک رسائی، اپ ڈیٹ اور حذف کی درخواست۔"
+      }
+    ],
+    "sections": [
+      {
+        "title": "۱۔ تعارف",
+        "content": "TravelTourUp میں خوش آمدید۔ ہم آپ کی پرائیویسی کا احترام کرتے ہیں اور بکنگ اور ٹریول خدمات استعمال کرتے وقت آپ کے ذاتی ڈیٹا کی حفاظت کے پابند ہیں۔"
+      },
+      {
+        "title": "۲۔ ہم کن معلومات جمع کرتے ہیں",
+        "points": [
+          "ذاتی تفصیل جیسے نام، ای میل، فون",
+          "بکنگ ڈیٹا: منزل، تاریخیں، مسافروں کی معلومات",
+          "قابل اعتماد پارٹنرز کے ذریعے محفوظ ادائیگی کی تفصیلات",
+          "کارکردگی اور استحکام کے لیے ڈیوائس اور استعمال کا ڈیٹا",
+          "ذاتی تجاویز کے لیے مقام کا ڈیٹا",
+          "کسٹمر سپورٹ بہتر بنانے کے لیے مواصلت کا ریکارڈ"
+        ]
+      },
+      {
+        "title": "۳۔ معلومات کا استعمال",
+        "content": "ہم آپ کا ڈیٹا بکنگ کے لیے، پروڈکٹ بہتر کرنے، تجربہ ذاتی بنانے، ضروری ٹریول نوٹیفیکیشن اور مدد کے لیے استعمال کرتے ہیں۔"
+      },
+      {
+        "title": "۴۔ قانونی بنیاد",
+        "points": [
+          "معاہدے کی تکمیل (بکنگ اور خدمات)",
+          "قانون اور ضوابط کی تعمیل",
+          "مارکیٹنگ اور اختیاری خدمات کی رضامندی",
+          "منصفانہ کاروباری مفادات جیسے خدمت بہتر کرنا"
+        ]
+      },
+      {
+        "title": "۵۔ ڈیٹا شیئرنگ",
+        "content": "ہم معلومات صرف اس وقت شیئر کرتے ہیں جب بکنگ پوری کرنے کے لیے ضروری ہو — ایئر لائنز، ہوٹلز اور ادائیگی کے پارٹنرز۔"
+      },
+      {
+        "title": "۶۔ تیسرے فریق فراہم کنندگان",
+        "points": [
+          "ایئر لائنز اور ٹرانسپورٹ",
+          "ہوٹلز اور رہائش کے پارٹنرز",
+          "پیمینٹ گیٹ وی اور بینک",
+          "تجزیات اور کارکردگی کی نگرانی"
+        ]
+      },
+      {
+        "title": "۷۔ بین الاقوامی منتقلی",
+        "content": "آپ کا ڈیٹا بکنگ مکمل کرنے اور عالمی خدمات کے لیے آپ کے ملک سے باہر منتقل یا پراسیس ہو سکتا ہے۔"
+      },
+      {
+        "title": "۸۔ ڈیٹا کی حفاظت",
+        "points": [
+          "ٹرانزیکشنز کے لیے SSL",
+          "محفوظ پیمینٹ گیٹ وی",
+          "سسٹم کی نگرانی",
+          "اندرونی رسائی محدود",
+          "غیر مجاز رسائی سے تحفظ"
+        ]
+      },
+      {
+        "title": "۹۔ کوکیز اور ٹریکنگ",
+        "content": "کوکیز پلیٹ فارم محفوظ رکھنے، ترجیحات یاد رکھنے اور ٹریفک سمجھنے میں مدد کرتی ہیں۔"
+      },
+      {
+        "title": "۱۰۔ کوکیز کی اقسام",
+        "points": [
+          "ضروری — پلیٹ فارم چلانے کے لیے",
+          "کارکردگی اور تجزیات",
+          "فعلی — ترجیحات کے لیے",
+          "مارکیٹنگ — ذاتی پیشکشوں کے لیے"
+        ]
+      },
+      {
+        "title": "۱۱۔ ڈیٹا برقرار رکھنا",
+        "content": "ہم ذاتی ڈیٹا صرف اتنی دیر رکھتے ہیں جتنی قانونی اور عملی طور پر ضروری ہو۔"
+      },
+      {
+        "title": "۱۲۔ اکاؤنٹس",
+        "points": [
+          "اکاؤنٹ کی رازداری آپ کی ذمہ داری ہے",
+          "لاگ ان محفوظ رکھیں",
+          "غیر مجاز رسائی کی فوری اطلاع دیں"
+        ]
+      },
+      {
+        "title": "۱۳۔ آپ کے حقوق",
+        "points": [
+          "ذاتی ڈیٹا تک رسائی",
+          "درستگی کی درخواست",
+          "حذف کی درخواست",
+          "رضامانی واپس لینا",
+          "کچھ عمل پر اعتراض"
+        ]
+      },
+      {
+        "title": "۱۴۔ مارکیٹنگ",
+        "content": "ہم پرومو ای میل بھیج سکتے ہیں؛ ان سبسکرائب یا اکاؤنٹ سیٹنگز سے آپٹ آؤٹ کریں۔"
+      },
+      {
+        "title": "۱۵۔ بچوں کی پرائیویسی",
+        "content": "خدمات ۱۸ سال سے کم کے لیے نہیں؛ ہم جان بوجھ کر بچوں کا ڈیٹا اکٹھا نہیں کرتے۔"
+      },
+      {
+        "title": "۱۶۔ تیسرے فریق کے لنکس",
+        "content": "پلیٹ فارم پر تیسرے فریق کے لنکس ہو سکتے ہیں؛ ان کی پرائیویسی ہماری ذمہ داری نہیں۔"
+      },
+      {
+        "title": "۱۷۔ ادائیگی کی معلومات",
+        "points": [
+          "تیسرے فریق کے محفوظ گیٹ وی سے ادائیگی",
+          "ہم مکمل کارڈ نمبر ذخیرہ نہیں کرتے",
+          "ٹرانزیکشنز مرموز اور نگرانی شدہ"
+        ]
+      },
+      {
+        "title": "۱۸۔ ٹریول سے متعلق ڈیٹا",
+        "points": [
+          "پاسپورٹ اور شناخت برائے بکنگ",
+          "ترجیحات اور سفر کی تاریخ",
+          "ایمرجنسی رابطے",
+          "خصوصی درخواستیں جیسے کھانا یا رسائی"
+        ]
+      },
+      {
+        "title": "۱۹۔ پالیسی میں تبدیلی",
+        "content": "ہم پرائیویسی پالیسی اپ ڈیٹ کر سکتے ہیں؛ تبدیلیاں اس صفحہ پر تجدید تاریخ کے ساتھ۔"
+      },
+      {
+        "title": "۲۰۔ رابطہ",
+        "content": "سوالات کے لیے: support@traveltourup.com۔"
+      }
+    ]
+  },
+  "TermsPage": {
+    "topCards": [
+      {
+        "title": "منصفانہ استعمال",
+        "desc": "درست معلومات اور قانونی استعمال۔"
+      },
+      {
+        "title": "فراہم کنندگان کے قواعد",
+        "desc": "بکنگ ایئر لائن اور ہوٹل کی شرائط پر منحصر ہے۔"
+      },
+      {
+        "title": "محفوظ ادائیگیاں",
+        "desc": "محفوظ پارٹنرز کے ذریعے لین دین۔"
+      }
+    ],
+    "sections": [
+      {
+        "title": "۱۔ شرائط قبول کرنا",
+        "content": "TravelTourUp استعمال کرتے ہوئے آپ ان شرائط اور منصوبہ بند پالیسیوں سے متفق ہیں۔"
+      },
+      {
+        "title": "۲۔ اہلیت",
+        "content": "آپ کی عمر کم از کم ۱۸ سال ہونی چاہیے اور معاہدے کرنے کی قانونی اہلیت۔"
+      },
+      {
+        "title": "۳۔ بکنگ خدمات",
+        "content": "TravelTourUp مسافروں اور تیسرے فریق فراہم کنندگان (طیران، ہوٹل، نقل و حمل) کے درمیان ثالث ہے۔"
+      },
+      {
+        "title": "۴۔ رجسٹریشن",
+        "points": [
+          "درست اور مکمل معلومات دیں",
+          "لاگ ان کی رازداری رکھیں",
+          "اکاؤنٹ کی تمام سرگرمی آپ کی ذمہ داری ہے"
+        ]
+      },
+      {
+        "title": "۵۔ ادائیگی اور قیمتیں",
+        "points": [
+          "محفوظ گیٹ وی سے ادائیگی",
+          "قیمتیں دستیابی اور مانگ پر بدل سکتی ہیں",
+          "ٹیکس اور فراہم کنندہ فیس لاگو ہو سکتی ہے",
+          "کرنسی کا معاملہ فراہم کنندہ کی شرح پر"
+        ]
+      },
+      {
+        "title": "۶۔ بکنگ کی تصدیق",
+        "content": "بکنگ صرف مکمل ادائیگی اور فراہم کنندہ کی تصدیق کے بعد ہوتی ہے۔"
+      },
+      {
+        "title": "۷۔ منسوخی اور ریفنڈ",
+        "content": "ہر فراہم کنندہ کی پالیسی پر منحصر؛ تصدیق سے پہلے شرائط دیکھیں۔"
+      },
+      {
+        "title": "۸۔ تبدیلیاں",
+        "content": "تاریخوں یا مسافروں کی تبدیلی فراہم کنندہ کی پالیسی پر ہے اور اضافی چارجز ہو سکتے ہیں۔"
+      },
+      {
+        "title": "۹۔ صارف کی ذمہ داریاں",
+        "points": [
+          "درست مسافر اور ادائیگی کی معلومات",
+          "ویزا، امیگریشن اور مقامی قوانین کی تعمیل",
+          "درست ٹریول دستاویزات",
+          "بدنیتی، دھوکہ یا غیر مجاز رسائی سے پرہیز"
+        ]
+      },
+      {
+        "title": "۱۰۔ دستاویزات",
+        "content": "پاسپورٹ، ویزا اور اجازتیں آپ کی ذمہ داری ہیں۔"
+      },
+      {
+        "title": "۱۱۔ ٹریول کے خطرات",
+        "content": "ٹریول میں خطرات ہیں؛ TravelTourUp بیرونی وجوہات سے تاخیر یا منسوخی کا ذمہ دار نہیں۔"
+      },
+      {
+        "title": "۱۲۔ تیسرے فریق",
+        "content": "خدمات آزاد فراہم کنندگان دیتے ہیں؛ ان کی غلطیاں یا معیار ہماری ذمہ داری نہیں۔"
+      },
+      {
+        "title": "۱۳۔ ذمہ داری کی حد",
+        "content": "تیسرے فریق کی وجہ سے تاخیر، اوور بکنگ، منسوخی یا فورس میجر کے واقعات میں ہم ذمہ دار نہیں۔"
+      },
+      {
+        "title": "۱۴۔ غیر متوقع واقعات (فورس میجر)",
+        "content": "قدرت، وباؤں یا حکومتی فیصلوں جیسے باہری واقعات میں ذمہ داری نہیں جو ہمارے کنٹرول سے باہر ہوں۔"
+      },
+      {
+        "title": "۱۵۔ ممنوع سرگرمیاں",
+        "points": [
+          "دھوکہ دہی والی بکنگ یا ادائیگیاں",
+          "سسٹم کا غلط استعمال یا ہیکنگ",
+          "قوانین کی خلاف ورزی",
+          "شناخت کی جعل سازی"
+        ]
+      },
+      {
+        "title": "۱۶۔ فکری ملکیت",
+        "content": "مواد اور برانڈنگ TravelTourUp کی ملکیت ہے؛ بغیر اجازت استعمال ممنوع۔"
+      },
+      {
+        "title": "۱۷۔ ختم کرنا",
+        "content": "خلاف ورزی پر اکاؤنٹ معطل یا بند کیا جا سکتا ہے بغیر پیشگی نوٹس۔"
+      },
+      {
+        "title": "۱۸۔ پرائیویسی پالیسی",
+        "content": "استعمال پرائیویسی پالیسی سے بھی مشروط ہے جو ڈیٹا اکٹھا کرنے اور استعمال کو بیان کرتی ہے۔"
+      },
+      {
+        "title": "۱۹۔ شرائط میں تبدیلی",
+        "content": "شرائط کسی بھی وقت اپ ڈیٹ ہو سکتی ہیں؛ مسلسل استعمال قبولیت ہے۔"
+      },
+      {
+        "title": "۲۰۔ رابطہ",
+        "content": "سوالات کے لیے: support@traveltourup.com۔"
+      }
+    ]
+  },
+  "AboutAchievements": {
+    "title": "آپ کا مقصد منتظر ہے",
+    "subtitle": "ہم نے ہزاروں مسافروں کو دنیا بھر میں حیرت انگیز مقامات دریافت کرنے میں مدد دی۔ معیار کی خدمت پر ہماری توجہ کامیابی بڑھاتی ہے۔",
+    "statCustomers": "12870+",
+    "statCustomersLabel": "خوش گاہک",
+    "statSatisfied": "100%",
+    "statSatisfiedLabel": "مطمئن کلائنٹس",
+    "connectText": "مزید معلومات کے لیے رابطہ کریں۔",
+    "contactButton": "ہم سے رابطہ کریں"
+  },
+  "Seo": {
+    "routes": {
+      "home": {
+        "title": "TravelTourUp — دنیا بھر میں پروازیں، ہوٹل اور کار کرایہ",
+        "description": "ایک ہی جگہ پر پروازیں، ہوٹل اور کار کرایہ موازنہ کریں اور بک کریں۔ واضح تلاش، محفوظ ادائیگی، کاروبار اور تفریحی سفر کے لیےمعاونت۔",
+        "ogTitle": "پروازیں، ہوٹل اور کار بک کریں — TravelTourUp",
+        "ogDescription": "دنیا بھر میں پروازیں، قیام اور کرایہ تلاش کریں، مسابقتی نرخوں پر اعتماد کے ساتھ بک کریں۔"
+      },
+      "about": {
+        "title": "TravelTourUp کے بارے میں | پرواز اور ہوٹل بکنگ پلیٹ فارم",
+        "description": "جانیں TravelTourUp مسافروں کو سادہ، محفوظ پلیٹ فارم اور فوری معاونت کے ساتھ پروازیں، ہوٹل اور کار کیسے بک کرنے میں مدد کرتا ہے۔",
+        "ogTitle": "ہمارے بارے میں — TravelTourUp",
+        "ogDescription": "ہمارا مقصد: ہر سفر کے لیے بکنگ آسان اور قابل اعتماد بنانا۔"
+      },
+      "contact": {
+        "title": "رابطہ TravelTourUp | کسٹمر سپورٹ",
+        "description": "بکنگ، پرواز/ہوٹل سوالات، ریفنڈ یا سفر کی منصوبہ بندی کے لیے TravelTourUp سے رابطہ کریں۔",
+        "ogTitle": "رابطہ کریں — TravelTourUp",
+        "ogDescription": "بکنگ، ادائیگی اور مسافروں کی مدد کے لیے ہم سے لکھیں۔"
+      },
+      "faqs": {
+        "title": "بکنگ کے عام سوالات | پرواز، ہوٹل، کار — TravelTourUp",
+        "description": "TravelTourUp پر پروازوں، ہوٹل اور کار کرایہ، ادائیگی، تبدیلیوں اور پالیسیوں کے بارے میں جوابات۔",
+        "ogTitle": "اکثر پوچھے گئے سوالات — TravelTourUp",
+        "ogDescription": "بکنگ، ریفنڈ، اکاؤنٹ اور مزید مدد۔"
+      },
+      "flights": {
+        "title": "سستی پروازیں اور ٹکٹیں | آن لائن بکنگ — TravelTourUp",
+        "description": "ملکی اور بین الاقوامی پروازیں تلاش کریں، ایئرلائنز اور کرایوں کا موازنہ کریں، محفوظ ادائیگی اور معاونت کے ساتھ بک کریں۔",
+        "ogTitle": "آن لائن پرواز بک کریں — TravelTourUp",
+        "ogDescription": "ڈیلز تلاش کریں، آپشنز کا موازنہ کریں، اگلا سفر بک کریں۔"
+      },
+      "hotels": {
+        "title": "ہوٹل اور قیام | بہترین نرخ — TravelTourUp",
+        "description": "دنیا بھر میں ہوٹل، ریزارٹس اور قیام تلاش کریں۔ قیمت، سہولیات اور مقام کا موازنہ کریں اور محفوظ طریقے سے کمرہ بک کریں۔",
+        "ogTitle": "عالمی سطح پر ہوٹل بک کریں — TravelTourUp",
+        "ogDescription": "بجٹ سے لگژری تک — مثالی قیام تلاش کریں۔"
+      },
+      "cars": {
+        "title": "کار کرایہ اور ہوائی اڈہ | ڈیلز کا موازنہ — TravelTourUp",
+        "description": "اپنے سفر کے لیے کار کرایہ لیں — معیشت سے پریمیم تک۔ ہوائی اڈے سمیت پک اپ پوائنٹس کا موازنہ کریں اور شفاف طریقے سے بک کریں۔",
+        "ogTitle": "کار کرایہ کی پیشکشیں — TravelTourUp",
+        "ogDescription": "کاروبار اور تفریحی سفر کے لیے گاڑیاں۔"
+      },
+      "flightbooking": {
+        "title": "پرواز بکنگ مکمل کریں | TravelTourUp",
+        "description": "محفوظ طریقے سے پرواز بکنگ مکمل کریں۔ ادائیگی سے پہلے مسافر اور روٹ کی تفصیلات چیک کریں۔",
+        "ogTitle": "پرواز چیک آؤٹ — TravelTourUp",
+        "ogDescription": "محفوظ پرواز ادائیگی۔"
+      },
+      "hotelbooking": {
+        "title": "ہوٹل بکنگ مکمل کریں | TravelTourUp",
+        "description": "محفوظ طریقے سے ہوٹل ریزرویشن مکمل کریں۔ تاریخیں، کمرے کی قسم اور مہمان کی تفصیلات تصدیق کریں۔",
+        "ogTitle": "ہوٹل چیک آؤٹ — TravelTourUp",
+        "ogDescription": "محفوظ ہوٹل ادائیگی۔"
+      },
+      "carbooking": {
+        "title": "کار کرایہ بکنگ مکمل کریں | TravelTourUp",
+        "description": "محفوظ طریقے سے کار کرایہ بکنگ مکمل کریں۔ ادائیگی سے پہلے گاڑی اور پک اپ چیک کریں۔",
+        "ogTitle": "کار کرایہ چیک آؤٹ — TravelTourUp",
+        "ogDescription": "محفوظ کرایہ ادائیگی۔"
+      },
+      "login": {
+        "title": "سائن ان | TravelTourUp اکاؤنٹ",
+        "description": "پرواز، ہوٹل اور کار بکنگز، محفوظ سفر اور سیٹنگز منظم کرنے کے لیے سائن ان کریں۔",
+        "ogTitle": "سائن ان — TravelTourUp",
+        "ogDescription": "مسافر اکاؤنٹ تک رسائی۔"
+      },
+      "signup": {
+        "title": "اکاؤنٹ بنائیں | TravelTourUp میں شامل ہوں",
+        "description": "تیز بکنگ، سفر کی تازہ کاریوں کے لیے مفت TravelTourUp اکاؤنٹ بنائیں۔",
+        "ogTitle": "اکاؤنٹ بنائیں — TravelTourUp",
+        "ogDescription": "شامل ہوں اور اگلا سفر بک کریں۔"
+      },
+      "cars_payment": {
+        "title": "کار کرایہ ادائیگی | TravelTourUp",
+        "description": "انکرپٹڈ چیک آؤٹ کے ذریعے کار کرایہ کی ادائیگی مکمل کریں۔",
+        "ogTitle": "کرایہ ادائیگی — TravelTourUp",
+        "ogDescription": "محفوظ کرایہ ادائیگی۔"
+      },
+      "hotels_payment": {
+        "title": "ہوٹل ادائیگی | TravelTourUp",
+        "description": "انکرپٹڈ چیک آؤٹ کے ذریعے ہوٹل بکنگ کی ادائیگی مکمل کریں۔",
+        "ogTitle": "ہوٹل ادائیگی — TravelTourUp",
+        "ogDescription": "محفوظ قیام کی ادائیگی۔"
+      },
+      "flights_payment": {
+        "title": "پرواز ادائیگی | TravelTourUp",
+        "description": "انکرپٹڈ چیک آؤٹ کے ذریعے پرواز بکنگ کی ادائیگی مکمل کریں۔",
+        "ogTitle": "پرواز ادائیگی — TravelTourUp",
+        "ogDescription": "محفوظ پرواز ادائیگی۔"
+      },
+      "privacy": {
+        "title": "رازداری کی پالیسی | TravelTourUp",
+        "description": "سفر بکنگ کے دوران TravelTourUp آپ کے ڈیٹا کو کیسے جمع، استعمال اور محفوظ رکھتا ہے۔",
+        "ogTitle": "رازداری — TravelTourUp",
+        "ogDescription": "ڈیٹا تحفظ اور آپ کے حقوق۔"
+      },
+      "terms": {
+        "title": "سروس کی شرائط | TravelTourUp",
+        "description": "پروازیں، ہوٹل اور کار تلاش و بکنگ کے لیے TravelTourUp استعمال کی شرائط۔",
+        "ogTitle": "شرائط — TravelTourUp",
+        "ogDescription": "مسافروں اور بکنگ کے لیے پلیٹ فارم کے قواعد۔"
+      },
+      "blog": {
+        "title": "سفر گائڈز اور تجاویز | پروازیں اور ہوٹل — TravelTourUp",
+        "description": "پروازیں، ہوٹل، سڑک سفر اور بہتر بکنگ کے لیے عملی رہنمائی اور توانائی۔",
+        "ogTitle": "سفر گائڈز — TravelTourUp",
+        "ogDescription": "ذہین پرواز اور ہوٹل بکنگ کے مشورے۔"
+      },
+      "forgot_password": {
+        "title": "پاس ورڈ ری سیٹ | TravelTourUp",
+        "description": "TravelTourUp اکاؤنٹ کے لیے محفوظ ری سیٹ لنک کی درخواست کریں۔",
+        "ogTitle": "پاس ورڈ ری سیٹ — TravelTourUp",
+        "ogDescription": "اکاؤنٹ تک رسائی بحال کریں۔"
+      },
+      "profile": {
+        "title": "آپ کا پروفائل | TravelTourUp",
+        "description": "TravelTourUp مسافر پروفائل اور ترجیحات منظم کریں۔",
+        "ogTitle": "پروفائل — TravelTourUp",
+        "ogDescription": "آپ کے اکاؤنٹ کا جائزہ۔"
+      },
+      "profile_bookings": {
+        "title": "میری بکنگز | TravelTourUp",
+        "description": "پرواز، ہوٹل اور کار بکنگ دیکھیں اور منظم کریں۔",
+        "ogTitle": "میری بکنگز — TravelTourUp",
+        "ogDescription": "آپ کے سفر اور بکنگ کی تفصیلات۔"
+      },
+      "profile_booking_detail": {
+        "title": "بکنگ کی تفصیلات | TravelTourUp",
+        "description": "TravelTourUp بکنگ کی تصدیق اور حوالہ جات۔",
+        "ogTitle": "بکنگ کی تفصیلات — TravelTourUp",
+        "ogDescription": "تصدیق اور سفر کی تفصیلات۔"
+      }
+    }
+  },
+  "Breadcrumb": {
+    "home": "ہوم",
+    "ariaLabel": "نیویگیشن کا راستہ",
+    "detailHotel": "ہوٹل کی تفصیل",
+    "detailFlight": "پرواز کی تفصیل",
+    "detailCar": "کار کی تفصیل",
+    "pages": {
+      "about": {
+        "title": "ہمارے بارے میں",
+        "description": "جانیں ہم کون ہیں، ہمارا مقصد کیا ہے، اور دنیا بھر کے مسافروں کے لیے ہر سفر میں ہمارا جذبہ کیا ہے۔"
+      },
+      "contact": {
+        "title": "رابطہ",
+        "description": "سوالات، مدد یا ذاتی سفر کی منصوبہ بندی کے لیے ہماری ٹیم سے رابطہ کریں۔"
+      },
+      "faqs": {
+        "title": "اکثر پوچھے گئے سوالات",
+        "description": "ہماری خدمات، بکنگ اور پالیسیوں سے متعلق عام سوالات کے جواب۔"
+      },
+      "flights": {
+        "title": "پروازیں",
+        "description": "کئی سو مقامات کے لیے پروازیں موازنہ کریں اور بہترین کرایوں سے بک کریں۔"
+      },
+      "flight-search": {
+        "title": "پرواز تلاش",
+        "description": "ہزاروں روٹس میں سے اپنی مناسب پرواز بہترین قیمت پر تلاش کریں۔"
+      },
+      "flightbooking": {
+        "title": "پرواز بکنگ",
+        "description": "محفوظ طریقے سے بکنگ مکمل کریں۔ سفر کا شیڈول چیک کریں اور تصدیق کریں۔"
+      },
+      "cars": {
+        "title": "کار کرایہ",
+        "description": "ہر سفر کے لیے گاڑیاں دیکھیں — معیشت سے لگژری تک، بہترین شرحوں پر۔"
+      },
+      "car-search": {
+        "title": "کار تلاش",
+        "description": "اپنے سفر کے لیے بہترین کار تلاش کریں۔ قسم، قیمت اور فیچر سے فلٹر کریں۔"
+      },
+      "carbooking": {
+        "title": "کار بکنگ",
+        "description": "کرایہ مکمل کریں۔ گاڑی کی تفصیلات چیک کریں اور تصدیق کریں۔"
+      },
+      "hotels": {
+        "title": "ہوٹلز",
+        "description": "دنیا بھر میں منتخب ہوٹل اور ریزورٹ دریافت کریں — بوتیک سے پانچ ستارہ تک۔"
+      },
+      "hotel-search": {
+        "title": "ہوٹل تلاش",
+        "description": "منزل، تاریخوں اور سہولیات کے حساب سے تلاش کریں اور بہترین قیام تلاش کریں۔"
+      },
+      "hotelbooking": {
+        "title": "ہوٹل بکنگ",
+        "description": "کمرہ کنفرم کریں۔ ہوٹل کی تفصیلات اور سہولیات چیک کریں۔"
+      },
+      "login": {
+        "title": "لاگ ان",
+        "description": "TravelTourUp اکاؤنٹ میں سائن ان کریں تاکہ بکنگز اور خصوصی ڈیلز تک رسائی ہو۔"
+      },
+      "signup": {
+        "title": "اکاؤنٹ بنائیں",
+        "description": "آج ہی شامل ہوں — ذاتی ڈیلز اور آساں بکنگ۔"
+      },
+      "payment": {
+        "title": "ادائیگی",
+        "description": "محفوظ طریقے سے خریداری مکمل کریں۔ ہر لین دین صنعتی معیار کے انکرپشن سے محفوظ ہے۔"
+      },
+      "privacy": {
+        "title": "پرائیویسی پالیسی",
+        "description": "جانیں ہم آپ کا ڈیٹا کیسے اکٹھا، استعمال اور محفوظ رکھتے ہیں۔"
+      },
+      "terms": {
+        "title": "سروس کی شرائط",
+        "description": "TravelTourUp خدمات استعمال کرنے کی شرائط پڑھیں۔"
+      },
+      "profile": {
+        "title": "پروفائل",
+        "description": "اپنے اکاؤنٹ اور ٹریول ترجیحات دیکھیں۔"
+      }
+    }
+  }
+}

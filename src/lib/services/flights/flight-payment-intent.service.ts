@@ -1,0 +1,156 @@
+import "server-only";
+
+import { Prisma } from "@/generated/prisma";
+import { getFlightPaymentsConfig } from "@/config/flight-payments.config";
+import { AppError } from "@/lib/api/errors";
+import { flightPaymentIntentRepository } from "@/lib/db/repositories/flight-payment-intent.repository";
+import {
+  confirmDuffelPaymentIntent,
+  createDuffelPaymentIntent,
+} from "@/lib/duffel/payment-intents";
+import { computeDuffelPaymentIntentBreakdown } from "@/lib/payments/duffel-intent-pricing";
+import { refreshFlightOffer } from "@/lib/services/flights/flights-offer.service";
+import {
+  encodeAncillarySelection,
+  parseAncillarySelectionJson,
+  validateAndPriceOrderServices,
+} from "@/lib/services/flights/flight-ancillaries.service";
+import type { FlightOrderServiceLine } from "@/lib/validations/flight-ancillaries.schema";
+
+function serializeRecord(row: {
+  duffel_intent_id: string;
+  offer_id: string;
+  charge_amount: string;
+  charge_currency: string;
+  offer_amount: string;
+  offer_currency: string;
+  markup_amount: string;
+  services_subtotal_amount: string | null;
+  status: string;
+  client_token: string;
+}) {
+  return {
+    payment_intent_id: row.duffel_intent_id,
+    client_token: row.client_token,
+    status: row.status,
+    offer_id: row.offer_id,
+    pricing: {
+      offer_total: row.offer_amount,
+      offer_currency: row.offer_currency,
+      services_subtotal: row.services_subtotal_amount ?? "0.00",
+      commission_and_fees_markup: row.markup_amount,
+      customer_charge_amount: row.charge_amount,
+      customer_charge_currency: row.charge_currency,
+    },
+  };
+}
+
+export async function createFlightCheckoutPaymentIntent(input: {
+  offerId: string;
+  idempotencyKey: string | null;
+  services: FlightOrderServiceLine[];
+}) {
+  const cfg = getFlightPaymentsConfig();
+  const selectionKey = encodeAncillarySelection(input.services);
+
+  if (input.idempotencyKey) {
+    const existing = await flightPaymentIntentRepository.findByIdempotencyKey(input.idempotencyKey);
+    if (existing) {
+      const storedKey = encodeAncillarySelection(parseAncillarySelectionJson(existing.ancillary_selection));
+      if (storedKey !== selectionKey) {
+        throw new AppError(
+          409,
+          "Idempotency-Key was already used with different ancillary selections.",
+          "IDEMPOTENCY_MISMATCH",
+        );
+      }
+      return { idempotent_replay: true as const, ...serializeRecord(existing) };
+    }
+  }
+
+  const offer = await refreshFlightOffer(input.offerId);
+  const priced = await validateAndPriceOrderServices({
+    offerId: input.offerId,
+    services: input.services,
+    offerTotalCurrency: offer.total_currency,
+  });
+  if (priced.currency !== offer.total_currency) {
+    throw new AppError(400, "Extras currency does not match offer.", "VALIDATION_ERROR");
+  }
+
+  const breakdown = computeDuffelPaymentIntentBreakdown(
+    offer.total_amount,
+    offer.total_currency,
+    cfg,
+    { servicesSubtotal: priced.servicesSubtotal },
+  );
+
+  const pit = await createDuffelPaymentIntent({
+    amount: breakdown.charge_amount,
+    currency: breakdown.charge_currency,
+  });
+
+  if (!pit.client_token || !pit.id) {
+    throw new AppError(502, "Invalid payment intent from supplier.", "PAYMENT_INTENT_INVALID");
+  }
+
+  await flightPaymentIntentRepository.create({
+    duffel_intent_id: pit.id,
+    offer_id: offer.id,
+    charge_amount: breakdown.charge_amount,
+    charge_currency: breakdown.charge_currency,
+    offer_amount: breakdown.offer_total,
+    offer_currency: breakdown.offer_currency,
+    markup_amount: breakdown.markup_amount,
+    services_subtotal_amount: priced.servicesSubtotal,
+    ...(priced.orderServices.length > 0
+      ? { ancillary_selection: priced.orderServices as unknown as Prisma.InputJsonValue }
+      : {}),
+    status: pit.status || "requires_payment_method",
+    client_token: pit.client_token,
+    idempotency_key: input.idempotencyKey,
+  });
+
+  return {
+    idempotent_replay: false as const,
+    ...serializeRecord({
+      duffel_intent_id: pit.id,
+      offer_id: offer.id,
+      charge_amount: breakdown.charge_amount,
+      charge_currency: breakdown.charge_currency,
+      offer_amount: breakdown.offer_total,
+      offer_currency: breakdown.offer_currency,
+      markup_amount: breakdown.markup_amount,
+      services_subtotal_amount: priced.servicesSubtotal,
+      status: pit.status || "requires_payment_method",
+      client_token: pit.client_token,
+    }),
+    pricing_detail: {
+      subtotal_before_payment_fee: breakdown.subtotal_charged,
+      duffel_payments_fee_rate: cfg.duffelPaymentsFeeRate,
+      fx_rate_applied: cfg.fxRateToCustomerCurrency,
+    },
+  };
+}
+
+export async function confirmFlightCheckoutPaymentIntent(duffelPaymentIntentId: string) {
+  if (!duffelPaymentIntentId.startsWith("pit_")) {
+    throw new AppError(400, "Invalid payment intent id.", "VALIDATION_ERROR");
+  }
+
+  const row = await flightPaymentIntentRepository.findByDuffelIntentId(duffelPaymentIntentId);
+  if (!row) {
+    throw new AppError(404, "Payment intent not found.", "NOT_FOUND");
+  }
+
+  const pit = await confirmDuffelPaymentIntent(duffelPaymentIntentId);
+  const status = pit.status || "unknown";
+  await flightPaymentIntentRepository.updateStatusByDuffelId(duffelPaymentIntentId, status);
+
+  return {
+    payment_intent_id: pit.id,
+    status,
+    amount: pit.amount,
+    currency: pit.currency,
+  };
+}

@@ -1,0 +1,799 @@
+@import "tailwindcss";
+@plugin "tailwindcss-animate";
+
+/* Class-based dark mode: .dark on <html> */
+@custom-variant dark (&:where(.dark, .dark *));
+
+
+/* Font Style  */
+:root {
+  --body-font: "Lato", sans-serif;
+  --heading-font: "Bai Jamjuree", sans-serif;
+}
+
+body,p {
+  font-family: var(--body-font) !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font) !important;
+}
+
+
+/* Primary & accent palettes - design colors from TravelTourUp UI */
+@theme {
+  --color-primary-50: #e6f6fc;
+  --color-primary-100: #ccecf9;
+  --color-primary-200: #99d9f3;
+  --color-primary-300: #66c6ed;
+  --color-primary-400: #33b3e7;
+  --color-primary-500: #0e90c7;
+  --color-primary-600: #0b73a0;
+  --color-primary-700: #095679;
+  --color-primary-800: #063a52;
+  --color-primary-900: #041d29;
+  --color-primary-950: #020f15;
+
+  --color-accent-300: #7dd3fc;
+  --color-accent-400: #00bfff;
+  --color-accent-500: #22d3ee;
+  --color-accent-600: #06b6d4;
+  --color-accent-700: #0891b2;
+
+  /* Semantic: success, destructive */
+  --color-success: #059669;
+  --color-success-foreground: #ffffff;
+  --color-destructive: #dc2626;
+  --color-destructive-foreground: #ffffff;
+}
+
+/* Semantic tokens - full palettes per theme variant & mode (WCAG AA contrast) */
+
+/* ═══════════════════════════════════════════════════════════════════
+   OCEAN BLUE - Trust & professionalism (aviation, travel)
+   ═══════════════════════════════════════════════════════════════════ */
+:root,
+:root[data-theme="ocean"] {
+  --color-background: #ffffff;
+  --color-foreground: #0f172a;
+  --color-muted: #f1f5f9;
+  --color-muted-foreground: #475569;
+  --color-border: #e2e8f0;
+  --color-input: #e2e8f0;
+  --color-ring: #0e90c7;
+  --color-primary: #0e90c7;
+  --color-primary-600: #0b73a0;
+  --color-primary-700: #095679;
+  --color-primary-800: #063a52;
+  --color-card: #ffffff;
+  --color-card-foreground: #0f172a;
+  /* Text fields: inset, slightly deeper than page (see dark blocks for navy “well”) */
+  --color-input-field: #f1f5f9;
+  --color-primary-foreground: #ffffff;
+  --color-success: #059669;
+  --color-success-foreground: #ffffff;
+  --color-destructive: #dc2626;
+  --color-destructive-foreground: #ffffff;
+  --color-hero-overlay: #0f4c5c;
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   SAPPHIRE - Deep royal blue (JetBlue, British Airways, Singapore Airlines)
+   ═══════════════════════════════════════════════════════════════════ */
+[data-theme="sapphire"] {
+  --color-hero-overlay: #172554;
+  --color-background: #ffffff;
+  --color-foreground: #0f172a;
+  --color-muted: #eff6ff;
+  --color-muted-foreground: #475569;
+  --color-border: #e2e8f0;
+  --color-input: #e2e8f0;
+  --color-ring: #1d4ed8;
+  --color-primary: #1d4ed8;
+  --color-primary-600: #1e40af;
+  --color-primary-700: #1e3a8a;
+  --color-primary-800: #172554;
+  --color-card: #ffffff;
+  --color-card-foreground: #0f172a;
+  --color-primary-foreground: #ffffff;
+  --color-success: #059669;
+  --color-success-foreground: #ffffff;
+  --color-destructive: #dc2626;
+  --color-destructive-foreground: #ffffff;
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   CRIMSON - Premium airline red (Emirates, Turkish Airlines, Qatar)
+   ═══════════════════════════════════════════════════════════════════ */
+[data-theme="crimson"] {
+  --color-hero-overlay: #4c0519;
+  --color-background: #ffffff;
+  --color-foreground: #1c1017;
+  --color-muted: #fff5f5;
+  --color-muted-foreground: #64748b;
+  --color-border: #e2e8f0;
+  --color-input: #e2e8f0;
+  --color-ring: #be123c;
+  --color-primary: #be123c;
+  --color-primary-600: #9f1239;
+  --color-primary-700: #881337;
+  --color-primary-800: #4c0519;
+  --color-card: #ffffff;
+  --color-card-foreground: #1c1017;
+  --color-input-field: #f1f5f9;
+  --color-primary-foreground: #ffffff;
+  --color-success: #059669;
+  --color-success-foreground: #ffffff;
+  --color-destructive: #dc2626;
+  --color-destructive-foreground: #ffffff;
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   AURORA - Modern travel tech purple (Hopper, WizzAir)
+   ═══════════════════════════════════════════════════════════════════ */
+[data-theme="aurora"] {
+  --color-hero-overlay: #2e1065;
+  --color-background: #ffffff;
+  --color-foreground: #1e1b4b;
+  --color-muted: #f5f3ff;
+  --color-muted-foreground: #64748b;
+  --color-border: #e2e8f0;
+  --color-input: #e2e8f0;
+  --color-ring: #7c3aed;
+  --color-primary: #7c3aed;
+  --color-primary-600: #6d28d9;
+  --color-primary-700: #5b21b6;
+  --color-primary-800: #4c1d95;
+  --color-card: #ffffff;
+  --color-card-foreground: #1e1b4b;
+  --color-input-field: #f1f5f9;
+  --color-primary-foreground: #ffffff;
+  --color-success: #059669;
+  --color-success-foreground: #ffffff;
+  --color-destructive: #dc2626;
+  --color-destructive-foreground: #ffffff;
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   SUNSET - Golden hour departures (Kayak, Lufthansa, EasyJet)
+   ═══════════════════════════════════════════════════════════════════ */
+[data-theme="sunset"] {
+  --color-hero-overlay: #78350f;
+  --color-background: #ffffff;
+  --color-foreground: #1c1917;
+  --color-muted: #fffbf5;
+  --color-muted-foreground: #64748b;
+  --color-border: #e7e5e4;
+  --color-input: #e7e5e4;
+  --color-ring: #b45309;
+  --color-primary: #b45309;
+  --color-primary-600: #92400e;
+  --color-primary-700: #78350f;
+  --color-primary-800: #451a03;
+  --color-card: #ffffff;
+  --color-card-foreground: #1c1917;
+  --color-primary-foreground: #ffffff;
+  --color-success: #059669;
+  --color-success-foreground: #ffffff;
+  --color-destructive: #dc2626;
+  --color-destructive-foreground: #ffffff;
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   DARK MODE - Ocean Blue
+   ═══════════════════════════════════════════════════════════════════ */
+.dark,
+.dark[data-theme="ocean"] {
+  --color-hero-overlay: #0c4a6e;
+  --color-background: #0f172a;
+  --color-input-field: color-mix(in srgb, var(--color-background) 52%, #000000);
+  --color-foreground: #f8fafc;
+  --color-muted: #1e293b;
+  --color-muted-foreground: #94a3b8;
+  --color-border: #334155;
+  --color-input: #475569;
+  --color-ring: #38a5d4;
+  --color-primary: #38a5d4;
+  --color-primary-600: #0e90c7;
+  --color-primary-700: #0b73a0;
+  --color-primary-800: #095679;
+  --color-card: #2d3a4d;
+  --color-card-foreground: #f8fafc;
+  --color-primary-foreground: #ffffff;
+  --color-success: #34d399;
+  --color-success-foreground: #0f172a;
+  --color-destructive: #f87171;
+  --color-destructive-foreground: #0f172a;
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   DARK MODE - Sapphire (deep navy night)
+   ═══════════════════════════════════════════════════════════════════ */
+.dark[data-theme="sapphire"] {
+  --color-hero-overlay: #0c1f4a;
+  --color-background: #0b1222;
+  --color-foreground: #f1f5fb;
+  --color-muted: #152035;
+  --color-muted-foreground: #8494b0;
+  --color-border: #1f3050;
+  --color-input: #2c3d58;
+  --color-ring: #3b82f6;
+  --color-primary: #3b82f6;
+  --color-primary-600: #2563eb;
+  --color-primary-700: #1d4ed8;
+  --color-primary-800: #1e40af;
+  --color-card: #1c2942;
+  --color-card-foreground: #f1f5fb;
+  --color-primary-foreground: #ffffff;
+  --color-success: #34d399;
+  --color-success-foreground: #0f172a;
+  --color-destructive: #f87171;
+  --color-destructive-foreground: #0f172a;
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   DARK MODE - Crimson (premium night)
+   ═══════════════════════════════════════════════════════════════════ */
+.dark[data-theme="crimson"] {
+  --color-hero-overlay: #4c0519;
+  --color-background: #141216;
+  --color-input-field: color-mix(in srgb, var(--color-background) 52%, #000000);
+  --color-foreground: #f8f7f8;
+  --color-muted: #1f1c22;
+  --color-muted-foreground: #9a96a0;
+  --color-border: #302c35;
+  --color-input: #403c44;
+  --color-ring: #fb7185;
+  --color-primary: #fb7185;
+  --color-primary-600: #f43f5e;
+  --color-primary-700: #e11d48;
+  --color-primary-800: #be123c;
+  --color-card: #2a2730;
+  --color-card-foreground: #f8f7f8;
+  --color-primary-foreground: #ffffff;
+  --color-success: #34d399;
+  --color-success-foreground: #0f172a;
+  --color-destructive: #f87171;
+  --color-destructive-foreground: #0f172a;
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   DARK MODE - Aurora (vibrant night)
+   ═══════════════════════════════════════════════════════════════════ */
+.dark[data-theme="aurora"] {
+  --color-hero-overlay: #2e1065;
+  --color-background: #100f19;
+  --color-input-field: color-mix(in srgb, var(--color-background) 52%, #000000);
+  --color-foreground: #f0eef8;
+  --color-muted: #1a1926;
+  --color-muted-foreground: #908ca2;
+  --color-border: #2b2838;
+  --color-input: #383548;
+  --color-ring: #a78bfa;
+  --color-primary: #a78bfa;
+  --color-primary-600: #8b5cf6;
+  --color-primary-700: #7c3aed;
+  --color-primary-800: #6d28d9;
+  --color-card: #23212e;
+  --color-card-foreground: #f0eef8;
+  --color-primary-foreground: #ffffff;
+  --color-success: #34d399;
+  --color-success-foreground: #0f172a;
+  --color-destructive: #f87171;
+  --color-destructive-foreground: #0f172a;
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   DARK MODE - Sunset (golden night)
+   ═══════════════════════════════════════════════════════════════════ */
+.dark[data-theme="sunset"] {
+  --color-hero-overlay: #451a03;
+  --color-background: #151310;
+  --color-input-field: color-mix(in srgb, var(--color-background) 52%, #000000);
+  --color-foreground: #faf8f5;
+  --color-muted: #201d19;
+  --color-muted-foreground: #a09a90;
+  --color-border: #322e28;
+  --color-input: #403c34;
+  --color-ring: #f59e0b;
+  --color-primary: #f59e0b;
+  --color-primary-600: #d97706;
+  --color-primary-700: #b45309;
+  --color-primary-800: #92400e;
+  --color-card: #2a2620;
+  --color-card-foreground: #faf8f5;
+  --color-primary-foreground: #0f172a;
+  --color-success: #34d399;
+  --color-success-foreground: #0f172a;
+  --color-destructive: #f87171;
+  --color-destructive-foreground: #0f172a;
+}
+
+/* Map semantic tokens to Tailwind */
+@theme inline {
+  --color-background: var(--color-background);
+  --color-foreground: var(--color-foreground);
+  --color-muted: var(--color-muted);
+  --color-muted-foreground: var(--color-muted-foreground);
+  --color-border: var(--color-border);
+  --color-input: var(--color-input);
+  --color-ring: var(--color-ring);
+  --color-primary: var(--color-primary);
+  --color-primary-600: var(--color-primary-600);
+  --color-primary-700: var(--color-primary-700);
+  --color-primary-800: var(--color-primary-800);
+  --color-card: var(--color-card);
+  --color-card-foreground: var(--color-card-foreground);
+  --color-input-field: var(--color-input-field);
+  --color-primary-foreground: var(--color-primary-foreground);
+  --color-success: var(--color-success);
+  --color-success-foreground: var(--color-success-foreground);
+  --color-destructive: var(--color-destructive);
+  --color-destructive-foreground: var(--color-destructive-foreground);
+  --color-hero-overlay: var(--color-hero-overlay);
+  /* shadcn-style aliases (admin UI) */
+  --color-secondary: var(--color-muted);
+  --color-secondary-foreground: var(--color-foreground);
+  --color-accent: var(--color-muted);
+  --color-accent-foreground: var(--color-foreground);
+  --color-popover: var(--color-card);
+  --color-popover-foreground: var(--color-card-foreground);
+  --color-sidebar: var(--color-card);
+  --color-sidebar-foreground: var(--color-card-foreground);
+  --color-sidebar-accent: var(--color-muted);
+  --color-sidebar-accent-foreground: var(--color-foreground);
+  --color-sidebar-border: var(--color-border);
+}
+
+/* Respect user's motion preferences (Phase 4 - Accessibility) */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Base styles */
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    color: var(--color-foreground);
+  width: 100%;
+  /* overflow-x: hidden !important; */
+}
+
+a {
+  /* color: inherit; */
+  text-decoration: none;
+  cursor: pointer;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* PageLoader dot pulse – optimized for smooth startup and performance */
+@keyframes pageLoaderPulse {
+  0%, 100% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+.page-loader-dot {
+  animation: pageLoaderPulse 2s ease-in-out infinite;
+  animation-fill-mode: both;
+  transform: translate3d(0,0,0); /* GPU acceleration applied once */
+  transform-origin: center;
+}
+button{
+  cursor: pointer;
+  
+}
+
+/* Hero rotating word animation */
+@keyframes heroWordSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+    filter: blur(4px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+@keyframes heroWordSlideOut {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100%);
+    filter: blur(4px);
+  }
+}
+.hero-word-enter {
+  animation: heroWordSlideIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+.hero-word-exit {
+  animation: heroWordSlideOut 0.5s cubic-bezier(0.7, 0, 0.84, 0) forwards;
+}
+
+/* Decorative underline: dots ... line ___ dots .. */
+.hero-underline-swoosh {
+  position: relative;
+  padding-bottom: 10px;
+}
+.hero-underline-swoosh::after {
+  content: "";
+  position: absolute;
+  left: -14px;
+  right: -14px;
+  bottom: 0;
+  height: 6px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 6'%3E%3Ccircle cx='4' cy='3' r='2.2' fill='%23ef4444'/%3E%3Ccircle cx='12' cy='3' r='2.2' fill='%23ef4444'/%3E%3Ccircle cx='20' cy='3' r='2.2' fill='%23ef4444'/%3E%3Crect x='28' y='1.2' width='144' height='3.6' rx='1.8' fill='%23ef4444'/%3E%3Ccircle cx='180' cy='3' r='2.2' fill='%23ef4444'/%3E%3Ccircle cx='188' cy='3' r='2.2' fill='%23ef4444'/%3E%3C/svg%3E");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+/* Dropdown scrollbar – hidden by default, reveals on hover with themed styling */
+.dropdown-scrollbar {
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-gutter: stable;
+  scrollbar-color: transparent transparent;
+}
+.dropdown-scrollbar:hover {
+  scrollbar-color: color-mix(in srgb, var(--color-primary) 50%, transparent) transparent;
+}
+.dropdown-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+.dropdown-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.dropdown-scrollbar::-webkit-scrollbar-thumb {
+  background: transparent;
+  border-radius: 10px;
+  transition: background 0.2s ease;
+}
+.dropdown-scrollbar:hover::-webkit-scrollbar-thumb {
+  background: color-mix(in srgb, var(--color-primary) 40%, transparent);
+}
+.dropdown-scrollbar:hover::-webkit-scrollbar-thumb:hover {
+  background: color-mix(in srgb, var(--color-primary) 65%, transparent);
+}
+
+/* Categories carousel pagination */
+.categories-pagination {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.categories-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--color-border);
+  opacity: 1;
+  transition: background 0.2s, transform 0.2s;
+  cursor: pointer;
+}
+.categories-pagination-bullet-active {
+  background: var(--color-foreground);
+  transform: scale(1.2);
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   Breadcrumb — Travel-themed smooth animations
+   ═══════════════════════════════════════════════════════════════════ */
+@keyframes breadcrumb-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes breadcrumb-stagger {
+  from {
+    opacity: 0;
+    transform: translateX(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes breadcrumb-title-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes breadcrumb-plane-path {
+  to {
+    stroke-dashoffset: -24;
+  }
+}
+
+@keyframes breadcrumb-shimmer {
+  0%, 100% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes breadcrumb-compass-float {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(8deg);
+  }
+}
+
+@keyframes breadcrumb-dot-pulse {
+  0%, 100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .breadcrumb-animate-in,
+  .breadcrumb-animate-stagger,
+  .breadcrumb-animate-title,
+  .breadcrumb-animate-plane,
+  .breadcrumb-animate-shimmer,
+  .breadcrumb-animate-compass,
+  .breadcrumb-animate-dot {
+    animation: none !important;
+  }
+}
+
+.breadcrumb-animate-in {
+  animation: breadcrumb-fade-up 0.5s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.breadcrumb-animate-stagger {
+  opacity: 0;
+  animation: breadcrumb-stagger 0.4s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.breadcrumb-animate-title {
+  opacity: 0;
+  animation: breadcrumb-title-in 0.5s cubic-bezier(0.22, 1, 0.36, 1) 0.15s forwards;
+}
+
+.breadcrumb-animate-plane {
+  stroke-dasharray: 6 8;
+  stroke-dashoffset: 0;
+  animation: breadcrumb-plane-path 3s linear infinite;
+}
+
+.breadcrumb-animate-shimmer {
+  animation: breadcrumb-shimmer 4s ease-in-out infinite;
+}
+
+.breadcrumb-animate-compass {
+  animation: breadcrumb-compass-float 6s ease-in-out infinite;
+}
+
+.breadcrumb-animate-dot {
+  animation: breadcrumb-dot-pulse 2.5s ease-in-out infinite;
+}
+
+.breadcrumb-link-hover {
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+.breadcrumb-link-hover:hover {
+  transform: translateX(2px);
+}
+
+.breadcrumb-icon-hover {
+  transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.breadcrumb-icon-hover:hover {
+  transform: scale(1.08);
+}
+
+/*  Swiper function color  */
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  color: hsl(var(--primary));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .auth-video {
+    display: none !important;
+  }
+}
+
+/* ── Autofill (Chrome/Safari/Edge): stop white/yellow background on saved credentials ── */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+  -webkit-text-fill-color: var(--color-foreground) !important;
+  -webkit-box-shadow: 0 0 0 1000px var(--color-background) inset !important;
+  transition: background-color 50000s ease-in-out 0s;
+}
+
+input.auth-input-autofill:-webkit-autofill,
+input.auth-input-autofill:-webkit-autofill:hover,
+input.auth-input-autofill:-webkit-autofill:focus,
+input.auth-input-autofill:-webkit-autofill:active {
+  -webkit-text-fill-color: var(--color-foreground) !important;
+  -webkit-box-shadow: 0 0 0 1000px var(--color-input-field) inset !important;
+}
+
+input:-moz-autofill,
+textarea:-moz-autofill {
+  box-shadow: 0 0 0 1000px var(--color-background) inset;
+  -moz-text-fill-color: var(--color-foreground);
+}
+
+input.auth-input-autofill:-moz-autofill {
+  box-shadow: 0 0 0 1000px var(--color-input-field) inset;
+}
+
+/* Chromium/Safari/Edge: calendar glyph defaults to dark — invert so it reads on --color-input-field.
+   Avoid setting color-scheme on these inputs in Blink: it can lighten the glyph so invert() hides it again. */
+.dark input[type="date"]::-webkit-calendar-picker-indicator,
+.dark input[type="datetime-local"]::-webkit-calendar-picker-indicator,
+.dark input[type="time"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  width: 1.35rem;
+  height: 1.35rem;
+  margin-left: 0.15rem;
+  padding: 0.15rem;
+  opacity: 1;
+  filter: invert(1) brightness(1.15);
+}
+
+/* Firefox: no webkit pseudo — dark scheme lets the UA draw a light control */
+@supports (-moz-appearance: none) {
+  .dark input[type="date"],
+  .dark input[type="datetime-local"],
+  .dark input[type="time"] {
+    color-scheme: dark;
+  }
+}
+
+/* Dual range slider: native thumbs must paint above the custom fill (z-index on inputs in TSX). */
+.dual-slider-range-input {
+  -webkit-appearance: none;
+  appearance: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background: transparent;
+  /* Interaction is handled by the transparent overlay in DualSlider (both thumbs share one hit layer). */
+  pointer-events: none;
+  z-index: 2;
+}
+
+.dual-slider-range-input.dual-slider-range-max {
+  /* Paint max thumb above min when they overlap */
+  z-index: 3;
+}
+
+.dual-slider-range-input::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 6px;
+  background: transparent;
+  border: none;
+  border-radius: 9999px;
+}
+
+.dual-slider-range-input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  margin-top: -6px;
+  border-radius: 9999px;
+  background: var(--color-primary);
+  border: 2px solid var(--color-background);
+  box-shadow: 0 1px 4px rgb(0 0 0 / 0.35);
+  cursor: grab;
+}
+
+.dual-slider-range-input:active::-webkit-slider-thumb {
+  cursor: grabbing;
+}
+
+.dual-slider-range-input::-moz-range-track {
+  width: 100%;
+  height: 6px;
+  background: transparent;
+  border: none;
+  border-radius: 9999px;
+}
+
+.dual-slider-range-input::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 9999px;
+  background: var(--color-primary);
+  border: 2px solid var(--color-background);
+  box-shadow: 0 1px 4px rgb(0 0 0 / 0.35);
+  cursor: grab;
+}
+
+/*
+ * Duffel Payments injects https://assets.duffel.com/components/.../global.css after mount.
+ * That sheet defines `.card-payment__container { width/max-width: 480px; margin: ... }`.
+ * The React `DuffelPayments` wrapper is a `.duffel-components` div; scope the override so
+ * specificity beats Duffel’s rule even when their link loads later in the document.
+ */
+.duffel-components .card-payment__container {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin-inline: 0 !important;
+  box-sizing: border-box !important;
+}
+
+.duffel-components .card-payment__pay-button {
+  margin-top: 0 !important;
+  background-color: var(--color-primary) !important;
+  color: var(--color-primary-foreground) !important;
+  border: none !important;
+  border-radius: 0.5rem !important;
+  padding: 0.5rem 1rem !important;
+  font-size: 1rem !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em !important;
+  transition: all 0.2s ease-in-out !important;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1) !important;
+}
+
+
+
+/* dfserefe */

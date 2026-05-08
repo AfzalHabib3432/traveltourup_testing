@@ -1,0 +1,1496 @@
+{
+  "Nav": {
+    "home": "Home",
+    "about": "About",
+    "flights": "Flights",
+    "cars": "Cars",
+    "hotels": "Hotels",
+    "contact": "Contact",
+    "phoneDisplay": "+92 (321)-9400142",
+    "emailDisplay": "info@traveltourup.com",
+    "theme": "Theme",
+    "currency": "Currency",
+    "language": "Language",
+    "account": "Account",
+    "profile": "Profile",
+    "bookings": "Bookings",
+    "wishlists": "Wishlists",
+    "adminConsole": "Admin console",
+    "logout": "Log out",
+    "login": "Log in",
+    "signup": "Sign up",
+    "navigationSection": "Navigation",
+    "languageCurrencyHeading": "Language & Currency",
+    "toggleMenu": "Toggle menu",
+    "closeMenu": "Close menu",
+    "themeSettingsAria": "Theme settings",
+    "lightModeAria": "Light mode",
+    "darkModeAria": "Dark mode",
+    "adminPanel": "Admin Panel"
+  },
+  "Footer": {
+    "rights": "All rights reserved.",
+    "stayTitle": "Stay in the loop",
+    "staySubtitle": "Get exclusive deals, travel tips & inspiration delivered to your inbox.",
+    "subscribedTitle": "You're all set!",
+    "subscribedSubtitle": "Check your inbox for a welcome email.",
+    "emailPlaceholder": "Enter your email",
+    "subscribe": "Subscribe",
+    "subscribing": "Subscribing...",
+    "noSpam": "No spam. Unsubscribe anytime.",
+    "tagline": "Your trusted partner for unforgettable travel experiences. Book flights, hotels, cars, and tours with exclusive deals worldwide.",
+    "quickLinksTitle": "Quick Links",
+    "servicesTitle": "Services",
+    "contactTitle": "Contact",
+    "copyright": "TravelTourUp. All rights reserved.",
+    "weAccept": "We accept",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "quick_home": "Home",
+    "quick_flights": "Flights",
+    "quick_about": "About Us",
+    "quick_blog": "Blogs",
+    "quick_contact": "Contact Us",
+    "svc_hotels": "Hotel Booking",
+    "svc_flights": "Flight Tickets",
+    "svc_cars": "Car Rental",
+    "svc_tours": "Tour Packages",
+    "svc_faqs": "FAQs",
+    "newsletterEmailInvalid": "Please enter a valid email address.",
+    "newsletterEmailRequired": "Please enter your email address.",
+    "newsletterEmailAria": "Email for newsletter",
+    "social_twitter": "Twitter",
+    "social_facebook": "Facebook",
+    "social_instagram": "Instagram",
+    "social_linkedin": "LinkedIn",
+    "brandAlt": "TravelTourUp"
+  },
+  "Common": {
+    "clearAll": "Clear all",
+    "filters": "Filters",
+    "applyFilters": "Apply filters",
+    "previous": "Previous",
+    "next": "Next",
+    "close": "Close",
+    "loading": "Loading…",
+    "bookNow": "Book Now",
+    "select": "Select",
+    "freeCancellation": "Free cancellation"
+  },
+  "Hero": {
+    "headlinePrefix": "Discover the World and",
+    "tagline": "Your next adventure is just a click away — unforgettable experiences, unbeatable deals.",
+    "rotate0": "Discover",
+    "rotate1": "Adventure",
+    "rotate2": "Explore",
+    "rotate3": "Travel",
+    "rotate4": "Wander",
+    "rotate5": "Experience",
+    "rotate6": "Dream",
+    "rotate7": "Escape",
+    "rotate8": "Celebrate",
+    "rotate9": "Relax",
+    "rotate10": "Enjoy",
+    "tabFlights": "FLIGHTS",
+    "tabCars": "CARS",
+    "tabHotels": "HOTELS",
+    "tabMore": "MORE"
+  },
+  "Blog": {
+    "indexH1": "Travel guides and tips for flights, hotels, and trips",
+    "featuredStoryLabel": "Featured guide",
+    "hubLinksAria": "Book travel on TravelTourUp",
+    "hubLinksTitle": "Plan your next trip",
+    "hubLinksFlights": "Search flights",
+    "hubLinksHotels": "Browse hotels",
+    "hubLinksCars": "Rent a car"
+  },
+  "Featured": {
+    "flightsHeading": "Featured Flights",
+    "flightsSubtitle": "Find inspiration — fares are cached briefly from our partner supply",
+    "flightsHeroTitle": "Featured Flights",
+    "flightsHeroDescription": "Discover flight deals to popular destinations — prices from live search (refresh periodically).",
+    "flightsCta": "Explore All Flights",
+    "hotelsHeading": "Featured Hotels",
+    "hotelsSubtitle": "Discover amazing places at exclusive deals",
+    "hotelsEmptyTitle": "Featured Hotels",
+    "hotelsEmptySubtitle": "No hotels available at the moment.",
+    "hotelsLoadingAria": "Loading featured hotels",
+    "hotelsDiscoverTitle": "Discover great deals",
+    "hotelsDiscoverSubtitle": "on hotels around the world",
+    "hotelsViewMore": "View More",
+    "hotelsAdAlt": "Discover great deals on hotels around the world",
+    "hotelsFallbackBanner": "Hotel Deals"
+  },
+  "Categories": {
+    "title": "Categories",
+    "subtitle": "Discover amazing places around the world for your next adventure",
+    "prevAria": "Previous categories",
+    "nextAria": "Next categories",
+    "goToSlide": "Go to slide {n}"
+  },
+  "RecommendedCars": {
+    "sectionTitle": "Recommended Transfer Cars",
+    "sectionSubtitle": "Comfortable and reliable transportation for all your travel needs",
+    "featuredFallbackTitle": "Premium Car Transfers",
+    "featuredFallbackDesc": "Luxury and comfort for your journey with professional drivers",
+    "exploreAll": "Explore All Cars",
+    "placeholderBanner": "CAR RENTALS",
+    "bannerAlt": "Premium car transfers - luxury and comfort for your journey"
+  },
+  "WinterSpecial": {
+    "title": "Winter Special",
+    "subtitle": "Plan, book, and embark on your dream adventure with our expert guidance and tailored experiences.",
+    "priceFrom": "From {price}",
+    "cardImageAlt": "Featured destination",
+    "destSwitzerland": "Switzerland",
+    "destNorway": "Norway",
+    "destIceland": "Iceland",
+    "destAustria": "Austria",
+    "destFinland": "Finland"
+  },
+  "Stats": {
+    "hotelsTitle": "Hotels Worldwide",
+    "hotelsDesc": "Luxury accommodations at best prices",
+    "destinationsTitle": "Destinations",
+    "destinationsDesc": "Explore amazing places around the world",
+    "satisfactionTitle": "Customer Satisfaction",
+    "satisfactionDesc": "Happy travelers and positive reviews"
+  },
+  "FAQ": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Find answers to common questions about our services, bookings, and policies",
+    "items": [
+      {
+        "question": "How can I change or cancel my flight booking?",
+        "answer": "You can change or cancel your flight booking by logging into your account and accessing your bookings. Please note that changes or cancellations may be subject to airline policies and fees."
+      },
+      {
+        "question": "What documents do I need for international travel?",
+        "answer": "For international travel, you typically need a valid passport, visa (if required), and any necessary health documents such as vaccination certificates. Check the entry requirements for your destination before traveling."
+      },
+      {
+        "question": "How do I know if my flight is refundable?",
+        "answer": "Refundability depends on the fare rules of your ticket. You can check this information in your booking confirmation or contact our customer support for assistance."
+      },
+      {
+        "question": "Can I select my seat during the booking process?",
+        "answer": "Yes, most airlines allow you to select your seat during the booking process. If not, you can usually choose your seat during online check-in."
+      },
+      {
+        "question": "What should I do if my flight is delayed or canceled?",
+        "answer": "If your flight is delayed or canceled, the airline will usually notify you via email or SMS. You can also check your flight status on our website or app. Contact customer support for rebooking options."
+      },
+      {
+        "question": "How do I book a flight for a group?",
+        "answer": "To book a flight for a group, select the number of passengers during the booking process. For groups larger than 10, please contact our group booking team for special rates and assistance."
+      },
+      {
+        "question": "Are there any hidden fees when booking flights?",
+        "answer": "We strive for transparency in pricing. All mandatory taxes and fees are included in the final price. Optional services, such as checked baggage or seat selection, may incur additional charges."
+      },
+      {
+        "question": "How can I check my baggage allowance?",
+        "answer": "Baggage allowance varies by airline and fare type. You can find this information in your booking confirmation or on the airline's website."
+      },
+      {
+        "question": "Is it safe to book flights online through your website?",
+        "answer": "Yes, our website uses secure encryption technology to protect your personal and payment information. We are committed to ensuring your data is safe."
+      },
+      {
+        "question": "Can I book flights for someone else using my account?",
+        "answer": "Yes, you can book flights for others using your account. Just enter the traveler's details during the booking process."
+      }
+    ]
+  },
+  "Reviews": {
+    "prevAria": "Previous testimonial",
+    "nextAria": "Next testimonial",
+    "goToSlide": "Go to slide {n}",
+    "items": [
+      {
+        "name": "Maria Smantha",
+        "role": "Web Developer",
+        "text": "TravelTourUp made booking my vacation incredibly easy. I found the perfect hotel within minutes and the booking process was smooth from start to finish. Everything was exactly as described and the prices were better than other platforms I checked.",
+        "image": "https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp"
+      },
+      {
+        "name": "Lisa Cudrow",
+        "role": "Graphic Designer",
+        "text": "I love how simple and clean the platform is. I was able to compare multiple hotels and flights without any confusion. The deals were amazing and the customer support team was very helpful when I had questions about my booking.",
+        "image": "https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp"
+      },
+      {
+        "name": "John Smith",
+        "role": "Marketing Specialist",
+        "text": "Booking my trip through TravelTourUp was a fantastic experience. From finding affordable flights to reserving a comfortable hotel, everything was handled perfectly. I'll definitely be using this platform again for my future travels.",
+        "image": "https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp"
+      }
+    ]
+  },
+  "MoreServices": {
+    "message": "More services coming soon..."
+  },
+  "About": {
+    "historyTitle": "Explore the World with Us",
+    "historySubtitle": "Since 1998",
+    "historyDescription": "We started with a vision to provide reliable and comfortable travel services. Today, we offer an extensive selection of luxury cars for a smooth and premium travel experience.",
+    "feat1": "Extensive Selection of Luxury Cars",
+    "feat2": "Well-Maintained & Luxury Hotels",
+    "feat3": "Easy and Intuitive Booking Process",
+    "feat4": "Exceptional Customer Service"
+  },
+  "Flights": {
+    "pageH1": "Search and book flights worldwide",
+    "tab": {
+      "tripOneWay": "One Way",
+      "tripRoundTrip": "Round Trip",
+      "tripMultiCity": "Multi City",
+      "advancedOptions": "Advanced options",
+      "classLabel": "Class",
+      "cabinEconomy": "Economy",
+      "cabinPremiumEconomy": "Premium Economy",
+      "cabinBusiness": "Business",
+      "cabinFirstClass": "First Class",
+      "maxConnectionsLabel": "Max connections",
+      "maxConnectionsAny": "Any",
+      "maxConnectionsDirect": "0 (direct only)",
+      "maxConnectionsOne": "1",
+      "maxConnectionsTwo": "2",
+      "supplierTimeoutLabel": "Supplier timeout (ms)",
+      "supplierTimeoutHint": "Duffel waits up to this for offer responses.",
+      "preferredAirlinesLabel": "Preferred airlines",
+      "preferredAirlinesHint": "Optional — filter by carrier with search.",
+      "flyingFromLabel": "Flying From",
+      "destinationToLabel": "Destination To",
+      "filterPlaceholder": "Type to filter",
+      "popularAirportsHint": "Popular airports — type 2+ letters to search with Duffel",
+      "ariaOriginAirports": "Origin airports",
+      "ariaDestinationAirports": "Destination airports",
+      "noMatchingAirports": "No matching airports",
+      "swapDestinationsTitle": "Swap destinations",
+      "removeFlightTitle": "Remove flight",
+      "departDateLabel": "Depart Date",
+      "departureDateLabel": "Departure date",
+      "returnDateLabel": "Return date",
+      "selectDate": "Select Date",
+      "travelerCount": "{count, plural, one {# traveler} other {# travelers}}",
+      "adultsLabel": "Adults",
+      "childrenLabel": "Children",
+      "infantsLabel": "Infants",
+      "childAgeHint": "A child's age must be valid for the full journey.",
+      "childLabel": "Child {n}",
+      "yearsOld": "{years} years",
+      "addAnotherFlight": "Add Another Flight",
+      "searchFlightsAria": "Search flights",
+      "calendarDaySun": "Su",
+      "calendarDayMon": "Mo",
+      "calendarDayTue": "Tu",
+      "calendarDayWed": "We",
+      "calendarDayThu": "Th",
+      "calendarDayFri": "Fr",
+      "calendarDaySat": "Sa",
+      "selectCity": "Select City",
+      "flightTimeSummaryAny": "At any time",
+      "flightTimeSummaryTakeoff": "Take-off {from}–{to}",
+      "flightTimeSummaryLanding": "Landing {from}–{to}",
+      "sliceTakeoffLabel": "Take-off",
+      "sliceLandingLabel": "Landing",
+      "timeAxisAnyTime": "at any time",
+      "flightTimeConfirm": "Confirm"
+    },
+    "sort": {
+      "best": "Best match",
+      "price_asc": "Least expensive",
+      "price_desc": "Most Expensive",
+      "duration_asc": "Shortest duration",
+      "duration_desc": "Longest duration",
+      "sortBy": "Sort by"
+    },
+    "stops": {
+      "any": "Any number of stops",
+      "direct": "Direct only",
+      "one": "1 stop at most",
+      "two": "2 stops at most",
+      "label": "Stops"
+    },
+    "filters": {
+      "title": "Filters",
+      "price": "Price",
+      "airlines": "Airlines",
+      "flightNumber": "Flight number",
+      "flightNumberPlaceholder": "e.g. EK 215",
+      "flightTime": "Flight time",
+      "flightTimeHint": "First segment departure / last segment arrival (local times)",
+      "airlineComboAll": "All airlines",
+      "airlineComboCount": "{count} airlines",
+      "airlineComboPlaceholder": "Type to filter",
+      "airlineComboNoMatches": "No matches",
+      "airlineComboNoAirlinesInResultSet": "No airlines in this result set"
+    },
+    "offerDetail": {
+      "unavailableTitle": "Offer unavailable",
+      "expiredMessage": "This offer is no longer available.",
+      "returnToSearchHint": "Return to search and pick another flight.",
+      "invalidOffer": "Invalid offer",
+      "couldNotLoadOffer": "Could not load this offer"
+    },
+    "detail": {
+      "labelAirline": "Airline",
+      "labelFlightType": "Flight Type",
+      "labelFareCabin": "Fare / cabin",
+      "labelCancellation": "Cancellation",
+      "labelFlightChange": "Flight Change",
+      "labelSeatsBaggage": "Seats & Baggage",
+      "labelInflightFeatures": "Inflight Features",
+      "labelTotal": "Total",
+      "valueNonstop": "Nonstop",
+      "valueStopCount": "{count, plural, one {# Stop} other {# Stops}}",
+      "valueNonRefundableFee": "Non-refundable (fee applies)",
+      "valueFreeChange": "Free change",
+      "valueFeeApplies": "Fee applies",
+      "inflightSectionTitle": "Inflight Features",
+      "inflightSectionDescription": "Enjoy a comfortable journey with these amenities on board."
+    },
+    "checkout": {
+      "errorCouldNotLoadOffer": "Could not load offer",
+      "backToFlights": "Back to flights",
+      "title": "Checkout",
+      "offerSubtitle": "Offer {offerId} · {currency} {amount}",
+      "stepPayment": "Step: Payment",
+      "backToOffer": "← Back to offer",
+      "payNowOrHoldTitle": "Pay now or hold",
+      "payNowOrHoldIntro": "Pay now confirms with the airline immediately. Hold reserves the fare while you finish arrangements (when enabled for your account).",
+      "payNowTitle": "Pay now",
+      "payNowDescription": "Pay with card via Duffel. Your booking is confirmed after payment succeeds.",
+      "holdOrderTitle": "Hold order",
+      "holdOrderDescription": "Place a hold without charging your card. Pay later before the hold expires.",
+      "holdDisabledHint": "Hold checkout is not enabled yet. Set FLIGHT_HOLD_BACKEND and NEXT_PUBLIC_FLIGHT_HOLD_BACKEND when your Duffel account supports hold orders.",
+      "passengerDetailsTitle": "Passenger details",
+      "passengerIndex": "Passenger {current} of {total}",
+      "referenceLabel": "Reference",
+      "passengerTypeGeneric": "Passenger",
+      "passengerTypeAdult": "Adult",
+      "passengerTypeChild": "Child",
+      "passengerTypeInfant": "Infant",
+      "titleFieldLabel": "Title",
+      "genderFieldLabel": "Gender",
+      "titleMr": "Mr",
+      "titleMrs": "Mrs",
+      "titleMs": "Ms",
+      "titleMiss": "Miss",
+      "titleDr": "Dr",
+      "genderMale": "Male",
+      "genderFemale": "Female",
+      "givenNameLabel": "Given name (as on ID)",
+      "familyNameLabel": "Family name (as on ID)",
+      "dobLabel": "Date of birth (YYYY-MM-DD)",
+      "infantAdultLabel": "Traveling on adult (lap infant)",
+      "selectAdultPassenger": "Select adult passenger",
+      "contactDetailsTitle": "Contact details",
+      "contactDetailsHint": "Used for your booking confirmation and airline contact (lead passenger).",
+      "emailLabel": "Email",
+      "phoneOptionalLabel": "Phone (optional)",
+      "continueToPayment": "Continue to payment",
+      "placeHold": "Place hold",
+      "preparingPayment": "Preparing payment…",
+      "placingHold": "Placing hold…",
+      "paymentSectionTitle": "Payment",
+      "confirmingBooking": "Confirming your booking…",
+      "pciNotice": "Payments are processed securely by Duffel. Your card details are handled according to PCI standards.",
+      "cardDetailsTitle": "Card details",
+      "hintIncompleteForm": "Enter all names and date of birth, a valid email for the lead passenger, and link any infant to an adult when required.",
+      "hintHoldNoCharge": "No card charge yet—complete payment from My bookings before the hold expires.",
+      "hintPayExtrasOnOffer": "Bags and seats were chosen on the offer page. You can go back to change them before paying.",
+      "orderSummaryTitle": "Order summary",
+      "summaryTypeFlight": "Flight",
+      "summaryTypeHotel": "Hotel",
+      "summaryTypeCar": "Car",
+      "summaryBookingWord": "booking",
+      "offerTotalLabel": "Offer total",
+      "totalAmountLabel": "Total amount",
+      "includesFareExtras": "Includes fare and selected extras where priced",
+      "secureCheckout": "100% secure checkout",
+      "viewOrderSummaryAria": "View order summary",
+      "sheetOrderSummaryTitle": "Order summary",
+      "defaultSummaryTitle": "Flight booking",
+      "successHoldPlaced": "Hold placed",
+      "successBookingConfirmed": "Booking confirmed",
+      "successHoldBodyPrefix": "Your order is on hold. Complete payment before the offer expires. Reference",
+      "successReferencePrefix": "Reference",
+      "successAirlinePnr": "Airline PNR",
+      "viewYourBooking": "View your booking",
+      "errorMissingCheckoutData": "Missing checkout data.",
+      "errorCouldNotStartPayment": "Could not start payment",
+      "errorCouldNotPlaceHold": "Could not place hold",
+      "errorBookingFailedAfterPayment": "Booking failed after payment",
+      "errorCardPaymentFailed": "Card payment failed"
+    },
+    "results": {
+      "searchFailed": "Flight search failed",
+      "roundTripTotal": "Round trip total",
+      "oneWayTotal": "One-way total",
+      "roundTripSteps": "Round trip steps",
+      "outbound": "Outbound",
+      "inbound": "Inbound",
+      "returnStep": "Return",
+      "changeOutbound": "Change outbound",
+      "loadingResults": "Loading results…",
+      "noMatching": "No matching flights",
+      "listView": "List view",
+      "gridView": "Grid view",
+      "filtersSortButton": "Filters & sort",
+      "mobileFilters": "Filters",
+      "done": "Done",
+      "startSearchTitle": "Start a flight search",
+      "startSearchBody": "Use the search form above to choose route, dates, and travelers.",
+      "noFlightsTitle": "No flights found",
+      "noFlightsBody": "Try adjusting your filters",
+      "clearFilters": "Clear filters",
+      "showingRange": "Showing {start}–{end} of {total} flights",
+      "paginationPage": "Page {page} of {total}",
+      "prevPage": "Previous page",
+      "nextPage": "Next page",
+      "importantTitle": "Important information",
+      "importantSubtitle": "Good to know before you confirm your flight.",
+      "baggageTitle": "Baggage",
+      "baggageBody": "Allowances vary by fare and airline—check the offer and carrier rules.",
+      "requirementsTitle": "Travel requirements",
+      "requirementsBody": "Review visas, entry rules, and health requirements for your destination.",
+      "flexibleTitle": "Flexible booking",
+      "flexibleBody": "Change and refund rules depend on the fare—see conditions before you pay.",
+      "paginationNav": "Flight results pagination",
+      "editSearchModalTitle": "Edit search",
+      "editSearchButton": "Edit search",
+      "editSearchCancel": "Cancel",
+      "editSearchTitleRoundTrip": "Round trip to {destination}",
+      "editSearchTitleOneWay": "One-way to {destination}",
+      "editSearchTitleMultiCity": "Multi-city trip",
+      "editSearchRouteRound": "{origin} ⇌ {destination} • Return",
+      "editSearchRouteOneWay": "{origin} → {destination} • One way",
+      "editSearchDatesRound": "{depart} – {returnDate} • {passengers}",
+      "editSearchDatesOneWay": "{depart} • {passengers}",
+      "editSearchDatesMultiCity": "{depart} • {passengers}",
+      "editSearchPassengers": "{count, plural, one {# passenger} other {# passengers}}"
+    }
+  },
+  "Hotels": {
+    "pageH1": "Find hotels and places to stay worldwide",
+    "tab": {
+      "alertSelectDestination": "Please select a destination.",
+      "alertSelectDates": "Please select check-in and check-out dates.",
+      "alertDestinationUnavailable": "This destination is not available for live hotel search yet.",
+      "searchFailed": "Search failed. Try again or check Duffel configuration.",
+      "destinationLabel": "Destination",
+      "destinationPlaceholder": "Type to filter",
+      "popularSection": "Popular destinations",
+      "popularHint": "Popular hotel destinations — type 2+ letters to search with Duffel",
+      "noMatching": "No matching places",
+      "roomsTravelers": "Rooms & travelers",
+      "nationality": "Nationality",
+      "nationalityComboPlaceholder": "Search country or code",
+      "nationalityComboNoMatches": "No matching countries",
+      "searchHotels": "Search Hotels",
+      "selectDestination": "Select Destination",
+      "selectDate": "Select Date",
+      "checkIn": "Check-in",
+      "checkOut": "Check-out",
+      "checkInDateLabel": "Check-in Date",
+      "checkOutDateLabel": "Check-out Date",
+      "destinationsAria": "Hotel destinations",
+      "roomsGuestsLabel": "Rooms & Guests",
+      "roomsCounterLabel": "Rooms",
+      "roomSingular": "Room",
+      "roomsPlural": "Rooms",
+      "travelerSingular": "Traveler",
+      "travelersPlural": "Travelers",
+      "adults": "Adults",
+      "children": "Children"
+    },
+    "results": {
+      "sortLabel": "Sort by:",
+      "sortPlaceholder": "Sort by",
+      "loadingResults": "Loading results…",
+      "noMatching": "No matching properties",
+      "showingRange": "Showing {start}–{end} of {total}",
+      "propertySingular": "property",
+      "propertyPlural": "properties",
+      "totalInParens": " ({total} total)",
+      "filtersSortButton": "Filters & sort",
+      "filtersTitle": "Filters",
+      "done": "Done",
+      "showFiltersButton": "Show Filters",
+      "applyFilters": "Apply filters",
+      "sortOpenMenuAria": "Sort by, open menu",
+      "sortByFallback": "Sort by",
+      "clearAllFilters": "Clear all",
+      "filterPricePerNightTitle": "Price per night (USD)",
+      "filterMinLabel": "Min",
+      "filterMaxLabel": "Max",
+      "filterStarRatingTitle": "Star Rating",
+      "filterSearchRadiusTitle": "Search radius",
+      "filterSearchRadiusAria": "Search radius",
+      "radiusSelectionSummary": "{km} km radius ({count, plural, one {# property} other {# properties}})",
+      "radiusKmOption": "{km, plural, one {1 kilometer} other {# kilometers}}",
+      "mapLocationsTitle": "Property locations",
+      "mapSidebarHint": "{count} shown on map (updates when you change filters).",
+      "mapModalFootnote": "{count, plural, one {# property matches your current filters (same as the sidebar map).} other {# properties match your current filters (same as the sidebar map).}}",
+      "closeMapAria": "Close map",
+      "cardSeeRoomRates": "See room rates",
+      "cardShownAfterPickRoom": "Shown after you pick a room",
+      "cardPriceOnRoomStep": "Price on room step",
+      "cardReserveNowPayLater": "Reserve now, pay later",
+      "sort": {
+        "best": "Best",
+        "price_low": "Price (lowest)",
+        "price_high": "Price (highest)",
+        "rating": "Guest rating",
+        "stars": "Stars",
+        "distance": "Distance"
+      },
+      "editSearchModalTitle": "Edit search",
+      "editSearchButton": "Edit search",
+      "editSearchCancel": "Cancel",
+      "editSearchHeadlineStays": "Stays in {destination}",
+      "editSearchStayDatesGuests": "{checkIn} – {checkOut} • {rooms} rooms · {guests} guests",
+      "editSearchStayGuestsOnly": "{guests} guests"
+    },
+    "detail": {
+      "labelLocation": "Location",
+      "labelRating": "Rating",
+      "labelPropertyType": "Property Type",
+      "labelMealPlan": "Meal Plan",
+      "labelCancellation": "Cancellation",
+      "labelRooms": "Rooms",
+      "labelDistance": "Distance",
+      "labelConfirmation": "Confirmation",
+      "labelArea": "Area",
+      "fromCenter": "from center",
+      "fromAirport": "from airport",
+      "ratingReviews": "{rating}/10 ({count, plural, one {# review} other {# reviews}})",
+      "roomsLeftCount": "{count, plural, one {# room left} other {# rooms left}}",
+      "confirmationInstant": "Instant",
+      "confirmationWithin24": "Within 24 hours",
+      "cancellationNonRefundable": "Non-refundable",
+      "cancellationRefundHint": "Refund windows may apply — pick a rate to see deadlines",
+      "cancellationRateCard": "Non-refundable or policy on rate card",
+      "amenitiesSectionTitle": "Hotel Amenities",
+      "amenitiesSectionDescription": "Enjoy these facilities during your stay.",
+      "aboutHotelHeading": "About {name}",
+      "aboutLocationTitle": "Location",
+      "sectionDeals": "Deals",
+      "redirectToHotelsCountdown": "Redirecting to hotels in {time}"
+    },
+    "checkout": {
+      "title": "Checkout",
+      "quoteLabel": "Quote",
+      "headerPriceSeparator": "·",
+      "backToHotels": "← Back to hotels",
+      "guestDetailsTitle": "Guest details",
+      "guestIndex": "Guest {current} of {total}",
+      "leadGuestBadge": "Lead guest",
+      "firstNameLabel": "First name",
+      "lastNameLabel": "Last name",
+      "dobLabel": "Date of birth",
+      "contactDetailsTitle": "Contact details",
+      "contactDetailsHint": "Used for your booking confirmation and hotel contact.",
+      "emailLabel": "Email",
+      "phoneLabel": "Phone (E.164)",
+      "phonePlaceholder": "+442080160509",
+      "confirmBooking": "Confirm booking",
+      "bookingInProgress": "Booking…",
+      "hintIncompleteForm": "Enter given and family name, date of birth (YYYY-MM-DD), a valid email, and phone (E.164).",
+      "hintChargesDuffel": "Charges follow your Duffel account (balance by default). Loyalty / negotiated rates need extra search or booking fields per Duffel docs when the product enables them.",
+      "errorMissingQuoteId": "Missing quote id.",
+      "errorFillAllFields": "Please fill all fields with a valid email and date of birth.",
+      "errorBookingFailed": "Booking failed.",
+      "errorAppendNewQuote": "Request a new quote from the hotel page.",
+      "orderSummaryTitle": "Order summary",
+      "summaryTypeFlight": "Flight",
+      "summaryTypeHotel": "Hotel",
+      "summaryTypeCar": "Car",
+      "summaryBookingWord": "booking",
+      "defaultSummaryTitle": "Hotel stay",
+      "rowLabelStay": "Stay",
+      "rowLabelQuote": "Quote",
+      "quoteTotalLabel": "Quote total",
+      "totalAmountLabel": "Total amount",
+      "includesRoomTaxes": "Includes room rate and taxes where priced in the quote",
+      "viewOrderSummaryAria": "View order summary",
+      "sheetOrderSummaryTitle": "Order summary",
+      "secureCheckout": "100% secure checkout"
+    }
+  },
+  "Cars": {
+    "pageH1": "Book car rental for your trip",
+    "tab": {
+      "fromAirportLabel": "From Airport",
+      "searchPlaceholder": "Search location...",
+      "selectLocation": "Select Location",
+      "dateLabel": "Date",
+      "selectDate": "Select Date",
+      "travelersLabel": "Travelers",
+      "adults": "Adults",
+      "children": "Children",
+      "travelerSingular": "Traveler",
+      "travelerPlural": "Travelers",
+      "searchCarsAria": "Search cars"
+    },
+    "detail": {
+      "labelSupplier": "Supplier",
+      "labelTransmission": "Transmission",
+      "labelFuelType": "Fuel Type",
+      "labelSeats": "Seats",
+      "labelBaggage": "Baggage",
+      "labelCategory": "Category",
+      "labelCancellation": "Cancellation",
+      "labelPickupLocation": "Pickup Location",
+      "labelPickupHours": "Pickup Hours",
+      "labelRating": "Rating",
+      "labelMileage": "Mileage",
+      "labelDoors": "Doors",
+      "seatsPassengers": "{count, plural, one {# passenger} other {# passengers}}",
+      "bagsCount": "{count, plural, one {# bag} other {# bags}}",
+      "doorsCount": "{count, plural, one {# door} other {# doors}}",
+      "cancellationFeeApplies": "Fee applies",
+      "ratingReviews": "{rating}/10 ({count, plural, one {# review} other {# reviews}})",
+      "reviewsParenthetical": "({count, plural, one {# review} other {# reviews}})",
+      "featuresSectionTitle": "Car Features",
+      "featuresSectionDescription": "This vehicle includes the following features.",
+      "sectionIncluded": "Included",
+      "sectionPickupDetails": "Pickup Details",
+      "aboutSupplierHeading": "About {supplier}",
+      "sectionDeals": "Deals"
+    }
+  },
+  "Booking": {
+    "sidebar": {
+      "title": "Booking Details",
+      "hotelPromptSelectRooms": "Select rooms from the list below to see your total.",
+      "selectedRoomsHeading": "Selected Rooms",
+      "confirmedQuoteHint": "Confirmed total after quote. Duffel flow: search → rates → quote → book.",
+      "datesHotel": "Check-in / Check-out",
+      "datesCar": "Pickup / Drop-off",
+      "datesFlight": "Travel dates",
+      "guests": "Guests",
+      "travelers": "Travelers",
+      "adults": "Adults",
+      "children": "Children",
+      "rooms": "Rooms",
+      "bagsAndSeats": "Bags & seats",
+      "extras": "Extras",
+      "extraBaggage50": "Extra baggage (+$50)",
+      "seatSelection25": "Seat selection (+$25)",
+      "fare": "Fare",
+      "selectedExtrasEst": "Selected extras (est.)",
+      "totalEst": "Total (est.)",
+      "finalAmountDisclaimer": "Final amount is confirmed at payment.",
+      "price": "Price",
+      "total": "Total",
+      "totalColon": "Total:",
+      "hotelQuotePaymentHint": "Select a rate and wait for the quote before payment — per Duffel Stays booking flow.",
+      "gettingQuote": "Getting quote…",
+      "selectRoom": "Select a room",
+      "proceedToPayment": "Proceed to Payment",
+      "selectRoomForTotal": "Select a room to see your total",
+      "viewFlightAria": "View flight booking details",
+      "viewHotelAria": "View hotel booking details",
+      "sheetFlightTitle": "Flight booking details",
+      "sheetHotelTitle": "Hotel booking details",
+      "summaryTravelers": "Travelers",
+      "summaryDates": "Dates",
+      "summaryExtras": "Extras",
+      "summaryGuests": "Guests",
+      "summaryRooms": "Rooms",
+      "summaryStay": "Stay",
+      "summaryRoom": "Room",
+      "summaryRentalPeriod": "Rental period",
+      "partySummary": "{adults} adults, {children} children",
+      "nightSingular": "night",
+      "nightPlural": "nights",
+      "totalStayPhrase": "total stay",
+      "extrasBagServices": "{qty} add-on service qty.",
+      "extrasSeatsChosen": "{count} seat(s)"
+    }
+  },
+  "Contact": {
+    "heading": "Get in Touch",
+    "subheading": "I'd like to hear from you.",
+    "intro": "If you have any inquiries or just want to say hi, please use the contact form.",
+    "addressLine1": "920 Hylan Blvd Staten Island, NewYork 10305",
+    "addressLine2": "USA",
+    "firstNameLabel": "First Name",
+    "lastNameLabel": "Last Name",
+    "firstNamePlaceholder": "John",
+    "lastNamePlaceholder": "Doe",
+    "emailLabel": "Email *",
+    "emailPlaceholder": "example@email.com",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Write your message...",
+    "send": "Send",
+    "sending": "Sending...",
+    "successMessage": "Thank you! Your message has been sent.",
+    "errorGeneric": "Something went wrong",
+    "errorSendFailed": "Failed to send message",
+    "rateLimit": "Try again in {seconds} seconds",
+    "mapIframeTitle": "Map",
+    "socialInstagram": "Instagram",
+    "socialFacebook": "Facebook",
+    "socialTwitter": "Twitter",
+    "socialLinkedIn": "LinkedIn"
+  },
+  "Home": {
+    "hotels": [
+      {
+        "name": "Luxury Beach Resort & Spa",
+        "location": "Bali, Indonesia",
+        "price": 299,
+        "rating": 4.8,
+        "reviews": "1.2k",
+        "facilities": [
+          "WiFi",
+          "Pool",
+          "Spa",
+          "Gym"
+        ]
+      },
+      {
+        "name": "Grand Palace Hotel",
+        "location": "Paris, France",
+        "price": 320,
+        "rating": 4.9,
+        "reviews": "892",
+        "facilities": [
+          "WiFi",
+          "Restaurant",
+          "Bar",
+          "Spa"
+        ]
+      },
+      {
+        "name": "Ocean View Paradise Resort",
+        "location": "Maldives",
+        "price": 450,
+        "rating": 4.7,
+        "reviews": "1.5k",
+        "facilities": [
+          "Beach",
+          "Pool",
+          "Spa",
+          "Diving"
+        ]
+      },
+      {
+        "name": "Mountain Peak Retreat",
+        "location": "Swiss Alps",
+        "price": 280,
+        "rating": 4.6,
+        "reviews": "734",
+        "facilities": [
+          "Skiing",
+          "Spa",
+          "Fireplace",
+          "WiFi"
+        ]
+      },
+      {
+        "name": "Urban Luxury Suites",
+        "location": "New York, USA",
+        "price": 380,
+        "rating": 4.8,
+        "reviews": "2.1k",
+        "facilities": [
+          "WiFi",
+          "Gym",
+          "Bar",
+          "Conference"
+        ]
+      },
+      {
+        "name": "Desert Oasis Resort",
+        "location": "Dubai, UAE",
+        "price": 420,
+        "rating": 4.9,
+        "reviews": "1.8k",
+        "facilities": [
+          "Pool",
+          "Spa",
+          "Golf",
+          "Beach"
+        ]
+      }
+    ],
+    "categories": [
+      {
+        "key": "beach",
+        "name": "Beach"
+      },
+      {
+        "key": "desert",
+        "name": "Desert"
+      },
+      {
+        "key": "mountain",
+        "name": "Mountain"
+      },
+      {
+        "key": "temple",
+        "name": "Temple"
+      },
+      {
+        "key": "tower",
+        "name": "Tower"
+      },
+      {
+        "key": "pyramid",
+        "name": "Pyramid"
+      },
+      {
+        "key": "city",
+        "name": "City"
+      },
+      {
+        "key": "forest",
+        "name": "Forest"
+      },
+      {
+        "key": "waterfall",
+        "name": "Waterfall"
+      },
+      {
+        "key": "lake",
+        "name": "Lake"
+      },
+      {
+        "key": "island",
+        "name": "Island"
+      },
+      {
+        "key": "canyon",
+        "name": "Canyon"
+      }
+    ],
+    "featuredCar": {
+      "title": "Premium Car Transfers",
+      "description": "Luxury and comfort for your journey with professional drivers",
+      "buttonText": "Explore All Cars"
+    },
+    "featuredBlogsTitle": "Featured stories",
+    "featuredBlogsSubtitle": "Read our latest stories and stay updated with the latest travel news",
+    "featuredBlogsViewAll": "View all posts",
+    "cars": [
+      {
+        "name": "Toyota Camry",
+        "type": "Sedan",
+        "passengers": 4,
+        "luggage": 2,
+        "price": 45,
+        "originalPrice": 60,
+        "features": [
+          "AC",
+          "WiFi",
+          "GPS"
+        ]
+      },
+      {
+        "name": "Honda Accord",
+        "type": "Sedan",
+        "passengers": 4,
+        "luggage": 3,
+        "price": 48,
+        "originalPrice": 65,
+        "features": [
+          "AC",
+          "USB",
+          "Leather"
+        ]
+      },
+      {
+        "name": "Toyota RAV4",
+        "type": "SUV",
+        "passengers": 5,
+        "luggage": 4,
+        "price": 65,
+        "originalPrice": 85,
+        "features": [
+          "AC",
+          "4WD",
+          "Roof Rack"
+        ]
+      },
+      {
+        "name": "Ford Explorer",
+        "type": "SUV",
+        "passengers": 7,
+        "luggage": 5,
+        "price": 75,
+        "originalPrice": 95,
+        "features": [
+          "AC",
+          "7 Seats",
+          "Premium Sound"
+        ]
+      },
+      {
+        "name": "Mercedes E-Class",
+        "type": "Luxury",
+        "passengers": 4,
+        "luggage": 3,
+        "price": 120,
+        "originalPrice": 150,
+        "features": [
+          "Leather",
+          "Panoramic",
+          "Massage Seats"
+        ]
+      },
+      {
+        "name": "BMW 5 Series",
+        "type": "Luxury",
+        "passengers": 4,
+        "luggage": 2,
+        "price": 125,
+        "originalPrice": 160,
+        "features": [
+          "Premium",
+          "Heated Seats",
+          "Entertainment"
+        ]
+      },
+      {
+        "name": "Toyota Sienna",
+        "type": "Van",
+        "passengers": 8,
+        "luggage": 6,
+        "price": 85,
+        "originalPrice": 110,
+        "features": [
+          "AC",
+          "8 Seats",
+          "Sliding Doors"
+        ]
+      },
+      {
+        "name": "Mercedes V-Class",
+        "type": "Van",
+        "passengers": 8,
+        "luggage": 7,
+        "price": 110,
+        "originalPrice": 140,
+        "features": [
+          "Luxury",
+          "TV",
+          "Refrigerator"
+        ]
+      }
+    ]
+  },
+  "Auth": {
+    "loginTitle": "Welcome Back",
+    "loginSubtitle": "Sign in with your email",
+    "signupTitle": "Create account",
+    "email": "Email",
+    "password": "Password",
+    "rememberMe": "Remember me",
+    "forgotPassword": "Forgot password?",
+    "signIn": "Sign in",
+    "signUp": "Sign up",
+    "noAccount": "Don't have an account?",
+    "hasAccount": "Already have an account?",
+    "orContinueWith": "Or continue with",
+    "terms": "Terms of Service",
+    "privacy": "Privacy Policy",
+    "oauthRedirecting": "Redirecting…",
+    "signInFailed": "Sign-in failed. Please try again or use email and password.",
+    "passwordUpdated": "Password updated. Sign in with your new password."
+  },
+  "PrivacyPage": {
+    "topCards": [
+      {
+        "title": "Security",
+        "desc": "Encrypted transactions and trusted providers."
+      },
+      {
+        "title": "Transparency",
+        "desc": "Clear explanation of data collection and usage."
+      },
+      {
+        "title": "Control",
+        "desc": "Access, update, and request deletion of your data."
+      }
+    ],
+    "sections": [
+      {
+        "title": "1. Introduction",
+        "content": "Welcome to TravelTourUp. We respect your privacy and are committed to protecting your personal data when you use our travel and booking services."
+      },
+      {
+        "title": "2. Information We Collect",
+        "points": [
+          "Personal details such as name, email, and phone number",
+          "Booking data including destination, dates, and traveler information",
+          "Payment details processed securely through trusted providers",
+          "Device and usage data to improve performance and reliability",
+          "Location data for personalized travel suggestions",
+          "Communication history for customer support improvements"
+        ]
+      },
+      {
+        "title": "3. How We Use Your Information",
+        "content": "We use your data to process bookings, improve products, personalize your experience, send essential travel notifications, and provide support when needed."
+      },
+      {
+        "title": "4. Legal Basis for Processing",
+        "points": [
+          "To fulfill contractual obligations (bookings and services)",
+          "To comply with legal and regulatory requirements",
+          "Based on your consent for marketing and optional services",
+          "For legitimate business interests such as improving services"
+        ]
+      },
+      {
+        "title": "5. Sharing Your Data",
+        "content": "We only share information with service partners such as airlines, hotels, and payment processors when necessary to fulfill your booking."
+      },
+      {
+        "title": "6. Third-Party Service Providers",
+        "points": [
+          "Airlines and transport providers",
+          "Hotels and accommodation partners",
+          "Payment gateways and financial institutions",
+          "Analytics and performance monitoring tools"
+        ]
+      },
+      {
+        "title": "7. International Data Transfers",
+        "content": "Your data may be transferred to and processed in countries outside your residence to complete bookings and provide services globally."
+      },
+      {
+        "title": "8. Data Security",
+        "points": [
+          "SSL encryption for all transactions",
+          "Secure payment gateways",
+          "Regular system monitoring",
+          "Restricted internal data access",
+          "Protection against unauthorized access and breaches"
+        ]
+      },
+      {
+        "title": "9. Cookies and Tracking Technologies",
+        "content": "Cookies help us keep the platform secure, remember your preferences, and understand traffic patterns so we can improve your experience."
+      },
+      {
+        "title": "10. Types of Cookies Used",
+        "points": [
+          "Essential cookies for platform functionality",
+          "Performance cookies for analytics",
+          "Functional cookies to remember preferences",
+          "Marketing cookies for personalized offers"
+        ]
+      },
+      {
+        "title": "11. Data Retention",
+        "content": "We retain your personal data only as long as necessary for legal, operational, and business purposes."
+      },
+      {
+        "title": "12. User Accounts",
+        "points": [
+          "You are responsible for maintaining account confidentiality",
+          "Ensure your login credentials are secure",
+          "Notify us immediately of unauthorized access"
+        ]
+      },
+      {
+        "title": "13. Your Rights",
+        "points": [
+          "Access your personal data",
+          "Request corrections",
+          "Request deletion",
+          "Withdraw consent anytime",
+          "Object to certain types of data processing"
+        ]
+      },
+      {
+        "title": "14. Marketing Communications",
+        "content": "We may send promotional emails and offers. You can opt out anytime through unsubscribe links or account settings."
+      },
+      {
+        "title": "15. Children's Privacy",
+        "content": "Our services are not intended for individuals under 18. We do not knowingly collect data from children."
+      },
+      {
+        "title": "16. Third-Party Links",
+        "content": "Our platform may contain links to third-party services. We are not responsible for their privacy practices."
+      },
+      {
+        "title": "17. Payment Information",
+        "points": [
+          "Payments are processed via secure third-party gateways",
+          "We do not store full credit/debit card details",
+          "Transactions are encrypted and monitored"
+        ]
+      },
+      {
+        "title": "18. Travel-Specific Data Usage",
+        "points": [
+          "Passport and identification details for bookings",
+          "Travel preferences and history",
+          "Emergency contact information for trips",
+          "Special requests such as meals or accessibility needs"
+        ]
+      },
+      {
+        "title": "19. Policy Updates",
+        "content": "We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated revision date."
+      },
+      {
+        "title": "20. Contact Us",
+        "content": "If you have any questions or concerns regarding this Privacy Policy, please contact us at support@traveltourup.com."
+      }
+    ]
+  },
+  "TermsPage": {
+    "topCards": [
+      {
+        "title": "Fair Use",
+        "desc": "Honest details and lawful use of the platform."
+      },
+      {
+        "title": "Provider Rules",
+        "desc": "Bookings follow airline and hotel policy terms."
+      },
+      {
+        "title": "Secure Payments",
+        "desc": "Transactions are processed through secure partners."
+      }
+    ],
+    "sections": [
+      {
+        "title": "1. Acceptance of Terms",
+        "content": "By using TravelTourUp, you agree to these Terms of Service and any applicable policies referenced on this platform."
+      },
+      {
+        "title": "2. Eligibility",
+        "content": "You must be at least 18 years old and legally capable of entering into binding contracts to use our services."
+      },
+      {
+        "title": "3. Booking Services",
+        "content": "TravelTourUp provides booking support as an intermediary between travelers and third-party providers such as airlines, hotels, and transport partners."
+      },
+      {
+        "title": "4. Account Registration",
+        "points": [
+          "Provide accurate and complete information",
+          "Maintain confidentiality of your account credentials",
+          "You are responsible for all activities under your account"
+        ]
+      },
+      {
+        "title": "5. Payments and Pricing",
+        "points": [
+          "Payments are processed through secure payment gateways",
+          "Displayed prices may change based on availability and demand",
+          "Taxes, service charges, and provider fees may apply",
+          "Currency conversions may vary based on provider rates"
+        ]
+      },
+      {
+        "title": "6. Booking Confirmation",
+        "content": "Bookings are only confirmed after full payment and receipt of confirmation from the service provider."
+      },
+      {
+        "title": "7. Cancellations and Refunds",
+        "content": "Cancellation and refund eligibility depend on the policy of each provider. Please review fare conditions before confirming your booking."
+      },
+      {
+        "title": "8. Changes and Modifications",
+        "content": "Changes to bookings such as dates or traveler details are subject to provider policies and may incur additional charges."
+      },
+      {
+        "title": "9. User Responsibilities",
+        "points": [
+          "Provide accurate traveler and payment information",
+          "Comply with visa, immigration, and local laws",
+          "Ensure valid travel documents",
+          "Avoid misuse, fraud, or unauthorized system access"
+        ]
+      },
+      {
+        "title": "10. Travel Documentation",
+        "content": "You are responsible for obtaining passports, visas, and any required travel permits before your trip."
+      },
+      {
+        "title": "11. Travel Risks",
+        "content": "Travel involves inherent risks. TravelTourUp is not responsible for delays, cancellations, or disruptions caused by external factors."
+      },
+      {
+        "title": "12. Third-Party Providers",
+        "content": "All travel services are provided by independent third parties. We are not liable for their actions, errors, or service quality."
+      },
+      {
+        "title": "13. Limitation of Liability",
+        "content": "TravelTourUp is not liable for disruptions caused by third-party providers, including delays, overbookings, cancellations, or force majeure events."
+      },
+      {
+        "title": "14. Force Majeure",
+        "content": "We are not responsible for failure to perform obligations due to events beyond our control such as natural disasters, pandemics, or government actions."
+      },
+      {
+        "title": "15. Prohibited Activities",
+        "points": [
+          "Fraudulent bookings or transactions",
+          "System abuse or hacking attempts",
+          "Violation of applicable laws",
+          "Impersonation or identity misuse"
+        ]
+      },
+      {
+        "title": "16. Intellectual Property",
+        "content": "All content, branding, and platform materials are owned by TravelTourUp and may not be used without permission."
+      },
+      {
+        "title": "17. Termination",
+        "content": "We reserve the right to suspend or terminate accounts that violate these terms without prior notice."
+      },
+      {
+        "title": "18. Privacy Policy",
+        "content": "Your use of our services is also governed by our Privacy Policy, which explains how we collect and use your data."
+      },
+      {
+        "title": "19. Changes to Terms",
+        "content": "We may update these Terms of Service at any time. Continued use of the platform means you accept the updated terms."
+      },
+      {
+        "title": "20. Contact",
+        "content": "For questions regarding these terms, contact us at support@traveltourup.com."
+      }
+    ]
+  },
+  "AboutAchievements": {
+    "title": "Your Destination Awaits",
+    "subtitle": "We have helped thousands of travelers explore amazing destinations worldwide. Our dedication to quality service continues to grow our success.",
+    "statCustomers": "12870+",
+    "statCustomersLabel": "Happy Customers",
+    "statSatisfied": "100%",
+    "statSatisfiedLabel": "Client Satisfied",
+    "connectText": "Let's connect. Reach out for more information.",
+    "contactButton": "Contact us"
+  },
+  "Seo": {
+    "routes": {
+      "home": {
+        "title": "TravelTourUp — Book Flights, Hotels & Car Rentals Worldwide",
+        "description": "Compare and book flights, hotels, and car rentals in one place. Transparent search, secure checkout, and 24/7 support for leisure and business trips.",
+        "ogTitle": "Book flights, hotels & cars — TravelTourUp",
+        "ogDescription": "Search worldwide flights, stays, and rentals. Find competitive fares and complete your trip with confidence."
+      },
+      "about": {
+        "title": "About TravelTourUp | Global flight & hotel booking partner",
+        "description": "Learn how TravelTourUp helps travelers book flights, hotels, and car rentals with a simple, secure platform and responsive support.",
+        "ogTitle": "About us — TravelTourUp",
+        "ogDescription": "Our mission: make travel booking straightforward and trustworthy for every trip."
+      },
+      "contact": {
+        "title": "Contact TravelTourUp | Customer support & travel help",
+        "description": "Reach TravelTourUp for booking help, flight and hotel questions, refunds, or trip planning support.",
+        "ogTitle": "Contact us — TravelTourUp",
+        "ogDescription": "Get in touch with our team for reservations, billing, and travel assistance."
+      },
+      "faqs": {
+        "title": "Travel booking FAQs | Flights, hotels & cars — TravelTourUp",
+        "description": "Answers to common questions about booking flights, hotels, and car rentals, payments, changes, and policies on TravelTourUp.",
+        "ogTitle": "Frequently asked questions — TravelTourUp",
+        "ogDescription": "Booking help, refunds, account support, and more."
+      },
+      "flights": {
+        "title": "Cheap flights & airline tickets | Book online — TravelTourUp",
+        "description": "Search domestic and international flights, compare airlines and fares, and book airline tickets with secure payment and booking support.",
+        "ogTitle": "Book flights online — TravelTourUp",
+        "ogDescription": "Find flight deals, compare options, and reserve your next trip."
+      },
+      "hotels": {
+        "title": "Hotels & accommodations | Best rates & booking — TravelTourUp",
+        "description": "Find hotels, resorts, and vacation stays worldwide. Compare prices, amenities, and locations, then book your room securely.",
+        "ogTitle": "Book hotels worldwide — TravelTourUp",
+        "ogDescription": "Search stays from budget to luxury and reserve with confidence."
+      },
+      "cars": {
+        "title": "Car rental & airport hire | Compare deals — TravelTourUp",
+        "description": "Rent a car for your trip—economy to premium. Compare pickup options, including airport rental, and book transparently.",
+        "ogTitle": "Car rental deals — TravelTourUp",
+        "ogDescription": "Affordable and premium vehicles for business and leisure travel."
+      },
+      "flightbooking": {
+        "title": "Complete your flight booking | TravelTourUp",
+        "description": "Finalize your flight reservation securely. Review passenger and itinerary details before payment.",
+        "ogTitle": "Flight checkout — TravelTourUp",
+        "ogDescription": "Secure flight booking completion."
+      },
+      "hotelbooking": {
+        "title": "Complete your hotel booking | TravelTourUp",
+        "description": "Finalize your hotel reservation securely. Confirm dates, room type, and guest details.",
+        "ogTitle": "Hotel checkout — TravelTourUp",
+        "ogDescription": "Secure hotel booking completion."
+      },
+      "carbooking": {
+        "title": "Complete your car rental booking | TravelTourUp",
+        "description": "Finalize your car rental booking securely. Review vehicle and pickup details before payment.",
+        "ogTitle": "Car rental checkout — TravelTourUp",
+        "ogDescription": "Secure car rental completion."
+      },
+      "login": {
+        "title": "Sign in | TravelTourUp account",
+        "description": "Sign in to manage flight, hotel, and car bookings, saved trips, and account settings.",
+        "ogTitle": "Sign in — TravelTourUp",
+        "ogDescription": "Access your TravelTourUp traveler account."
+      },
+      "signup": {
+        "title": "Create account | Join TravelTourUp",
+        "description": "Create a free TravelTourUp account to book faster, track trips, and get travel updates.",
+        "ogTitle": "Create account — TravelTourUp",
+        "ogDescription": "Join TravelTourUp and start booking your next trip."
+      },
+      "cars_payment": {
+        "title": "Car rental payment | TravelTourUp",
+        "description": "Complete your car rental payment securely with encrypted checkout.",
+        "ogTitle": "Car rental payment — TravelTourUp",
+        "ogDescription": "Secure payment for your rental."
+      },
+      "hotels_payment": {
+        "title": "Hotel payment | TravelTourUp",
+        "description": "Complete your hotel booking payment securely with encrypted checkout.",
+        "ogTitle": "Hotel payment — TravelTourUp",
+        "ogDescription": "Secure payment for your stay."
+      },
+      "flights_payment": {
+        "title": "Flight payment | TravelTourUp",
+        "description": "Complete your flight booking payment securely with encrypted checkout.",
+        "ogTitle": "Flight payment — TravelTourUp",
+        "ogDescription": "Secure payment for your flight."
+      },
+      "privacy": {
+        "title": "Privacy policy | TravelTourUp",
+        "description": "How TravelTourUp collects, uses, and protects your personal data when you book travel.",
+        "ogTitle": "Privacy policy — TravelTourUp",
+        "ogDescription": "Data protection and your privacy rights."
+      },
+      "terms": {
+        "title": "Terms of service | TravelTourUp",
+        "description": "Terms and conditions for using TravelTourUp to search and book flights, hotels, and cars.",
+        "ogTitle": "Terms of service — TravelTourUp",
+        "ogDescription": "Platform terms for travelers and bookings."
+      },
+      "blog": {
+        "title": "Travel guides & tips | Flights, hotels & trips — TravelTourUp",
+        "description": "Inspiration and practical guides for flying, finding hotels, road trips, and getting more from your next booking.",
+        "ogTitle": "Travel guides & news — TravelTourUp",
+        "ogDescription": "Tips for smarter flight and hotel booking and better trips."
+      },
+      "forgot_password": {
+        "title": "Reset password | TravelTourUp",
+        "description": "Request a secure link to reset your TravelTourUp account password.",
+        "ogTitle": "Reset password — TravelTourUp",
+        "ogDescription": "Recover access to your account."
+      },
+      "profile": {
+        "title": "Your profile | TravelTourUp",
+        "description": "Manage your TravelTourUp traveler profile and preferences.",
+        "ogTitle": "Profile — TravelTourUp",
+        "ogDescription": "Your account overview."
+      },
+      "profile_bookings": {
+        "title": "My bookings | TravelTourUp",
+        "description": "View and manage your flight, hotel, and car reservations.",
+        "ogTitle": "My bookings — TravelTourUp",
+        "ogDescription": "Your trips and reservation details."
+      },
+      "profile_booking_detail": {
+        "title": "Booking details | TravelTourUp",
+        "description": "Confirmation, references, and itinerary for your TravelTourUp booking.",
+        "ogTitle": "Booking details — TravelTourUp",
+        "ogDescription": "Reservation confirmation and details."
+      }
+    }
+  },
+  "Breadcrumb": {
+    "home": "Home",
+    "ariaLabel": "Breadcrumb",
+    "detailHotel": "Hotel Detail",
+    "detailFlight": "Flight Detail",
+    "detailCar": "Car Detail",
+    "pages": {
+      "about": {
+        "title": "About Us",
+        "description": "Discover who we are, our mission, and the passion behind every journey we craft for travelers worldwide."
+      },
+      "contact": {
+        "title": "Contact Us",
+        "description": "Get in touch with our team for questions, support, or custom travel help."
+      },
+      "faqs": {
+        "title": "Frequently Asked Questions",
+        "description": "Find answers to common questions about our services, bookings, and policies"
+      },
+      "flights": {
+        "title": "Flights",
+        "description": "Compare and book flights to hundreds of destinations with the best fares from top airlines."
+      },
+      "flight-search": {
+        "title": "Flight Search",
+        "description": "Search through thousands of routes to find your perfect flight at the best price available."
+      },
+      "flightbooking": {
+        "title": "Flight Booking",
+        "description": "Complete your flight reservation securely. Review your itinerary and confirm your booking."
+      },
+      "cars": {
+        "title": "Car Rentals",
+        "description": "Browse premium vehicles for every journey — from economy to luxury, at unbeatable rates."
+      },
+      "car-search": {
+        "title": "Car Search",
+        "description": "Find the perfect rental car for your trip. Filter by type, price, and features."
+      },
+      "carbooking": {
+        "title": "Car Booking",
+        "description": "Finalize your car rental. Review vehicle details and confirm your reservation."
+      },
+      "hotels": {
+        "title": "Hotels",
+        "description": "Explore handpicked hotels and resorts worldwide — from boutique stays to five-star luxury."
+      },
+      "hotel-search": {
+        "title": "Hotel Search",
+        "description": "Search accommodations by destination, dates, and amenities to find your ideal stay."
+      },
+      "hotelbooking": {
+        "title": "Hotel Booking",
+        "description": "Secure your room reservation. Review hotel details, amenities, and confirm your stay."
+      },
+      "login": {
+        "title": "Login",
+        "description": "Sign in to your TravelTourUp account to manage bookings and access exclusive deals."
+      },
+      "signup": {
+        "title": "Create Account",
+        "description": "Join TravelTourUp today and unlock personalized travel deals and seamless booking."
+      },
+      "payment": {
+        "title": "Payment",
+        "description": "Complete your purchase securely. We protect every transaction with industry-standard encryption."
+      },
+      "privacy": {
+        "title": "Privacy Policy",
+        "description": "Learn how we collect, use, and protect your personal information at TravelTourUp."
+      },
+      "terms": {
+        "title": "Terms of Service",
+        "description": "Review the terms and conditions governing your use of TravelTourUp services."
+      },
+      "profile": {
+        "title": "Profile",
+        "description": "View your account information and travel preferences."
+      }
+    }
+  }
+}
