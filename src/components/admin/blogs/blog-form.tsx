@@ -6,6 +6,7 @@ import { useForm, useFormState, useWatch, type UseFormReturn } from "react-hook-
 import type { BlogPostDto } from "@/lib/blog/blog.types";
 import { createBlogPost, updateBlogPost } from "@/lib/http/blog.client";
 import GenericForm, { type SubFormConfig } from "@/components/admin_ui/shared/generic-form";
+import { SeoToolsSection } from "./seo-tools-section";
 import {
   galleryItemsFromDto,
   galleryToApiPayload,
@@ -449,6 +450,8 @@ export function BlogPostForm({ mode, categories, initial }: BlogPostFormProps) {
   const excerptW = useWatch({ control: form.control, name: "excerpt" }) ?? "";
   const metaTitleW = useWatch({ control: form.control, name: "meta_title" }) ?? "";
   const metaDescW = useWatch({ control: form.control, name: "meta_description" }) ?? "";
+  const focusKeyphraseW = useWatch({ control: form.control, name: "focus_keyphrase" }) ?? "";
+  const tagsW = useWatch({ control: form.control, name: "tags" }) ?? [];
 
   // Auto slug from title until the user diverges (slug kept in sync with previous title’s slug)
   const titleW = useWatch({ control: form.control, name: "title" });
@@ -731,6 +734,19 @@ export function BlogPostForm({ mode, categories, initial }: BlogPostFormProps) {
           form={form}
           isSubmitting={form.formState.isSubmitting}
           mode={mode}
+        />
+
+        <SeoToolsSection
+          title={titleW ?? ""}
+          metaTitle={metaTitleW}
+          metaDescription={metaDescW}
+          slug={slugW}
+          content={contentW ?? ""}
+          excerpt={excerptW}
+          focusKeyphrase={focusKeyphraseW}
+          tags={tagsW}
+          postId={initial?.id}
+          isSubmitting={form.formState.isSubmitting}
         />
       </GenericForm>
     </div>
