@@ -40,6 +40,9 @@ export type BlogPostDto = {
   seo: {
     metaTitle: string;
     metaDescription: string;
+    focusKeyphrase: string | null;
+    canonicalUrl: string | null;
+    robotsMeta: string | null;
   };
 };
 

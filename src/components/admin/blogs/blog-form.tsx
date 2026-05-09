@@ -93,6 +93,8 @@ export type BlogPostFormValues = {
   meta_title: string;
   meta_description: string;
   focus_keyphrase: string;
+  canonical_url: string;
+  robots_meta: string;
   published_at: string;
   /** Ordered images; exactly one is featured (cover) when any have a URL. */
   images: GalleryItem[];
@@ -110,7 +112,9 @@ function buildDefaults(initial: BlogPostDto | undefined, categories: CategoryOpt
     read_time: initial?.readTime ?? estimateReadMinutesFromHtml(initial?.content ?? ""),
     meta_title: initial?.seo.metaTitle ?? "",
     meta_description: initial?.seo.metaDescription ?? "",
-    focus_keyphrase: "",
+    focus_keyphrase: initial?.seo.focusKeyphrase ?? "",
+    canonical_url: initial?.seo.canonicalUrl ?? "",
+    robots_meta: initial?.seo.robotsMeta ?? "index,follow",
     published_at: initial?.publishedAt ? toDatetimeLocalValue(new Date(initial.publishedAt)) : "",
     images: initialImagesFromPost(initial),
   };
@@ -559,6 +563,30 @@ export function BlogPostForm({ mode, categories, initial }: BlogPostFormProps) {
             placeholder: "e.g. family travel in Italy",
             cols: 12,
             mdCols: 6,
+            description: "Max 100 characters. Main keyword this post targets.",
+          },
+          {
+            name: "canonical_url",
+            label: "Canonical URL (optional)",
+            type: "text",
+            placeholder: "https://example.com/blog/post-slug",
+            cols: 12,
+            mdCols: 6,
+            description: "Prevents duplicate content; leave blank to auto-generate.",
+          },
+          {
+            name: "robots_meta",
+            label: "Robots meta tag",
+            type: "select",
+            options: [
+              { label: "Index, Follow (Default)", value: "index,follow" },
+              { label: "NoIndex, Follow", value: "noindex,follow" },
+              { label: "Index, NoFollow", value: "index,nofollow" },
+              { label: "NoIndex, NoFollow", value: "noindex,nofollow" },
+            ],
+            cols: 12,
+            mdCols: 6,
+            description: "Controls search engine indexing behavior.",
           },
           {
             name: "meta_description",
@@ -639,6 +667,9 @@ export function BlogPostForm({ mode, categories, initial }: BlogPostFormProps) {
       read_time: Number(data.read_time) || 0,
       meta_title: data.meta_title.trim() ? data.meta_title.trim() : null,
       meta_description: data.meta_description.trim() ? data.meta_description.trim() : null,
+      focus_keyphrase: data.focus_keyphrase.trim() ? data.focus_keyphrase.trim() : null,
+      canonical_url: data.canonical_url.trim() ? data.canonical_url.trim() : null,
+      robots_meta: data.robots_meta || "index,follow",
       published_at:
         data.status === "published" && data.published_at
           ? new Date(data.published_at).toISOString()

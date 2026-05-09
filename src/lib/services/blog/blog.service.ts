@@ -83,6 +83,9 @@ export function mapRowToDto(row: BlogPostRow): BlogPostDto {
     seo: {
       metaTitle: row.meta_title ?? row.title,
       metaDescription: row.meta_description ?? row.excerpt,
+      focusKeyphrase: row.focus_keyphrase ?? null,
+      canonicalUrl: row.canonical_url ?? null,
+      robotsMeta: row.robots_meta ?? "index,follow",
     },
   };
 }

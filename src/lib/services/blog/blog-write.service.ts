@@ -82,6 +82,9 @@ export async function createAdminBlogPost(body: CreateBody): Promise<BlogPostDto
     read_time: body.read_time,
     meta_title: body.meta_title ?? undefined,
     meta_description: body.meta_description ?? undefined,
+    focus_keyphrase: body.focus_keyphrase ?? undefined,
+    canonical_url: body.canonical_url ?? undefined,
+    robots_meta: body.robots_meta ?? "index,follow",
     published_at,
     category: { connect: { id: body.category_id } },
     ...(body.author_id
@@ -155,6 +158,9 @@ export async function updateAdminBlogPost(id: string, body: UpdateBody): Promise
   if (body.read_time !== undefined) data.read_time = body.read_time;
   if (body.meta_title !== undefined) data.meta_title = body.meta_title;
   if (body.meta_description !== undefined) data.meta_description = body.meta_description;
+  if (body.focus_keyphrase !== undefined) data.focus_keyphrase = body.focus_keyphrase;
+  if (body.canonical_url !== undefined) data.canonical_url = body.canonical_url;
+  if (body.robots_meta !== undefined) data.robots_meta = body.robots_meta;
   if (body.published_at !== undefined || body.status !== undefined) {
     data.published_at = published_at;
   }

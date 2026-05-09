@@ -395,6 +395,9 @@ model BlogPost {
   read_time        Int       @default(0) @map("read_time")
   meta_title       String?   @map("meta_title") @db.Text
   meta_description String?   @map("meta_description") @db.Text
+  focus_keyphrase  String?   @map("focus_keyphrase") @db.Text
+  canonical_url    String?   @map("canonical_url") @db.Text
+  robots_meta      String?   @default("index,follow") @map("robots_meta")
   published_at     DateTime? @map("published_at")
   created_at       DateTime  @default(now()) @map("created_at")
   updated_at       DateTime  @updatedAt @map("updated_at")
@@ -410,6 +413,8 @@ model BlogPost {
   @@index([status, published_at])
   @@index([category_id])
   @@index([updated_at])
+  @@index([focus_keyphrase])
+  @@index([robots_meta])
   @@map("blog_posts")
 }
 
